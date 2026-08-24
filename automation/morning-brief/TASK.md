@@ -107,6 +107,16 @@ before ending the run. A run whose state never lands back in git means tomorrow'
 run silently falls back to a full resync — not a failure, just wasted tokens, so
 don't skip this step.
 
+**Verify the push actually landed before ending the run** — run `git log
+origin/<this-branch> --oneline -1` (fetching first) and confirm it shows the
+commit you just made. Don't just assume `git push` printing success means it's
+really there. If the push failed or the commit is missing, retry once; if it
+still isn't there, say so explicitly in the brief itself (top of Heads-up) rather
+than ending quietly — a run that silently didn't persist is worse than one that
+flags its own failure. (This check exists because a manual test run on 2026-08-24
+completed and apparently sent a notification but never actually committed
+anything — don't repeat that silently.)
+
 ## Everything else
 
 Sections 1 (who/where), 2 (state file table — now rooted at the repo path above),
