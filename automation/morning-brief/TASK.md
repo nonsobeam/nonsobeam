@@ -26,7 +26,7 @@ SLA_TARGET_HOURS  = 9
 LOOKBACK_DAYS     = 14        # only used for the SLA scorecard window and full-resync fallback
 STATE_DIR         = automation/morning-brief/state   (inside nonsobeam/nonsobeam, this branch)
 OUTPUT_DIR        = automation/morning-brief/output  (inside nonsobeam/nonsobeam, this branch)
-MAIL_METHOD       = graph
+MAIL_METHOD       = none      # explicitly disabled by Thaddeus — report only, never send mail
 BUILD_DASHBOARD   = false
 ```
 
@@ -113,14 +113,22 @@ Sections 1 (who/where), 2 (state file table — now rooted at the repo path abov
 4 (classification), 5 (people/availability), 6 (commitments), 7 (calendar/Teams/
 portal enrichment), 8 (SLA computation — same business-hours Python, same
 assertions), 9 (carry-forward), 10 (ranking into MIT/three/five/backlog), 11 (the
-email format and content rules), 12 (delivery — see the note below), 14
-(guardrails), and 15 (operational rules) are unchanged from the v2 spec.
+brief's content and format — read as "the report", not "the email"; the anatomy,
+sections, and Outlook-safe HTML formatting rules still apply, they just describe a
+file now), 14 (guardrails), and 15 (operational rules) are unchanged from the v2
+spec, **except Section 12 (delivery), which is fully replaced by the rule below.**
 
-**Delivery note:** `outlook_send_mail` is currently returning `403 FORBIDDEN` —
-the Microsoft 365 connector's `Mail.Send` delegated permission isn't consented for
-this session. Per Section 12's own rule, 403 means don't retry. Until that's
-fixed: write the brief to `output/brief-YYYY-MM-DD.html`, commit and push it as
-always, and additionally send it to the user as a file (proactive) so it surfaces
-as a notification even though the email itself didn't go out. Try
-`outlook_send_mail` first every run regardless — check it, don't assume it's
-still broken — and only fall back to the file-only path if it still 403s.
+**Delivery — report only, never email. This is an explicit, standing instruction
+from Thaddeus, not a workaround for the 403 below — do not revert to emailing even
+if `Mail.Send` gets consented later.**
+
+- **Never call `outlook_send_mail`.** Don't try it "just to check" — skip it
+  entirely. (For the record: it was returning `403 FORBIDDEN` — the connector's
+  `Mail.Send` permission wasn't consented — but that's no longer the reason it's
+  skipped; it's skipped because Thaddeus asked for report-only delivery.)
+- Write the brief to `output/brief-YYYY-MM-DD.html` and commit + push it, every
+  run, same as always — that's the durable copy.
+- Additionally send it to Thaddeus as a file in this session (proactive) each run,
+  so the report surfaces as a notification even though nothing was emailed.
+- Everything else in Section 12 (writing the plain-markdown copy to stdout,
+  the 403-vs-429 handling for any *other* Graph calls in the run) still applies.

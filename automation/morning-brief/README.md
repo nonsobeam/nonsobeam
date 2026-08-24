@@ -12,10 +12,9 @@ edit it there to change how the automation behaves.
   `carry-forward.json`, `commitments.json`, `people.json`,
   `no-reply-needed.json` — this last one is Thaddeus's to edit by hand, the
   automation only reads it).
-- `output/brief-YYYY-MM-DD.html` — one file per day, the actual brief. This is
-  the report. Since the automated email send is currently broken (see below),
-  this file — plus the file sent into that day's session — is where the report
-  actually lives day to day.
+- `output/brief-YYYY-MM-DD.html` — one file per day, the actual brief. This,
+  plus the copy pushed into that day's session as a file, is where the report
+  lives day to day. **No email is ever sent** — see below.
 
 ## Why this exists
 
@@ -26,11 +25,11 @@ persists thread state here in git so each day only needs to read what's new sinc
 the last run, then recompute SLA/breach status for already-known open threads
 with plain arithmetic instead of re-fetching them.
 
-## Known issue: email delivery
+## Delivery: report only, no email
 
-`outlook_send_mail` is returning `403 FORBIDDEN` — the Microsoft 365 connector's
-`Mail.Send` delegated permission hasn't been consented for this session. Until
-that's fixed, the brief doesn't actually arrive by email; it's written here and
-also pushed to Thaddeus as a file in that day's session. Fixing this is an admin
-consent step on the Entra/Graph app registration behind the Microsoft 365
-connector, not something fixable from inside a task run.
+Thaddeus explicitly asked for report-only delivery — `outlook_send_mail` is never
+called. The report is written to `output/brief-YYYY-MM-DD.html`, committed here,
+and pushed to him as a file in the session that ran it. (For the record, it was
+also blocked by a `403 FORBIDDEN` — the connector's `Mail.Send` permission was
+never consented — but that's now moot: even if that permission were granted,
+email sending stays off unless Thaddeus asks for it again.)
