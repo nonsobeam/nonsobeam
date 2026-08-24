@@ -338,7 +338,7 @@
     "anchor_at": "2026-08-20T16:31:47Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 11.6,
+    "working_hours_elapsed": 18.47,
     "sla_status": "Breached"
   },
   {
@@ -358,7 +358,7 @@
     "anchor_at": "2026-08-13T17:25:18Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 56.13,
+    "working_hours_elapsed": 63.0,
     "sla_status": "Breached"
   },
   {
@@ -378,8 +378,49 @@
     "first_inbound_at": "2026-08-12T09:48:47Z",
     "anchor_at": "2026-08-12T10:03:29Z",
     "anchor_is_after_hours": false,
+    "replied_at": "2026-08-24T11:55:02Z",
+    "working_hours_elapsed": 73.86,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "b87dc94bf85fd4b0",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "ciaran mcnamee - book a meeting with me (follow-up)",
+    "participant_domains": [
+      "binariilabs.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: Ciaran McNamee - Book a meeting with me",
+    "from": "cm@binariilabs.com",
+    "account": "Binarii Labs",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "uncertain (also addressed to Geoffroy, who is OOO through Aug 28)",
+    "first_inbound_at": "2026-08-24T16:14:44Z",
+    "anchor_at": "2026-08-24T16:14:44Z",
+    "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 72.08,
-    "sla_status": "Breached"
+    "working_hours_elapsed": 0.75,
+    "sla_status": "Awaiting reply"
+  },
+  {
+    "thread_key": "5f3659205396377b",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "large transaction alert on azure marketplace for kumo.ai (tenant closing)",
+    "participant_domains": [
+      "kumo.ai",
+      "nvidia.com",
+      "wetransact.io"
+    ],
+    "subject": "RE: Large Transaction Alert on Azure Marketplace for Kumo.AI",
+    "from": "aleksandar.s.sokolovski@kumo.ai",
+    "account": "Kumo.AI",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-24T16:50:22Z",
+    "anchor_at": "2026-08-24T16:50:22Z",
+    "anchor_is_after_hours": false,
+    "replied_at": null,
+    "working_hours_elapsed": 0.16,
+    "sla_status": "Awaiting reply"
   }
 ]
