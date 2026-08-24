@@ -1,0 +1,385 @@
+[
+  {
+    "thread_key": "1ce6718916c98d50",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "[external] re: spa0029 jefferson health has invoice invinc008556 - $408,061",
+    "participant_domains": [
+      "craneware.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: [EXTERNAL] Re: SPA0029 Jefferson Health has invoice INVINC008556 - $408,061",
+    "from": "c.cory@craneware.com",
+    "account": "Craneware / Jefferson Health",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-20T15:07:31Z",
+    "anchor_at": "2026-08-21T16:00:08Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-24T10:03:44Z",
+    "working_hours_elapsed": 3.06,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "5a26356631ae9de9",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "galencia invoicing issue/request",
+    "participant_domains": [
+      "graviteesource.com",
+      "microsoft.com",
+      "wetransact.io"
+    ],
+    "subject": "Galencia Invoicing Issue/Request",
+    "from": "eleanor.thompson@graviteesource.com",
+    "account": "Gravitee / Galencia",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-21T13:25:35Z",
+    "anchor_at": "2026-08-21T13:25:35Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-24T09:15:22Z",
+    "working_hours_elapsed": 4.83,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "14223efa61048586",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "turbo360 & wetransact | introduction & best practices",
+    "participant_domains": [
+      "kovai.co",
+      "wetransact.io"
+    ],
+    "subject": "Re: Turbo360 & WeTransact | Introduction & Best Practices",
+    "from": "casey.read@kovai.co",
+    "account": "Kovai / Turbo360",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-18T10:16:48Z",
+    "anchor_at": "2026-08-20T13:34:55Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-20T15:02:05Z",
+    "working_hours_elapsed": 1.45,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "b1174c96371495b7",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "azure accelerate assessment kick-off meeting 18.06.2026",
+    "participant_domains": [
+      "crowdtech.com",
+      "mwm2.nl",
+      "wetransact.io"
+    ],
+    "subject": "RE: Azure Accelerate Assessment Kick-Off meeting 18.06.2026",
+    "from": "j.korse@crowdtech.com",
+    "account": "Crowdtech",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-11T10:15:30Z",
+    "anchor_at": "2026-08-19T12:18:18Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-20T08:58:02Z",
+    "working_hours_elapsed": 5.66,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "9a70161ca2c64fbb",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "my payout is not getting verified. trackingid#2608170040007476",
+    "participant_domains": [
+      "crowdtech.com",
+      "microsoft.com",
+      "mwm2.nl",
+      "wetransact.io"
+    ],
+    "subject": "Re: My payout is not getting verified. TrackingID#2608170040007476",
+    "from": "m.vanluit@crowdtech.com",
+    "account": "Crowdtech",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-17T21:20:48Z",
+    "anchor_at": "2026-08-18T10:56:23Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-18T11:30:16Z",
+    "working_hours_elapsed": 0.56,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "1204899913c449ec",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "datarails x wetransact \u2014 recap, next steps, and your csm thaddeus",
+    "participant_domains": [
+      "datarails.com",
+      "microsoft.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: Datarails x WeTransact \u2014 recap, next steps, and your CSM Thaddeus",
+    "from": "eyal.h@datarails.com",
+    "account": "Datarails",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-13T17:12:07Z",
+    "anchor_at": "2026-08-18T17:00:09Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-18T17:03:05Z",
+    "working_hours_elapsed": 0.0,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "3d3f2db3cded4eeb",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "i want to submit my documentation for the azure ip co-sell application - trackingid#2607300040007476",
+    "participant_domains": [
+      "regask.com",
+      "wetransact.io"
+    ],
+    "subject": "Fw: I want to submit my documentation for the Azure IP co-sell application - TrackingID#2607300040007476",
+    "from": "craig.gleason@regask.com",
+    "account": "Regask",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-18T22:45:24Z",
+    "anchor_at": "2026-08-18T22:45:24Z",
+    "anchor_is_after_hours": true,
+    "replied_at": "2026-08-19T11:42:59Z",
+    "working_hours_elapsed": 3.72,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "ed0a2672a9587628",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "credits?",
+    "participant_domains": [
+      "regask.com",
+      "wetransact.io"
+    ],
+    "subject": "Credits?",
+    "from": "craig.gleason@regask.com",
+    "account": "Regask",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-18T22:43:18Z",
+    "anchor_at": "2026-08-18T22:43:18Z",
+    "anchor_is_after_hours": true,
+    "replied_at": "2026-08-19T11:35:39Z",
+    "working_hours_elapsed": 3.59,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "8481d0cc43382de3",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "what documents are needed for a company name change - trackingid#2607210040004594",
+    "participant_domains": [
+      "voicera.io",
+      "wetransact.io"
+    ],
+    "subject": "RE: What documents are needed for a company name change - TrackingID#2607210040004594",
+    "from": "chandra@voicera.io",
+    "account": "Voicera",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-10T13:05:30Z",
+    "anchor_at": "2026-08-18T12:55:22Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-18T13:02:19Z",
+    "working_hours_elapsed": 0.12,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "c2c0483658e75303",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "ciaran mcnamee - book a meeting with me",
+    "participant_domains": [
+      "binariilabs.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: Ciaran McNamee - Book a meeting with me",
+    "from": "cm@binariilabs.com",
+    "account": "Binarii Labs",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-13T09:58:40Z",
+    "anchor_at": "2026-08-13T09:58:40Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-13T10:15:43Z",
+    "working_hours_elapsed": 0.28,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "e2caff755845753e",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "td synnex - registratio",
+    "participant_domains": [
+      "tdsynnex.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: TD Synnex - Registratio",
+    "from": "Martin.Hala@tdsynnex.com",
+    "account": "TD Synnex",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-12T14:47:21Z",
+    "anchor_at": "2026-08-12T14:47:21Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-13T08:16:42Z",
+    "working_hours_elapsed": 2.49,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "579b14e3003fd3f2",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "[external] re: exploring the microsoft for startups co-sell acceleration benefit",
+    "participant_domains": [
+      "wetransact.io"
+    ],
+    "subject": "RV: [EXTERNAL] Re: Exploring the Microsoft for Startups Co-sell Acceleration Benefit",
+    "from": "paula.jimenez@wetransact.io",
+    "account": "",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-12T14:23:01Z",
+    "anchor_at": "2026-08-12T14:23:01Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-13T08:23:03Z",
+    "working_hours_elapsed": 3.0,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "8698a1e0f746260d",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "2607240040005422",
+    "participant_domains": [
+      "microsoft.com",
+      "wetransact.io"
+    ],
+    "subject": "2607240040005422",
+    "from": "v-mthorat@microsoft.com",
+    "account": "",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-12T11:13:41Z",
+    "anchor_at": "2026-08-12T11:13:41Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-12T12:13:00Z",
+    "working_hours_elapsed": 0.99,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "d56775f44f298792",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "",
+    "participant_domains": [
+      "wetransact.io"
+    ],
+    "subject": "RE: Re:",
+    "from": "sara.llorca@wetransact.io",
+    "account": "",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-12T07:12:10Z",
+    "anchor_at": "2026-08-12T09:55:37Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-12T09:57:55Z",
+    "working_hours_elapsed": 0.04,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "19561816165c458c",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "private offer on tsb listing",
+    "participant_domains": [
+      "tetrate.io",
+      "wetransact.io"
+    ],
+    "subject": "Re: Private Offer on TSB listing",
+    "from": "mike.castricone@tetrate.io",
+    "account": "Tetrate / TSB",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-11T23:44:49Z",
+    "anchor_at": "2026-08-12T05:21:36Z",
+    "anchor_is_after_hours": true,
+    "replied_at": "2026-08-12T09:45:01Z",
+    "working_hours_elapsed": 1.75,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "4ac085a43c41dada",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "wetransact notification",
+    "participant_domains": [
+      "dayshape.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: WeTransact Notification",
+    "from": "lauren.hart@dayshape.com",
+    "account": "Dayshape",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-14T15:47:07Z",
+    "anchor_at": "2026-08-14T16:31:40Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-17T07:36:52Z",
+    "working_hours_elapsed": 0.47,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "02e93652ba45f4da",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "tpid request - multiverse computing",
+    "participant_domains": [
+      "wetransact.io"
+    ],
+    "subject": "Tr : TPID Request - Multiverse Computing",
+    "from": "geoffroy.tamburro@wetransact.io",
+    "account": "Multiverse Computing",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "uncertain (ruby.sran co-recipient)",
+    "first_inbound_at": "2026-08-20T16:31:47Z",
+    "anchor_at": "2026-08-20T16:31:47Z",
+    "anchor_is_after_hours": false,
+    "replied_at": null,
+    "working_hours_elapsed": 11.6,
+    "sla_status": "Breached"
+  },
+  {
+    "thread_key": "6fe500b27daa8bbf",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "plan publish not getting completed",
+    "participant_domains": [
+      "kovai.co",
+      "wetransact.io"
+    ],
+    "subject": "Re: Plan publish not getting completed",
+    "from": "michael.stephenson@kovai.co",
+    "account": "Kovai",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-12T12:03:29Z",
+    "anchor_at": "2026-08-13T17:25:18Z",
+    "anchor_is_after_hours": false,
+    "replied_at": null,
+    "working_hours_elapsed": 56.13,
+    "sla_status": "Breached"
+  },
+  {
+    "thread_key": "c800851de1e4791d",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "refive <>td synnex<>wetransact",
+    "participant_domains": [
+      "refive.io",
+      "tdsynnex.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: Refive <>TD SYNNEX<>WeTransact",
+    "from": "mitul.jain@refive.io",
+    "account": "Refive / TD Synnex",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated (Sounak Ghosh asked Thaddeus directly)",
+    "first_inbound_at": "2026-08-12T09:48:47Z",
+    "anchor_at": "2026-08-12T10:03:29Z",
+    "anchor_is_after_hours": false,
+    "replied_at": null,
+    "working_hours_elapsed": 72.08,
+    "sla_status": "Breached"
+  }
+]

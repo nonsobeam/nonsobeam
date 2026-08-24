@@ -1,0 +1,36 @@
+# Morning brief automation
+
+Daily SLA + planning brief for Thaddeus, run by a scheduled Claude Code trigger
+(weekdays, 08:00 Europe/Lisbon). See `TASK.md` for the full task spec the
+scheduled run follows — that file is the actual prompt, not just documentation;
+edit it there to change how the automation behaves.
+
+## Where things are
+
+- `TASK.md` — the task spec / prompt the daily trigger executes.
+- `state/` — durable state between runs (`history.jsonl`, `threads-latest.json`,
+  `carry-forward.json`, `commitments.json`, `people.json`,
+  `no-reply-needed.json` — this last one is Thaddeus's to edit by hand, the
+  automation only reads it).
+- `output/brief-YYYY-MM-DD.html` — one file per day, the actual brief. This is
+  the report. Since the automated email send is currently broken (see below),
+  this file — plus the file sent into that day's session — is where the report
+  actually lives day to day.
+
+## Why this exists
+
+The original version of this task re-read the full 14-day Outlook window from
+scratch every single day, which was by far the most expensive part of the run
+(hundreds of thousands of tokens on the Inbox scan alone some days). This version
+persists thread state here in git so each day only needs to read what's new since
+the last run, then recompute SLA/breach status for already-known open threads
+with plain arithmetic instead of re-fetching them.
+
+## Known issue: email delivery
+
+`outlook_send_mail` is returning `403 FORBIDDEN` — the Microsoft 365 connector's
+`Mail.Send` delegated permission hasn't been consented for this session. Until
+that's fixed, the brief doesn't actually arrive by email; it's written here and
+also pushed to Thaddeus as a file in that day's session. Fixing this is an admin
+consent step on the Entra/Graph app registration behind the Microsoft 365
+connector, not something fixable from inside a task run.

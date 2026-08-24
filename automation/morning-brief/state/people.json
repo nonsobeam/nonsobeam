@@ -1,0 +1,12 @@
+{
+  "Geoffroy Tamburro": {"email":"geoffroy.tamburro@wetransact.io","away_start":"2026-08-24","away_end":"2026-08-28","source":"OOO auto-reply","confidence":"stated"},
+  "Romain de Leusse": {"email":"romaindeleusse@wetransact.io","away_start":"2026-08-19","away_end":"2026-08-25","source":"HR PTO calendar entry","confidence":"stated"},
+  "Divyashree G": {"email":"Divyashree.G@wetransact.io","away_start":"2026-08-19","away_end":"2026-09-05","source":"HR PTO calendar entry","confidence":"stated"},
+  "Emerald Bartolome": {"email":"emerald.bartolome@wetransact.io","away_start":"2026-08-24","away_end":"2026-08-25","source":"HR/calendar all-day event","confidence":"stated"},
+  "Thomas Matthieu Roche": {"email":"thomas.roche@wetransact.io","away_start":"2026-08-26","away_end":"2026-08-29","source":"HR PTO calendar entry","confidence":"stated"},
+  "Sarah Christiansen": {"email":"sarah.christiansen@professional.me","away_start":null,"away_end":"2026-09-01","source":"OOO auto-reply","confidence":"stated"},
+  "Gary Harper": {"email":"gary.harper@graviteesource.com","away_start":null,"away_end":"2026-09-03","source":"OOO auto-reply","confidence":"stated"},
+  "M. van Luit": {"email":"m.vanluit@crowdtech.com","away_start":"2026-08-20","away_end":"2026-09-14","source":"OOO auto-reply","confidence":"stated"},
+  "Johan Aussenac": {"email":"johan.aussenac@wetransact.io","away_start":null,"away_end":"2026-08-27","source":"OOO auto-reply","confidence":"stated"},
+  "Juan Castiblanques (JJ)": {"email":"juan.castiblanques@wetransact.io","away_start":"2026-08-12","away_end":"2026-08-27","source":"Calendar all-day event 'JJ - OoO'","confidence":"stated"}
+}
