@@ -128,7 +128,15 @@ if `Mail.Send` gets consented later.**
   skipped; it's skipped because Thaddeus asked for report-only delivery.)
 - Write the brief to `output/brief-YYYY-MM-DD.html` and commit + push it, every
   run, same as always — that's the durable copy.
-- Additionally send it to Thaddeus as a file in this session (proactive) each run,
-  so the report surfaces as a notification even though nothing was emailed.
+- Send it to Thaddeus as a file in this session (proactive) each run, so it's
+  sitting there as an attachment, not just prose in the transcript.
+- **Then call the push-notification tool** (status "proactive") with a short,
+  concrete one-liner — e.g. `"Morning brief ready: 1 MIT, 3 breached, 8 tasks"`
+  — pulling the actual numbers from this run, not a generic "brief ready"
+  message. This trigger is self-bound (fires into this same session rather than
+  a fresh one), so the create_trigger notification setting doesn't apply here;
+  this explicit call is what actually reaches his phone/desktop each morning.
+  Do this every run, even a quiet one — a quiet day's notification just has
+  smaller numbers in it, it isn't skipped.
 - Everything else in Section 12 (writing the plain-markdown copy to stdout,
   the 403-vs-429 handling for any *other* Graph calls in the run) still applies.
