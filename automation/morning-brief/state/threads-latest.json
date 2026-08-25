@@ -422,5 +422,45 @@
     "replied_at": null,
     "working_hours_elapsed": 0.16,
     "sla_status": "Awaiting reply"
+  },
+  {
+    "thread_key": "93c144d1eb2abf3b",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "wetransact notification (convertr private offer confusion)",
+    "participant_domains": [
+      "convertr.io",
+      "wetransact.io"
+    ],
+    "subject": "Fwd: WeTransact Notification",
+    "from": "oliver.reid@convertr.io",
+    "account": "Convertr",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-24T21:48:26Z",
+    "anchor_at": "2026-08-25T08:00:00Z",
+    "anchor_is_after_hours": true,
+    "replied_at": null,
+    "working_hours_elapsed": 0.0,
+    "sla_status": "Awaiting reply"
+  },
+  {
+    "thread_key": "0447b08523a1af7b",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "convertrone - contracting & billing process",
+    "participant_domains": [
+      "convertr.io",
+      "wetransact.io"
+    ],
+    "subject": "Fwd: ConvertrOne - Contracting & Billing Process",
+    "from": "oliver.reid@convertr.io",
+    "account": "Convertr",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-24T21:35:29Z",
+    "anchor_at": "2026-08-25T08:00:00Z",
+    "anchor_is_after_hours": true,
+    "replied_at": null,
+    "working_hours_elapsed": 0.0,
+    "sla_status": "Awaiting reply"
   }
 ]
