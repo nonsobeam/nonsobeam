@@ -338,7 +338,7 @@
     "anchor_at": "2026-08-20T16:31:47Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 18.47,
+    "working_hours_elapsed": 27.47,
     "sla_status": "Breached"
   },
   {
@@ -358,7 +358,7 @@
     "anchor_at": "2026-08-13T17:25:18Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 63.0,
+    "working_hours_elapsed": 72.0,
     "sla_status": "Breached"
   },
   {
@@ -399,8 +399,8 @@
     "anchor_at": "2026-08-24T16:14:44Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 0.75,
-    "sla_status": "Awaiting reply"
+    "working_hours_elapsed": 9.75,
+    "sla_status": "Breached"
   },
   {
     "thread_key": "5f3659205396377b",
@@ -420,44 +420,107 @@
     "anchor_at": "2026-08-24T16:50:22Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 0.16,
-    "sla_status": "Awaiting reply"
+    "working_hours_elapsed": 9.16,
+    "sla_status": "Breached"
   },
   {
-    "thread_key": "93c144d1eb2abf3b",
+    "thread_key": "ec9d28dc8efe7562",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "wetransact notification (convertr private offer confusion)",
+    "normalized_subject": "wetransact notification",
     "participant_domains": [
       "convertr.io",
       "wetransact.io"
     ],
-    "subject": "Fwd: WeTransact Notification",
+    "subject": "Re: WeTransact Notification",
     "from": "oliver.reid@convertr.io",
     "account": "Convertr",
+    "next_step_owner": "Oliver Reid (now his to message the customer)",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-25T09:10:16Z",
+    "anchor_at": "2026-08-25T11:16:44Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-25T14:58:34Z",
+    "working_hours_elapsed": 3.7,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "bcb619407804e7c8",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "convertrone - contracting & billing process",
+    "participant_domains": [
+      "convertr.io",
+      "lionreach.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: ConvertrOne - Contracting & Billing Process",
+    "from": "ashish@lionreach.com",
+    "account": "Lion Reach / Convertr",
     "next_step_owner": "Thaddeus",
     "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-24T21:48:26Z",
-    "anchor_at": "2026-08-25T08:00:00Z",
+    "first_inbound_at": "2026-08-24T21:35:29Z",
+    "anchor_at": "2026-08-25T18:57:21Z",
     "anchor_is_after_hours": true,
     "replied_at": null,
     "working_hours_elapsed": 0.0,
     "sla_status": "Awaiting reply"
   },
   {
-    "thread_key": "0447b08523a1af7b",
+    "thread_key": "c22b0808605f9396",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "convertrone - contracting & billing process",
+    "normalized_subject": "engagement with the team",
     "participant_domains": [
-      "convertr.io",
+      "kovai.co",
       "wetransact.io"
     ],
-    "subject": "Fwd: ConvertrOne - Contracting & Billing Process",
-    "from": "oliver.reid@convertr.io",
-    "account": "Convertr",
+    "subject": "Engagement with the team",
+    "from": "peter.clitheroe@kovai.co",
+    "account": "Kovai",
+    "next_step_owner": "Thaddeus (Geoffroy, the addressee, is OOO through Aug 28)",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-25T09:21:40Z",
+    "anchor_at": "2026-08-25T09:21:40Z",
+    "anchor_is_after_hours": false,
+    "replied_at": null,
+    "working_hours_elapsed": 7.64,
+    "sla_status": "Awaiting reply"
+  },
+  {
+    "thread_key": "207d443a8550db1c",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "[external]re: invoice overdue",
+    "participant_domains": [
+      "dock.tech",
+      "metacompliance.com",
+      "microsoft.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: [External]Re: Invoice Overdue",
+    "from": "felipe.correia@dock.tech",
+    "account": "Dock Tecnologia / MetaCompliance",
     "next_step_owner": "Thaddeus",
     "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-24T21:35:29Z",
-    "anchor_at": "2026-08-25T08:00:00Z",
+    "first_inbound_at": "2026-08-25T20:14:24Z",
+    "anchor_at": "2026-08-25T20:14:24Z",
+    "anchor_is_after_hours": true,
+    "replied_at": null,
+    "working_hours_elapsed": 0.0,
+    "sla_status": "Awaiting reply"
+  },
+  {
+    "thread_key": "6d10c3a658373c7f",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "summize <> wetransact - getting you transactable on microsoft marketplace",
+    "participant_domains": [
+      "summize.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: Summize <> WeTransact - Getting you transactable on Microsoft Marketplace",
+    "from": "chris.picarde@summize.com",
+    "account": "Summize",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-25T19:45:28Z",
+    "anchor_at": "2026-08-25T19:45:28Z",
     "anchor_is_after_hours": true,
     "replied_at": null,
     "working_hours_elapsed": 0.0,

@@ -1,4 +1,10 @@
 {
-  "6fe500b27daa8bbf": {"first_seen":"2026-08-24","times_surfaced":3,"last_status":"Breached"},
-  "02e93652ba45f4da": {"first_seen":"2026-08-24","times_surfaced":3,"last_status":"Breached"}
+  "6fe500b27daa8bbf": {"first_seen":"2026-08-24","times_surfaced":4,"last_status":"Breached"},
+  "02e93652ba45f4da": {"first_seen":"2026-08-24","times_surfaced":4,"last_status":"Breached"},
+  "ciaran-followup": {"first_seen":"2026-08-24","times_surfaced":3,"last_status":"Breached"},
+  "kumo-ai-notice": {"first_seen":"2026-08-24","times_surfaced":3,"last_status":"Breached"},
+  "convertrone-billing": {"first_seen":"2026-08-26","times_surfaced":1,"last_status":"Awaiting reply"},
+  "kovai-engagement": {"first_seen":"2026-08-26","times_surfaced":1,"last_status":"Awaiting reply"},
+  "dock-invoice-followup": {"first_seen":"2026-08-26","times_surfaced":1,"last_status":"Awaiting reply"},
+  "summize-scheduling": {"first_seen":"2026-08-26","times_surfaced":1,"last_status":"Awaiting reply"}
 }
