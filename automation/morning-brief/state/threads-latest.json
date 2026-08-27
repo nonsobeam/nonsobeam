@@ -338,7 +338,7 @@
     "anchor_at": "2026-08-20T16:31:47Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 27.47,
+    "working_hours_elapsed": 36.47,
     "sla_status": "Breached"
   },
   {
@@ -358,7 +358,7 @@
     "anchor_at": "2026-08-13T17:25:18Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 72.0,
+    "working_hours_elapsed": 81.0,
     "sla_status": "Breached"
   },
   {
@@ -399,7 +399,7 @@
     "anchor_at": "2026-08-24T16:14:44Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 9.75,
+    "working_hours_elapsed": 18.75,
     "sla_status": "Breached"
   },
   {
@@ -420,7 +420,7 @@
     "anchor_at": "2026-08-24T16:50:22Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 9.16,
+    "working_hours_elapsed": 18.16,
     "sla_status": "Breached"
   },
   {
@@ -457,12 +457,12 @@
     "account": "Lion Reach / Convertr",
     "next_step_owner": "Thaddeus",
     "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-24T21:35:29Z",
+    "first_inbound_at": "2026-08-25T18:57:21Z",
     "anchor_at": "2026-08-25T18:57:21Z",
-    "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply"
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-26T09:33:03Z",
+    "working_hours_elapsed": 1.55,
+    "sla_status": "Replied"
   },
   {
     "thread_key": "c22b0808605f9396",
@@ -481,8 +481,8 @@
     "anchor_at": "2026-08-25T09:21:40Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 7.64,
-    "sla_status": "Awaiting reply"
+    "working_hours_elapsed": 16.64,
+    "sla_status": "Breached"
   },
   {
     "thread_key": "207d443a8550db1c",
@@ -501,10 +501,10 @@
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-08-25T20:14:24Z",
     "anchor_at": "2026-08-25T20:14:24Z",
-    "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply"
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-26T09:26:14Z",
+    "working_hours_elapsed": 1.44,
+    "sla_status": "Replied"
   },
   {
     "thread_key": "6d10c3a658373c7f",
@@ -521,9 +521,90 @@
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-08-25T19:45:28Z",
     "anchor_at": "2026-08-25T19:45:28Z",
-    "anchor_is_after_hours": true,
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-26T09:30:52Z",
+    "working_hours_elapsed": 1.51,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "e962777c784206ed",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "publishing issue \u2013 kovai turbo360 plan descriptions",
+    "participant_domains": [
+      "kovai.co",
+      "wetransact.io"
+    ],
+    "subject": "Re: Publishing Issue \u2013 Kovai Turbo360 Plan Descriptions",
+    "from": "michael.stephenson@kovai.co",
+    "account": "Kovai",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-26T10:28:40Z",
+    "anchor_at": "2026-08-26T10:28:40Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-26T12:55:33Z",
+    "working_hours_elapsed": 2.45,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "da9a7a9584931e67",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "wetransact notification",
+    "participant_domains": [
+      "stibosystems.com",
+      "wetransact.io"
+    ],
+    "subject": "FW: WeTransact Notification",
+    "from": "ataa@stibosystems.com",
+    "account": "Stibo Systems",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-26T15:32:21Z",
+    "anchor_at": "2026-08-26T15:32:21Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-26T15:49:29Z",
+    "working_hours_elapsed": 0.29,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "d1340abbc803c786",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "it decision <>td synnex<>wetransact",
+    "participant_domains": [
+      "it-decision.com",
+      "tdsynnex.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: IT Decision <>TD SYNNEX<>WeTransact",
+    "from": "Sounak.Ghosh@wetransact.io",
+    "account": "TD Synnex / IT Decision",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-26T12:36:19Z",
+    "anchor_at": "2026-08-26T12:36:19Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-26T15:44:23Z",
+    "working_hours_elapsed": 3.13,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "76e16f011ed539f1",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "your customer bought products in your private offer",
+    "participant_domains": [
+      "dayshape.com",
+      "wetransact.io"
+    ],
+    "subject": "Fw: Your customer bought products in your private offer",
+    "from": "lauren.hart@dayshape.com",
+    "account": "Dayshape",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-26T13:37:25Z",
+    "anchor_at": "2026-08-26T13:37:25Z",
+    "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 0.0,
+    "working_hours_elapsed": 3.38,
     "sla_status": "Awaiting reply"
   }
 ]
