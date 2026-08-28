@@ -71,12 +71,13 @@ incremental day. Build that view like this, with **no extra Outlook calls**:
 1. Load every thread object from `state/threads-latest.json` (the previous run's
    output). Drop any whose `anchor_at` is now older than `LOOKBACK_DAYS` — they've
    aged out of the window.
-2. For every thread still in scope with `sla_status` other than `Replied` (i.e.
-   still open), **recompute `working_hours_elapsed` and `sla_status` using its
-   stored `anchor_at` against the new "now"** — pure arithmetic, the same
-   business-hours function as v2 Section 8. A thread's breach clock keeps ticking
-   even on days nothing new arrives on it; that recomputation is why open threads
-   can flip from `Awaiting reply` to `Breached` between runs with zero new reads.
+2. For every thread still in scope with `sla_status` other than `Replied` or
+   `No reply needed` (i.e. still genuinely open), **recompute
+   `working_hours_elapsed` and `sla_status` using its stored `anchor_at` against
+   the new "now"** — pure arithmetic, the same business-hours function as v2
+   Section 8. A thread's breach clock keeps ticking even on days nothing new
+   arrives on it; that recomputation is why open threads can flip from `Awaiting
+   reply` to `Breached` between runs with zero new reads.
 3. Merge in whatever the incremental read just found:
    - A new inbound message on an existing open thread's `thread_key` → it doesn't
      change the anchor (the anchor is still the original unanswered message,
@@ -88,8 +89,10 @@ incremental day. Build that view like this, with **no extra Outlook calls**:
      that thread's `anchor_at` → that thread just got its first reply. Compute
      `working_hours_elapsed` from `anchor_at` to this reply, set `sla_status` =
      `Replied`, `replied_at` = this message's timestamp.
-4. Threads that were already `Replied` in the prior run stay exactly as they were
-   — never recompute a status that's already settled; only open threads move.
+4. Threads that were already `Replied` or `No reply needed` in the prior run stay
+   exactly as they were — never recompute a status that's already settled; only
+   genuinely open threads move. See Section 4a for what `No reply needed` means
+   and when to use it.
 
 Everything downstream (Sections 4 through 16 of the v2 spec — classification,
 people/availability, commitments, carry-forward, ranking, the email, delivery)
@@ -116,6 +119,50 @@ than ending quietly — a run that silently didn't persist is worse than one tha
 flags its own failure. (This check exists because a manual test run on 2026-08-24
 completed and apparently sent a notification but never actually committed
 anything — don't repeat that silently.)
+
+## 4a. CLASSIFICATION GUARDRAILS (added 2026-08-28, amends v2 Section 4/9)
+
+On 2026-08-28 Thaddeus reviewed the six threads shown as breached and said directly:
+**none of them required a reply.** Investigation confirmed all six — the classifier had
+been systematically over-escalating. Root causes, and the fixes that now apply to every
+run, going forward:
+
+- **`[OWNER AWAY]` is not a green light to escalate to Thaddeus.** A thread addressed to
+  another colleague (e.g. Geoffroy) who happens to be away does **not** automatically
+  become Thaddeus's to answer just because he's cc'd or a co-recipient. Before tagging
+  `[OWNER AWAY]` and assigning `next_step_owner: Thaddeus`, check:
+  1. Is the message actually addressed/directed to Thaddeus (to-line, or "Thaddeus,"
+     opening), or is he only cc'd while someone else is the addressee?
+  2. Is there evidence someone else is already handling it through another channel —
+     a recurring call-booking pattern, a co-recipient who owns the account relationship,
+     an internal thread showing someone else picked it up? If so, that's the owner, not
+     Thaddeus, regardless of who's out.
+  3. If it's genuinely only Thaddeus who can act and no one else is covering it, the
+     escalation is valid — but say so explicitly with the specific evidence, not just
+     "Geoffroy is out."
+- **FYI / churn / close-out / casual-aside messages are not open asks.** A message that
+  states a decision or fact and doesn't pose a question (e.g. "we will no longer be
+  using this tenant," a casual aside forwarding an automated notification with no direct
+  ask) does not need a reply just because it's unread and inbound. Before marking a
+  thread `Breached`/`Awaiting reply`, confirm the message actually contains an
+  unanswered question or explicit ask directed at Thaddeus. If it doesn't, classify it
+  `No reply needed` (see below) instead of letting the SLA clock run on it.
+- **Check for a superseding thread before tracking an old one as independently
+  breached.** If a different, more recent thread on the same real-world issue shows
+  active back-and-forth already resolving it, the older thread is superseded, not a
+  separate open item — don't count both.
+- **A new terminal `sla_status` value: `"No reply needed"`.** Use it (with a
+  `no_reply_reason` string field explaining why) for threads that fail the checks
+  above, or that Thaddeus has explicitly told you don't need a reply. Treat it exactly
+  like `Replied` in the reconstitution logic (Section 3): never recompute it on a later
+  run, never count it toward `breached`/`still_open`/`threads_needing_reply` in the SLA
+  scorecard, and never increment its `times_surfaced` in `carry-forward.json` — it's
+  settled, not carried forward. This is distinct from `state/no-reply-needed.json`,
+  which stays Thaddeus's own hand-edited file (never write to it); this is the
+  automation's own record of threads it determined, or was told, don't need action.
+- When in doubt between escalating and not, prefer surfacing the evidence in the brief
+  (e.g. "addressed to Geoffroy, not clearly Thaddeus's — flagging for a decision") over
+  silently assigning `next_step_owner: Thaddeus` and starting the SLA clock.
 
 ## Everything else
 

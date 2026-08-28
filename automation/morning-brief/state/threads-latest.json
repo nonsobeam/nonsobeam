@@ -332,14 +332,15 @@
     "subject": "Tr : TPID Request - Multiverse Computing",
     "from": "geoffroy.tamburro@wetransact.io",
     "account": "Multiverse Computing",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "uncertain (ruby.sran co-recipient)",
+    "next_step_owner": "geoffroy.tamburro@wetransact.io / ruby.sran (not Thaddeus)",
+    "next_step_owner_confidence": "stated by Thaddeus 2026-08-28",
     "first_inbound_at": "2026-08-20T16:31:47Z",
     "anchor_at": "2026-08-20T16:31:47Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
     "working_hours_elapsed": 45.47,
-    "sla_status": "Breached"
+    "sla_status": "No reply needed",
+    "no_reply_reason": "Thaddeus confirmed 2026-08-28 this doesn't need his reply — forwarded by Geoffroy with ruby.sran as co-recipient, no further activity found in either direction since, consistent with ruby.sran handling it directly with Microsoft outside this mailbox's visibility. Was wrongly escalated to Thaddeus by the [OWNER AWAY] rule for merely being addressed alongside an absent colleague."
   },
   {
     "thread_key": "6fe500b27daa8bbf",
@@ -352,14 +353,15 @@
     "subject": "Re: Plan publish not getting completed",
     "from": "michael.stephenson@kovai.co",
     "account": "Kovai",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
+    "next_step_owner": "n/a (superseded)",
+    "next_step_owner_confidence": "stated by Thaddeus 2026-08-28",
     "first_inbound_at": "2026-08-12T12:03:29Z",
     "anchor_at": "2026-08-13T17:25:18Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
     "working_hours_elapsed": 90.0,
-    "sla_status": "Breached"
+    "sla_status": "No reply needed",
+    "no_reply_reason": "Thaddeus confirmed 2026-08-28 this doesn't need a separate reply — superseded by 'Re: Publishing Issue – Kovai Turbo360 Plan Descriptions' (thread_key e962777c784206ed), an actively-worked thread on the same substance where Thaddeus has been personally replying all week (most recently 2026-08-28). This older thread was being tracked and counted as an independent breach even though the real conversation moved elsewhere."
   },
   {
     "thread_key": "c800851de1e4791d",
@@ -393,14 +395,15 @@
     "subject": "Re: Ciaran McNamee - Book a meeting with me",
     "from": "cm@binariilabs.com",
     "account": "Binarii Labs",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "uncertain (also addressed to Geoffroy, who is OOO through Aug 28)",
+    "next_step_owner": "geoffroy.tamburro@wetransact.io (not Thaddeus)",
+    "next_step_owner_confidence": "stated by Thaddeus 2026-08-28",
     "first_inbound_at": "2026-08-24T16:14:44Z",
     "anchor_at": "2026-08-24T16:14:44Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
     "working_hours_elapsed": 27.75,
-    "sla_status": "Breached"
+    "sla_status": "No reply needed",
+    "no_reply_reason": "Thaddeus confirmed 2026-08-28 this doesn't need his reply — addressed to Geoffroy, not Thaddeus, and sits inside an active pattern of CSM support-call bookings/cancellations (Gong recordings, Read.ai reports for Aug 17/18/20/21 sessions) that is already the real channel handling Ciaran McNamee's follow-up. Was wrongly escalated by the [OWNER AWAY] rule for merely being addressed alongside an absent colleague."
   },
   {
     "thread_key": "5f3659205396377b",
@@ -414,14 +417,15 @@
     "subject": "RE: Large Transaction Alert on Azure Marketplace for Kumo.AI",
     "from": "aleksandar.s.sokolovski@kumo.ai",
     "account": "Kumo.AI",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
+    "next_step_owner": "n/a (no action needed)",
+    "next_step_owner_confidence": "stated by Thaddeus 2026-08-28",
     "first_inbound_at": "2026-08-24T16:50:22Z",
     "anchor_at": "2026-08-24T16:50:22Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
     "working_hours_elapsed": 27.16,
-    "sla_status": "Breached"
+    "sla_status": "No reply needed",
+    "no_reply_reason": "Thaddeus confirmed 2026-08-28 this doesn't need a reply. Message text confirmed: \"we will no longer be using this tenant. The points you raised are no longer applicable on our end.\" A churn/close-out notice with no actual question — was wrongly classified as an open ask needing acknowledgement."
   },
   {
     "thread_key": "ec9d28dc8efe7562",
@@ -475,14 +479,15 @@
     "subject": "Engagement with the team",
     "from": "peter.clitheroe@kovai.co",
     "account": "Kovai",
-    "next_step_owner": "Thaddeus (Geoffroy, the addressee, is OOO through Aug 28)",
-    "next_step_owner_confidence": "stated",
+    "next_step_owner": "geoffroy.tamburro@wetransact.io (not Thaddeus)",
+    "next_step_owner_confidence": "stated by Thaddeus 2026-08-28",
     "first_inbound_at": "2026-08-25T09:21:40Z",
     "anchor_at": "2026-08-25T09:21:40Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
     "working_hours_elapsed": 25.64,
-    "sla_status": "Breached"
+    "sla_status": "No reply needed",
+    "no_reply_reason": "Thaddeus confirmed 2026-08-28 this isn't his to answer. Message is explicitly addressed to Geoffroy ('Geoffroy, I am getting comments...'), with Thaddeus only cc'd alongside Michael Stephenson. Being cc'd next to an absent colleague does not make it Thaddeus's question to answer — was wrongly escalated by the [OWNER AWAY] rule."
   },
   {
     "thread_key": "207d443a8550db1c",
@@ -598,14 +603,15 @@
     "subject": "Fw: Your customer bought products in your private offer",
     "from": "lauren.hart@dayshape.com",
     "account": "Dayshape",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
+    "next_step_owner": "n/a (no action needed)",
+    "next_step_owner_confidence": "stated by Thaddeus 2026-08-28",
     "first_inbound_at": "2026-08-26T13:37:25Z",
     "anchor_at": "2026-08-26T13:37:25Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
     "working_hours_elapsed": 12.38,
-    "sla_status": "Breached"
+    "sla_status": "No reply needed",
+    "no_reply_reason": "Thaddeus confirmed 2026-08-28 this doesn't need a reply. Message text confirmed: \"I did not get this message re BDO (the £900k+ offer that was accepted yesterday) - hence my concern 🙂\" — a casual, emoji-softened aside forwarding an automated notification, not a hard question demanding an answer. Was wrongly classified as a high-stakes open ask on the size of the deal alone."
   },
   {
     "thread_key": "3734ed4a0e499ed8",

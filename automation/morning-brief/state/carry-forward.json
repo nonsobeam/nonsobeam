@@ -1,9 +1,9 @@
 {
-  "6fe500b27daa8bbf": {"first_seen":"2026-08-24","times_surfaced":6,"last_status":"Breached"},
-  "02e93652ba45f4da": {"first_seen":"2026-08-24","times_surfaced":6,"last_status":"Breached"},
-  "ciaran-followup": {"first_seen":"2026-08-24","times_surfaced":5,"last_status":"Breached"},
-  "kumo-ai-notice": {"first_seen":"2026-08-24","times_surfaced":5,"last_status":"Breached"},
-  "kovai-engagement": {"first_seen":"2026-08-25","times_surfaced":3,"last_status":"Breached"},
-  "dayshape-bdo-notification": {"first_seen":"2026-08-27","times_surfaced":2,"last_status":"Breached"},
+  "6fe500b27daa8bbf": {"first_seen":"2026-08-24","times_surfaced":6,"last_status":"No reply needed","note":"Reclassified 2026-08-28 — superseded by e962777c784206ed, stop surfacing/rolling."},
+  "02e93652ba45f4da": {"first_seen":"2026-08-24","times_surfaced":6,"last_status":"No reply needed","note":"Reclassified 2026-08-28 — not Thaddeus's to answer, stop surfacing/rolling."},
+  "ciaran-followup": {"first_seen":"2026-08-24","times_surfaced":5,"last_status":"No reply needed","note":"Reclassified 2026-08-28 — thread_key b87dc94bf85fd4b0, addressed to Geoffroy, handled via CSM call bookings, stop surfacing/rolling."},
+  "kumo-ai-notice": {"first_seen":"2026-08-24","times_surfaced":5,"last_status":"No reply needed","note":"Reclassified 2026-08-28 — thread_key 5f3659205396377b, churn close-out with no question, stop surfacing/rolling."},
+  "kovai-engagement": {"first_seen":"2026-08-25","times_surfaced":3,"last_status":"No reply needed","note":"Reclassified 2026-08-28 — thread_key c22b0808605f9396, addressed to Geoffroy not Thaddeus, stop surfacing/rolling."},
+  "dayshape-bdo-notification": {"first_seen":"2026-08-27","times_surfaced":2,"last_status":"No reply needed","note":"Reclassified 2026-08-28 — thread_key 76e16f011ed539f1, casual aside not a real question, stop surfacing/rolling."},
   "convertr-zscaler": {"first_seen":"2026-08-28","times_surfaced":1,"last_status":"Awaiting reply"}
 }
