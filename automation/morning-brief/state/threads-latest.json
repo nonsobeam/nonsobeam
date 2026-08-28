@@ -338,7 +338,7 @@
     "anchor_at": "2026-08-20T16:31:47Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 36.47,
+    "working_hours_elapsed": 45.47,
     "sla_status": "Breached"
   },
   {
@@ -358,7 +358,7 @@
     "anchor_at": "2026-08-13T17:25:18Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 81.0,
+    "working_hours_elapsed": 90.0,
     "sla_status": "Breached"
   },
   {
@@ -399,7 +399,7 @@
     "anchor_at": "2026-08-24T16:14:44Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 18.75,
+    "working_hours_elapsed": 27.75,
     "sla_status": "Breached"
   },
   {
@@ -420,7 +420,7 @@
     "anchor_at": "2026-08-24T16:50:22Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 18.16,
+    "working_hours_elapsed": 27.16,
     "sla_status": "Breached"
   },
   {
@@ -481,7 +481,7 @@
     "anchor_at": "2026-08-25T09:21:40Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 16.64,
+    "working_hours_elapsed": 25.64,
     "sla_status": "Breached"
   },
   {
@@ -540,10 +540,10 @@
     "next_step_owner": "Thaddeus",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-08-26T10:28:40Z",
-    "anchor_at": "2026-08-26T10:28:40Z",
+    "anchor_at": "2026-08-27T14:55:29Z",
     "anchor_is_after_hours": false,
-    "replied_at": "2026-08-26T12:55:33Z",
-    "working_hours_elapsed": 2.45,
+    "replied_at": "2026-08-27T15:37:17Z",
+    "working_hours_elapsed": 0.7,
     "sla_status": "Replied"
   },
   {
@@ -604,7 +604,68 @@
     "anchor_at": "2026-08-26T13:37:25Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 3.38,
+    "working_hours_elapsed": 12.38,
+    "sla_status": "Breached"
+  },
+  {
+    "thread_key": "3734ed4a0e499ed8",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "td synnex - registratio",
+    "participant_domains": [
+      "enactia.com",
+      "tdsynnex.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: TD Synnex - Registratio",
+    "from": "michael@enactia.com",
+    "account": "Enactia / TD Synnex",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-27T11:21:09Z",
+    "anchor_at": "2026-08-27T11:21:09Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-27T17:00:41Z",
+    "working_hours_elapsed": 5.65,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "02a3a71bb2e695bd",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "invoice for one time charge to be generated in wetransact",
+    "participant_domains": [
+      "iotap.com",
+      "wetransact.io"
+    ],
+    "subject": "Invoice for One Time Charge to be generated in WeTransact",
+    "from": "skhatri@iotap.com",
+    "account": "DATCO / iotap",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-27T17:24:51Z",
+    "anchor_at": "2026-08-27T17:24:51Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-27T20:12:55Z",
+    "working_hours_elapsed": 0.0,
+    "sla_status": "Replied"
+  },
+  {
+    "thread_key": "cf5c3b0bd19324ed",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "re: [external] re: convertr | zscaler private offer azure marketplace",
+    "participant_domains": [
+      "convertr.io",
+      "wetransact.io"
+    ],
+    "subject": "Re: Re: Re: [External\u26a0\ufe0f] Re: Convertr | Zscaler Private Offer Azure Marketplace",
+    "from": "oliver.reid@convertr.io",
+    "account": "Convertr",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-08-27T20:22:40Z",
+    "anchor_at": "2026-08-28T06:06:40Z",
+    "anchor_is_after_hours": true,
+    "replied_at": null,
+    "working_hours_elapsed": 0.0,
     "sla_status": "Awaiting reply"
   }
 ]
