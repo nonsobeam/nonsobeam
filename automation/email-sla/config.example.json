@@ -1,0 +1,21 @@
+{
+  "owner_name": "Thaddeus Uzornne",
+
+  "_me": "Every address that is you, aliases included. Without this nothing can tell inbound from outbound.",
+  "me": [
+    "thaddeus.uzornne@wetransact.io"
+  ],
+
+  "_months": "Window length. 11 for the one-shot backfill.",
+  "months": 11,
+
+  "_accounts": "Optional. Maps a contact address or a whole domain to an account name. Anything unmatched renders as 'not identified' -- the scan never guesses an account.",
+  "accounts": {
+    "northwind-analytics.example": "Northwind Analytics",
+    "cobaltledger.example": "Cobalt Ledger",
+    "marisol-robotics.example": "Marisol Robotics",
+    "halcyonfreight.example": "Halcyon Freight",
+    "petravox.example": "Petravox",
+    "silverbrookhealth.example": "Silverbrook Health"
+  }
+}

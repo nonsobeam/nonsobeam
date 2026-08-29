@@ -1,0 +1,18 @@
+# Sample environment file for the OPTIONAL --llm pass.
+#
+# Copy this to `.env` in this directory and fill it in:
+#     cp llm-env.sample .env
+#
+# `.env` is gitignored and must never be committed. Nothing here is needed for a
+# default run -- without --llm the scan makes no network calls at all.
+
+# Base URL of an OpenAI-compatible chat-completions endpoint.
+# CompactifAI (Multiverse Computing) is https://api.compactif.ai/v1
+SLA_LLM_BASE_URL=
+
+# Bearer token for that endpoint.
+SLA_LLM_API_KEY=
+
+# Model id. Confirm what your account actually has, rather than guessing, with:
+#     python3 run.py --probe-llm
+SLA_LLM_MODEL=

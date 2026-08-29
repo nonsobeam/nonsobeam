@@ -1,0 +1,20 @@
+# Secrets — never commit these
+.env
+.env.*
+!.env.example
+
+# Local run config — can carry real customer account names. config.example.json
+# is the committed template.
+automation/email-sla/config.json
+
+# Local SLA scan working data: mailbox contents, token cache, rendered output
+automation/email-sla/data/
+automation/email-sla/.cache/
+automation/email-sla/out/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/

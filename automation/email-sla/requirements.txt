@@ -1,0 +1,14 @@
+# A default run needs NOTHING here -- it uses only the Python standard library.
+# Python 3.11+ (for zoneinfo and the newer typing syntax).
+
+# Only for reading a .pst export (Outlook for Windows, or a compliance-centre
+# mailbox export). Builds from source, so on Debian/Ubuntu you may first need:
+#     sudo apt-get install build-essential python3-dev
+# Not required for .olm, .mbox or .eml.
+libpff-python==20231205
+
+# Only for the optional --llm pass and --probe-llm.
+requests>=2.31
+
+# Only for tests/shoot.py, which screenshots the dashboard to check layout.
+playwright>=1.40
