@@ -1,9 +1,17 @@
 # Daily Morning Brief — SLA + Planning (v3, incremental)
 
-This is the canonical task spec for Thaddeus's daily morning brief. It replaces the
+This is the canonical task spec for Thaddeus's morning brief. It replaces the
 one-off v2 prompt: the deliverable, ranking, and email format are unchanged — only
 Section 3 (the read pass) changed, to stop re-reading the full 14-day mailbox from
-scratch every single day.
+scratch every single run.
+
+**Schedule note (2026-08-29):** this now runs twice a week (Monday and Thursday,
+08:00 Europe/Lisbon), not every weekday — a deliberate token/credit-saving change,
+on top of the incremental-read savings below. Nothing in this spec assumes a daily
+cadence: the incremental read (Section 3) always reads from the prior run's
+`last_run_at`, whatever the actual gap turns out to be, and the SLA business-hours
+math is pure arithmetic against real timestamps regardless of how often the report
+runs. The file/name "morning brief" and `brief-YYYY-MM-DD.html` naming stay as-is.
 
 State for this task lives in this repo, at `automation/morning-brief/state/` and
 `automation/morning-brief/output/`, so it survives across daily runs regardless of
