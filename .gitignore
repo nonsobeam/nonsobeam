@@ -1,3 +1,6 @@
 .env
 .env.*
 node_modules/
+__pycache__/
+*.pyc
+sla_detail.csv
