@@ -9,13 +9,14 @@
 '
 ' HOW TO RUN
 '   1. Open classic Outlook.
-'   2. Press Alt+F11 to open the VBA editor.
+'   2. Developer tab > Visual Basic  (or Alt+F11).
 '   3. Insert > Module.
 '   4. Paste this whole file in.
 '   5. Edit OUT_DIR below if your folder differs.
-'   6. Press F5.
+'   6. Run > Run Sub/UserForm  (or F5).
 '
-' It writes inbox.csv and sent.csv, then tells you how many rows it wrote.
+' It writes inbox.csv and sent.csv, then reports how many messages it
+' exported and how many it scanned.
 
 Option Explicit
 
@@ -27,17 +28,27 @@ Const END_DATE As String = "2026-06-30"
 
 ' ---------------------------------------------------------------------------
 
+' Set by ExportFolder: how many mail items it walked past, regardless of
+' whether they fell inside the date range. Reported so that a zero result
+' distinguishes "found no mail at all" from "found mail, none in range".
+Private LastSeen As Long
+
 Public Sub ExportMailForSLA()
     Dim nInbox As Long, nSent As Long
+    Dim seenInbox As Long, seenSent As Long
 
     On Error GoTo Fail
 
     nInbox = ExportFolder(olFolderInbox, OUT_DIR & "inbox.csv", True)
+    seenInbox = LastSeen
+
     nSent = ExportFolder(olFolderSentMail, OUT_DIR & "sent.csv", False)
+    seenSent = LastSeen
 
     MsgBox "Done." & vbCrLf & vbCrLf & _
-           "inbox.csv:  " & nInbox & " messages" & vbCrLf & _
-           "sent.csv:   " & nSent & " messages" & vbCrLf & vbCrLf & _
+           "inbox.csv:  " & nInbox & " exported  (" & seenInbox & " scanned)" & vbCrLf & _
+           "sent.csv:   " & nSent & " exported  (" & seenSent & " scanned)" & vbCrLf & vbCrLf & _
+           "Date range: " & START_DATE & " to " & END_DATE & vbCrLf & _
            "Saved in " & OUT_DIR, vbInformation
     Exit Sub
 
@@ -54,23 +65,37 @@ Private Function ExportFolder(folderId As Long, outPath As String, _
     Dim fso As Object, ts As Object
     Dim filt As String, dateField As String
     Dim n As Long, stamp As Date
+    Dim startD As Date, endD As Date
+    Dim seen As Long
+
+    startD = CDate(START_DATE)
+    endD = CDate(END_DATE) + 1
 
     Set ns = Application.GetNamespace("MAPI")
     Set fld = ns.GetDefaultFolder(folderId)
     Set items = fld.items
 
-    ' Restrict by date up front — much faster than filtering in the loop.
+    ' Try to narrow with Restrict first — much faster on a big folder. The date
+    ' literal it needs is locale-dependent, so this quietly does nothing on some
+    ' machines; the loop below re-checks every date anyway.
     If isInbox Then
         dateField = "[ReceivedTime]"
     Else
         dateField = "[SentOn]"
     End If
 
-    filt = dateField & " >= '" & Format(CDate(START_DATE), "ddddd h:nn AMPM") & "' AND " & _
-           dateField & " <= '" & Format(CDate(END_DATE) + 1, "ddddd h:nn AMPM") & "'"
+    filt = dateField & " >= '" & Format(startD, "ddddd h:nn AMPM") & "' AND " & _
+           dateField & " <= '" & Format(endD, "ddddd h:nn AMPM") & "'"
 
     On Error Resume Next
-    Set items = items.Restrict(filt)
+    Dim narrowed As Object
+    Set narrowed = items.Restrict(filt)
+    If Err.Number = 0 Then
+        ' A filter that matches nothing usually means the locale format was
+        ' wrong rather than an empty mailbox. Fall back to the full folder.
+        If narrowed.Count > 0 Then Set items = narrowed
+    End If
+    Err.Clear
     On Error GoTo 0
 
     Set fso = CreateObject("Scripting.FileSystemObject")
@@ -80,24 +105,28 @@ Private Function ExportFolder(folderId As Long, outPath As String, _
 
     For Each itm In items
         If TypeName(itm) = "MailItem" Then
-            On Error Resume Next
+            seen = seen + 1
 
-            stamp = Null
+            On Error Resume Next
+            Err.Clear
+
+            stamp = 0
             If isInbox Then
                 stamp = itm.ReceivedTime
             Else
                 stamp = itm.SentOn
                 If stamp = 0 Then stamp = itm.CreationTime
             End If
+            Err.Clear
 
-            If Err.Number = 0 And stamp > 0 Then
+            If stamp >= startD And stamp <= endD Then
                 ts.WriteLine _
                     CsvCell(itm.ConversationID) & "," & _
                     CsvCell(Format(stamp, "yyyy-mm-dd hh:nn:ss")) & "," & _
                     CsvCell(SenderSmtp(itm)) & "," & _
                     CsvCell(RecipientList(itm)) & "," & _
                     CsvCell(itm.Subject)
-                n = n + 1
+                If Err.Number = 0 Then n = n + 1
             End If
 
             Err.Clear
@@ -106,6 +135,7 @@ Private Function ExportFolder(folderId As Long, outPath As String, _
     Next
 
     ts.Close
+    LastSeen = seen
     ExportFolder = n
 End Function
 
@@ -132,6 +162,7 @@ End Function
 
 Private Function RecipientList(itm As Object) As String
     Dim r As Object, out As String, addr As String
+    Dim alt As String
     On Error Resume Next
 
     For Each r In itm.Recipients
@@ -141,7 +172,7 @@ Private Function RecipientList(itm As Object) As String
             addr = ""
             addr = r.Address
             If InStr(1, addr, "/O=", vbTextCompare) > 0 Or InStr(addr, "@") = 0 Then
-                Dim alt As String
+                alt = ""
                 alt = r.PropertyAccessor.GetProperty( _
                     "http://schemas.microsoft.com/mapi/proptag/0x39FE001E")
                 If InStr(alt, "@") > 0 Then addr = alt
