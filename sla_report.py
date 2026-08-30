@@ -8,13 +8,17 @@ generating the report costs no model tokens.
     pip install msal requests
     python sla_report.py --start 2025-07-01 --end 2026-06-30
 
-Auth uses Entra ID device-code flow against the pre-consented Microsoft Graph
-public client, so there is no app registration and no stored password. You get
+Auth uses Entra ID device-code flow, so there is no stored password. You get
 a code, you sign in once in a browser, the token is cached locally.
+
+If your tenant blocks the default client, register your own Entra app and:
+
+    export SLA_CLIENT_ID=<your app's Application (client) ID>
+    export SLA_TENANT_ID=<your Directory (tenant) ID>   # single-tenant only
 
 "Did this email need a reply?" is the only judgement call in the pipeline.
 By default it is answered by a local heuristic (free). Set MULTIVERSE_API_URL
-to hand that classification to the Multiverse Computing API instead.
+to hand that classification to an external API instead.
 """
 
 import argparse
@@ -32,9 +36,11 @@ try:
 except ImportError:
     sys.exit("Missing deps. Run: pip install msal requests")
 
-# Microsoft Graph PowerShell — a public client, pre-consented in most tenants.
-CLIENT_ID = "14d82eec-204b-4c2f-b7e8-296a70dab67e"
-AUTHORITY = "https://login.microsoftonline.com/organizations"
+# Defaults to Microsoft Graph PowerShell, a public client pre-consented in many
+# tenants. Plenty of tenants block it — if yours does, register your own app and
+# set SLA_CLIENT_ID, plus SLA_TENANT_ID if the registration is single-tenant.
+CLIENT_ID = os.environ.get("SLA_CLIENT_ID", "14d82eec-204b-4c2f-b7e8-296a70dab67e")
+AUTHORITY = f"https://login.microsoftonline.com/{os.environ.get('SLA_TENANT_ID', 'organizations')}"
 SCOPES = ["Mail.Read", "User.Read"]
 GRAPH = "https://graph.microsoft.com/v1.0"
 TOKEN_CACHE = os.path.expanduser("~/.cache/sla_report_token.json")
@@ -155,8 +161,8 @@ def needs_reply_heuristic(msg, me):
     return False
 
 
-def needs_reply_multiverse(messages, me):
-    """Batch-classify via the Multiverse Computing API.
+def needs_reply_external(messages, me):
+    """Batch-classify via an external API.
 
     Only subject + sender are sent — never message bodies. Set both:
         MULTIVERSE_API_URL   the classification endpoint
@@ -345,12 +351,12 @@ def main():
     sent = fetch_folder(token, "sentitems", start, end)
 
     print("\nClassifying which messages needed a reply…")
-    classified = needs_reply_multiverse(inbox, me)
+    classified = needs_reply_external(inbox, me)
     if classified is None:
         print("  MULTIVERSE_API_URL not set — using local heuristic (free)")
         classified = {m["id"]: needs_reply_heuristic(m, me) for m in inbox}
     else:
-        print("  via Multiverse Computing API")
+        print("  via external classification API")
 
     rows, unanswered = pair_replies(inbox, sent, me, classified)
 
