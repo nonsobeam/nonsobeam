@@ -6,7 +6,7 @@ Runs entirely on your machine. Message bodies never pass through Claude, so
 generating the report costs no model tokens.
 
     pip install msal requests
-    python sla_report.py --start 2025-07-01 --end 2026-07-31
+    python sla_report.py --start 2025-07-01 --end 2026-06-30
 
 Auth uses Entra ID device-code flow against the pre-consented Microsoft Graph
 public client, so there is no app registration and no stored password. You get
@@ -327,7 +327,7 @@ def summarise(rows, unanswered, start, end):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--start", default="2025-07-01", help="YYYY-MM-DD")
-    p.add_argument("--end", default="2026-07-31", help="YYYY-MM-DD")
+    p.add_argument("--end", default="2026-06-30", help="YYYY-MM-DD")
     p.add_argument("--csv", default="sla_detail.csv")
     args = p.parse_args()
 
