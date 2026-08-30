@@ -6,7 +6,7 @@ Runs entirely on your machine. Message bodies never pass through Claude, so
 generating the report costs no model tokens.
 
     pip install msal requests
-    python sla_report.py --start 2025-08-01 --end 2026-07-31
+    python sla_report.py --start 2025-07-01 --end 2026-07-31
 
 Auth uses Entra ID device-code flow against the pre-consented Microsoft Graph
 public client, so there is no app registration and no stored password. You get
@@ -47,7 +47,7 @@ BUSINESS_START = 9   # 09:00 local
 BUSINESS_END = 17    # 17:00 local
 
 
-# ── auth ──────────────────────────────────────────────────────────
+# ── auth ────────────────────────────────────────────────
 
 def get_token():
     cache = msal.SerializableTokenCache()
@@ -80,7 +80,7 @@ def get_token():
     return result["access_token"]
 
 
-# ── graph fetch ──────────────────────────────────────────────────
+# ── graph fetch ────────────────────────────────────────────
 
 def fetch_folder(token, folder, start, end):
     """Page through one mail folder, returning metadata only."""
@@ -120,7 +120,7 @@ def whoami(token):
     return (d.get("mail") or d.get("userPrincipalName")).lower()
 
 
-# ── needs-a-reply classification ─────────────────────────────────────
+# ── needs-a-reply classification ─────────────────────────────────
 
 NO_REPLY_HINTS = (
     "no-reply", "noreply", "donotreply", "do-not-reply", "notifications@",
@@ -199,7 +199,7 @@ def needs_reply_multiverse(messages, me):
     return results
 
 
-# ── SLA maths ─────────────────────────────────────────────────────
+# ── SLA maths ─────────────────────────────────────────────
 
 def parse_dt(s):
     return datetime.fromisoformat(s.replace("Z", "+00:00"))
@@ -322,11 +322,11 @@ def summarise(rows, unanswered, start, end):
     return "\n".join(lines)
 
 
-# ── main ─────────────────────────────────────────────────────────
+# ── main ───────────────────────────────────────────────
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--start", default="2025-08-01", help="YYYY-MM-DD")
+    p.add_argument("--start", default="2025-07-01", help="YYYY-MM-DD")
     p.add_argument("--end", default="2026-07-31", help="YYYY-MM-DD")
     p.add_argument("--csv", default="sla_detail.csv")
     args = p.parse_args()
