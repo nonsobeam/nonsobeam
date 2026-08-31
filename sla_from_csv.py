@@ -5,7 +5,7 @@ SLA reply-time report, computed from Outlook CSV exports.
 Companion to ExportMailForSLA.vba. Run that macro in Outlook first; it writes
 inbox.csv and sent.csv. Then:
 
-    py sla_from_csv.py --days mon-wed --hours 9-17
+    py sla_from_csv.py --target 24
 
 Standard library only — nothing to pip install. Reads the two CSVs, pairs each
 inbound message that needed a reply with your first reply in that conversation,
@@ -188,7 +188,7 @@ def pair_replies(inbox, sent, me):
     return rows, unanswered
 
 
-def summarise(rows, unanswered, me):
+def summarise(rows, unanswered, me, target=None):
     if not rows:
         return "No replied messages found. Check that sent.csv covers the same period."
 
@@ -229,6 +229,20 @@ def summarise(rows, unanswered, me):
         f"    < 4 working hours    {sum(1 for h in biz if h <= 4)/len(biz)*100:>5.1f}%",
         f"    < 1 working day      {sum(1 for h in biz if h <= day_hours)/len(biz)*100:>5.1f}%",
         f"    < 2 working days     {sum(1 for h in biz if h <= day_hours*2)/len(biz)*100:>5.1f}%",
+    ]
+
+    if target:
+        hit = sum(1 for h in biz if h <= target)
+        missed = len(biz) - hit
+        L += [
+            "",
+            f"  YOUR TARGET — {target:g} working hours",
+            f"    Met        {hit/len(biz)*100:>5.1f}%   ({hit} of {len(biz)} replies)",
+            f"    Missed     {missed/len(biz)*100:>5.1f}%   "
+            f"({missed} repl{'y' if missed == 1 else 'ies'})",
+        ]
+
+    L += [
         "",
         "  BY MONTH (median working hours)",
     ]
@@ -255,6 +269,8 @@ def main():
                    help="working days, e.g. 'mon-wed' or 'mon,tue,wed' (default mon-fri)")
     p.add_argument("--hours", default="9-17",
                    help="working hours as START-END on a 24h clock (default 9-17)")
+    p.add_argument("--target", type=float, default=None,
+                   help="SLA target in working hours, e.g. 24 for three working days")
     args = p.parse_args()
 
     global WORK_DAYS, BUSINESS_START, BUSINESS_END
@@ -275,7 +291,7 @@ def main():
     print(f"Read {len(inbox)} inbox and {len(sent)} sent messages.")
 
     rows, unanswered = pair_replies(inbox, sent, me)
-    print(summarise(rows, unanswered, me))
+    print(summarise(rows, unanswered, me, args.target))
 
     with open(args.csv, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["received", "replied", "hours",
