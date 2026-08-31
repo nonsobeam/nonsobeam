@@ -1,0 +1,65 @@
+<h2>Morning brief : Monday 31 August</h2>
+
+<h3>SLA</h3>
+<pre>
+REPLIED IN TARGET     22 / 24   ████████████████████░   92%
+AVG TIME TO REPLY     2.2h
+MEDIAN                1.5h
+OPEN BREACHES         0
+</pre>
+
+<p><b>Zero breaches for the first time since this started.</b> That's not luck — it's the fix from Friday's review working: the six wrongly-escalated threads (Kovai plan-publish, Multiverse TPID, Ciaran McNamee follow-up, Kumo.AI, Kovai "Engagement with the team," Lauren Hart's BDO notification) are now correctly marked <code>No reply needed</code> and excluded from the count, and nothing new actually breached over a quiet weekend. Two items are genuinely open (below), both same-day, neither close to breaching yet.</p>
+
+<pre>
+27 Aug   5.0h   ██████████████████████████████████░░░░░░  (56% of target)
+28 Aug   4.8h   ███████████████████████████████████░░░░░  (53% of target)
+31 Aug   2.2h   █████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░  (24% of target — best day yet, zero breaches)
+</pre>
+<p>This is the first run under the new twice-weekly (Mon/Thu) schedule — it covers Friday 07:21 through this morning, roughly 3 days including the weekend, not a single day. The incremental-read logic handled that gap the same way it handles a 1-day gap: reconstitute state, read what's new since last_run_at, recompute business hours with plain arithmetic. Also aged 8 long-settled threads (anchored before 17 Aug) out of the tracked set per the 14-day window, per TASK.md Section 3.</p>
+
+<h3>Heads-up</h3>
+<p>Window covered: Fri 28 Aug 07:21 to Mon 31 Aug 07:22 (~3 days, incl. weekend) — 47 new inbox, 18 new sent.</p>
+<p>Geoffroy is back from OOO today — the three threads misrouted to Thaddeus on the "owner away" assumption last week no longer have that excuse if anything similar comes up again.</p>
+<p>Light day: 1:1 with Javi (11:00-11:30 Lisbon), CSM support with Arjan Taal (14:30-15:00), a meeting with Iotap/Shabnam Khatri (15:30-16:00), and a tentative Training session with Mariana (17:30-18:30). About 2.5h booked.</p>
+<p>Antonio Banganho starts PTO today through Oct 1. Divyashree G remains on PTO through Sep 5.</p>
+<p>Worth a look, not a task: a Teams chat had a bot repeating "access the microsoft authentication app and click the number NN, timeout in 10 minutes" roughly every 5-10 minutes from 03:38 to 07:17 this morning — that's the pattern of an automated MFA-approval prompt, not a person chatting. Didn't interact with it or click anything. Worth Thaddeus (or IT/security) confirming nothing is actually trying to get an authentication request approved on his account.</p>
+<p>Coverage: no unanswered direct Teams questions to Thaddeus found this window (one internal design-feedback aside between Niklas and Alex, not addressed to him). No WeTransact customer-data connector on this session, unchanged.</p>
+
+<h3>MIT</h3>
+<p><b>Get someone owning the SatNavTech service-termination request</b> : a formal request to stop WeTransact services and Azure billing, effective today, landed Saturday addressed to support@wetransact.io with Ambroise, Romain, and ruby.sran cc'd — not specifically to Thaddeus, and no one has replied yet. Given the "effective today" language, worth confirming who's driving this rather than letting it sit unowned (Request to Stop WeTransact Services &amp; Azure Billing – Effective 31st Aug 2026)</p>
+
+<h3>The three</h3>
+<ol>
+<li><b>Check the 4minds.ai private offer / order Dick Dijkstra flagged</b> : "@Thaddeus - could you please check this?" — a direct ask from a colleague, landed Saturday, no reply yet (Re: Private Offer / Order)</li>
+<li><b>Confirm ownership on the SatNavTech termination</b> : see MIT above — same item, listed here too since it's time-sensitive today</li>
+<li><b>Keep an eye on the Datarails listing-rejection follow-through</b> : Thaddeus committed Sunday evening to investigate why Microsoft's certification team rejected the SaaS listing enrolment — acknowledged, but the actual investigation is still open (Fwd: WeTransact Notification)</li>
+</ol>
+
+<h3>The five</h3>
+<p>Nothing else rose to this level this window — a genuinely quiet weekend on top of the classification fix. See Backlog for the standing lower-priority items.</p>
+
+<h3>Waiting on</h3>
+<ul>
+<li>Allianz Worldwide Care — still waiting on the insurer re: your policy cancellation.</li>
+</ul>
+
+<h3>Done since Friday's brief</h3>
+<ul>
+<li>Kovai Turbo360 plan descriptions — Mike Birch asked about a Microsoft human contact to override the marketplace validation; Thaddeus explained there isn't one but offered a support ticket. Kovai confirmed they're republishing with a fuller description.</li>
+<li>Stibo/Arjan — apologized for pushing ahead with WeTransact's billing ID on his behalf; agreed to respect his preference to keep control of his own testing.</li>
+<li>Convertr/Zscaler private offer — diagnosed the likely cause (no active Azure subscription for Zscaler's first Marketplace transaction) and replied Friday.</li>
+<li>Lion Reach/Convertr "issue with accessing offer" — replied same day confirming the users involved have the required Azure permissions.</li>
+<li>Voicera onboarding — re-engaged Sunday after a long pause; Chandra asked for a Wednesday invite and got one within two minutes.</li>
+</ul>
+
+<h3>Backlog</h3>
+<ul>
+<li>GTM ownership handoff (Wordsmith) — still awaiting Simon Elliott; no new information this window.</li>
+<li>Two CSM assignments from last week (Meniga, Act Security) — still no onboarding kicked off, nothing urgent until the accounts reach out.</li>
+</ul>
+
+<hr>
+<h4>Run notes</h4>
+<p>Source: incremental Outlook read, 2026-08-28T07:21:51Z to 2026-08-31T07:22:01Z, 47 inbox and 18 sent messages read. Teams: broad scan found nothing needing a reply from Thaddeus, plus the MFA-bot pattern flagged above. Push verified before this run ended (see below). First run under the twice-weekly (Mon/Thu) schedule.</p>
+<p>Blocked: no email sent, by standing instruction. No WeTransact customer-data connector on this session.</p>
+<p>Assumptions: treated the ongoing TD Synnex/Enactia scheduling exchange (Fabio Pagura driving it directly with Enactia) as not needing Thaddeus's input — he's only cc'd, someone else is driving it, consistent with the 2026-08-28 classification guardrails. Treated Oliver Reid's Friday afternoon follow-up to Zscaler/Microsoft support (looping in Thaddeus's earlier diagnosis) as informational, not a fresh ask. The SatNavTech termination request's true owner is genuinely unclear from this mailbox alone — flagged rather than guessed, per the same guardrails.</p>

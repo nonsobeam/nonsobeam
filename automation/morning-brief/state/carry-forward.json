@@ -5,5 +5,7 @@
   "kumo-ai-notice": {"first_seen":"2026-08-24","times_surfaced":5,"last_status":"No reply needed","note":"Reclassified 2026-08-28 — thread_key 5f3659205396377b, churn close-out with no question, stop surfacing/rolling."},
   "kovai-engagement": {"first_seen":"2026-08-25","times_surfaced":3,"last_status":"No reply needed","note":"Reclassified 2026-08-28 — thread_key c22b0808605f9396, addressed to Geoffroy not Thaddeus, stop surfacing/rolling."},
   "dayshape-bdo-notification": {"first_seen":"2026-08-27","times_surfaced":2,"last_status":"No reply needed","note":"Reclassified 2026-08-28 — thread_key 76e16f011ed539f1, casual aside not a real question, stop surfacing/rolling."},
-  "convertr-zscaler": {"first_seen":"2026-08-28","times_surfaced":1,"last_status":"Awaiting reply"}
+  "convertr-zscaler": {"first_seen":"2026-08-28","times_surfaced":1,"last_status":"Replied","note":"Thaddeus replied 2026-08-28, resolved."},
+  "9d2c6b47a08e1f35": {"first_seen":"2026-08-31","times_surfaced":1,"last_status":"Awaiting reply"},
+  "e5a983c6d1074b28": {"first_seen":"2026-08-31","times_surfaced":1,"last_status":"Awaiting reply"}
 }

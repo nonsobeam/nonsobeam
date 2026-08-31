@@ -8,5 +8,6 @@
   "Gary Harper": {"email":"gary.harper@graviteesource.com","away_start":null,"away_end":"2026-09-03","source":"OOO auto-reply","confidence":"stated"},
   "M. van Luit": {"email":"m.vanluit@crowdtech.com","away_start":"2026-08-20","away_end":"2026-09-14","source":"OOO auto-reply","confidence":"stated"},
   "Johan Aussenac": {"email":"johan.aussenac@wetransact.io","away_start":null,"away_end":"2026-08-27","source":"OOO auto-reply","confidence":"stated"},
-  "Juan Castiblanques (JJ)": {"email":"juan.castiblanques@wetransact.io","away_start":"2026-08-12","away_end":"2026-08-27","source":"Calendar all-day event 'JJ - OoO'","confidence":"stated"}
+  "Juan Castiblanques (JJ)": {"email":"juan.castiblanques@wetransact.io","away_start":"2026-08-12","away_end":"2026-08-27","source":"Calendar all-day event 'JJ - OoO'","confidence":"stated"},
+  "Antonio Banganho": {"email":null,"away_start":"2026-08-31","away_end":"2026-10-01","source":"HR PTO calendar entry","confidence":"stated"}
 }
