@@ -5,7 +5,7 @@ SLA reply-time report, computed from Outlook CSV exports.
 Companion to ExportMailForSLA.vba. Run that macro in Outlook first; it writes
 inbox.csv and sent.csv. Then:
 
-    py sla_from_csv.py
+    py sla_from_csv.py --days mon-wed --hours 9-17
 
 Standard library only — nothing to pip install. Reads the two CSVs, pairs each
 inbound message that needed a reply with your first reply in that conversation,
@@ -25,6 +25,53 @@ from datetime import datetime, timedelta
 
 BUSINESS_START = 9
 BUSINESS_END = 17
+
+# Which weekdays count as working time. Monday is 0. Anything outside this set
+# is skipped entirely, so a reply sent after a non-working day is not charged
+# for the days you were not there. Override with --days.
+WORK_DAYS = {0, 1, 2, 3, 4}
+
+DAY_NAMES = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+
+
+def parse_days(spec):
+    """Accept 'mon-wed', 'mon,tue,wed' or '0,1,2'."""
+    spec = spec.strip().lower().replace(" ", "")
+    if "-" in spec and "," not in spec:
+        a, b = spec.split("-", 1)
+        try:
+            i, j = DAY_NAMES.index(a[:3]), DAY_NAMES.index(b[:3])
+        except ValueError:
+            sys.exit(f"Unrecognised day range: {spec}")
+        if i > j:
+            sys.exit(f"Range runs backwards: {spec}")
+        return set(range(i, j + 1))
+
+    out = set()
+    for part in spec.split(","):
+        if not part:
+            continue
+        if part.isdigit():
+            out.add(int(part))
+        elif part[:3] in DAY_NAMES:
+            out.add(DAY_NAMES.index(part[:3]))
+        else:
+            sys.exit(f"Unrecognised day: {part}")
+    if not out:
+        sys.exit("No working days given.")
+    return out
+
+
+def describe_week():
+    days = sorted(WORK_DAYS)
+    hrs_per_day = BUSINESS_END - BUSINESS_START
+    contiguous = days == list(range(days[0], days[-1] + 1))
+    if contiguous and len(days) > 1:
+        span = f"{DAY_NAMES[days[0]].title()}–{DAY_NAMES[days[-1]].title()}"
+    else:
+        span = ", ".join(DAY_NAMES[d].title() for d in days)
+    return (f"{span} {BUSINESS_START:02d}:00–{BUSINESS_END:02d}:00 "
+            f"({len(days) * hrs_per_day} h/week)")
 
 NO_REPLY_HINTS = (
     "no-reply", "noreply", "donotreply", "do-not-reply", "notifications@",
@@ -91,7 +138,7 @@ def business_hours_between(a, b):
     while cur < b:
         day_start = cur.replace(hour=BUSINESS_START, minute=0, second=0, microsecond=0)
         day_end = cur.replace(hour=BUSINESS_END, minute=0, second=0, microsecond=0)
-        if cur.weekday() < 5:
+        if cur.weekday() in WORK_DAYS:
             ws, we = max(cur, day_start), min(b, day_end)
             if we > ws:
                 total += (we - ws).total_seconds() / 3600
@@ -152,6 +199,7 @@ def summarise(rows, unanswered, me):
         return d[min(int(len(d) * p / 100), len(d) - 1)]
 
     total = len(rows) + len(unanswered)
+    day_hours = BUSINESS_END - BUSINESS_START
     by_month = defaultdict(list)
     for r in rows:
         by_month[r["received"].strftime("%Y-%m")].append(r["business_hours"])
@@ -166,7 +214,7 @@ def summarise(rows, unanswered, me):
         f"  Replied                    {len(rows)}  ({len(rows)/total*100:.1f}%)",
         f"  Never replied              {len(unanswered)}  ({len(unanswered)/total*100:.1f}%)",
         "",
-        "  REPLY TIME — business hours (Mon–Fri 09:00–17:00)",
+        f"  REPLY TIME — working hours ({describe_week()})",
         f"    Mean       {statistics.mean(biz):>8.1f} h",
         f"    Median     {statistics.median(biz):>8.1f} h",
         f"    75th pct   {pct(biz, 75):>8.1f} h",
@@ -177,12 +225,12 @@ def summarise(rows, unanswered, me):
         f"    Median     {statistics.median(clock):>8.1f} h",
         "",
         "  WITHIN TARGET",
-        f"    < 1 business hour    {sum(1 for h in biz if h <= 1)/len(biz)*100:>5.1f}%",
-        f"    < 4 business hours   {sum(1 for h in biz if h <= 4)/len(biz)*100:>5.1f}%",
-        f"    < 1 business day     {sum(1 for h in biz if h <= 8)/len(biz)*100:>5.1f}%",
-        f"    < 2 business days    {sum(1 for h in biz if h <= 16)/len(biz)*100:>5.1f}%",
+        f"    < 1 working hour     {sum(1 for h in biz if h <= 1)/len(biz)*100:>5.1f}%",
+        f"    < 4 working hours    {sum(1 for h in biz if h <= 4)/len(biz)*100:>5.1f}%",
+        f"    < 1 working day      {sum(1 for h in biz if h <= day_hours)/len(biz)*100:>5.1f}%",
+        f"    < 2 working days     {sum(1 for h in biz if h <= day_hours*2)/len(biz)*100:>5.1f}%",
         "",
-        "  BY MONTH (median business hours)",
+        "  BY MONTH (median working hours)",
     ]
     for m in sorted(by_month):
         v = by_month[m]
@@ -203,13 +251,27 @@ def main():
     p.add_argument("--sent", default="sent.csv")
     p.add_argument("--me", help="your email address (auto-detected if omitted)")
     p.add_argument("--csv", default="sla_detail.csv")
+    p.add_argument("--days", default="mon-fri",
+                   help="working days, e.g. 'mon-wed' or 'mon,tue,wed' (default mon-fri)")
+    p.add_argument("--hours", default="9-17",
+                   help="working hours as START-END on a 24h clock (default 9-17)")
     args = p.parse_args()
+
+    global WORK_DAYS, BUSINESS_START, BUSINESS_END
+    WORK_DAYS = parse_days(args.days)
+    try:
+        BUSINESS_START, BUSINESS_END = (int(x) for x in args.hours.split("-", 1))
+    except ValueError:
+        sys.exit(f"Could not read --hours {args.hours!r}. Use e.g. 9-17.")
+    if not 0 <= BUSINESS_START < BUSINESS_END <= 24:
+        sys.exit(f"Working hours out of range: {args.hours}")
 
     inbox = read_csv(args.inbox)
     sent = read_csv(args.sent)
     me = (args.me or detect_me(sent)).strip().lower()
 
     print(f"Mailbox: {me}")
+    print(f"Working week: {describe_week()}")
     print(f"Read {len(inbox)} inbox and {len(sent)} sent messages.")
 
     rows, unanswered = pair_replies(inbox, sent, me)
