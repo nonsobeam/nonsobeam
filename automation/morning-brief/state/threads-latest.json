@@ -61,90 +61,6 @@
     "sla_status": "Replied"
   },
   {
-    "thread_key": "b1174c96371495b7",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "azure accelerate assessment kick-off meeting 18.06.2026",
-    "participant_domains": [
-      "crowdtech.com",
-      "mwm2.nl",
-      "wetransact.io"
-    ],
-    "subject": "RE: Azure Accelerate Assessment Kick-Off meeting 18.06.2026",
-    "from": "j.korse@crowdtech.com",
-    "account": "Crowdtech",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-11T10:15:30Z",
-    "anchor_at": "2026-08-19T12:18:18Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-08-20T08:58:02Z",
-    "working_hours_elapsed": 5.66,
-    "sla_status": "Replied"
-  },
-  {
-    "thread_key": "9a70161ca2c64fbb",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "my payout is not getting verified. trackingid#2608170040007476",
-    "participant_domains": [
-      "crowdtech.com",
-      "microsoft.com",
-      "mwm2.nl",
-      "wetransact.io"
-    ],
-    "subject": "Re: My payout is not getting verified. TrackingID#2608170040007476",
-    "from": "m.vanluit@crowdtech.com",
-    "account": "Crowdtech",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-17T21:20:48Z",
-    "anchor_at": "2026-08-18T10:56:23Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-08-18T11:30:16Z",
-    "working_hours_elapsed": 0.56,
-    "sla_status": "Replied"
-  },
-  {
-    "thread_key": "1204899913c449ec",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "datarails x wetransact \u2014 recap, next steps, and your csm thaddeus",
-    "participant_domains": [
-      "datarails.com",
-      "microsoft.com",
-      "wetransact.io"
-    ],
-    "subject": "Re: Datarails x WeTransact \u2014 recap, next steps, and your CSM Thaddeus",
-    "from": "eyal.h@datarails.com",
-    "account": "Datarails",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-13T17:12:07Z",
-    "anchor_at": "2026-08-18T17:00:09Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-08-18T17:03:05Z",
-    "working_hours_elapsed": 0.0,
-    "sla_status": "Replied"
-  },
-  {
-    "thread_key": "3d3f2db3cded4eeb",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "i want to submit my documentation for the azure ip co-sell application - trackingid#2607300040007476",
-    "participant_domains": [
-      "regask.com",
-      "wetransact.io"
-    ],
-    "subject": "Fw: I want to submit my documentation for the Azure IP co-sell application - TrackingID#2607300040007476",
-    "from": "craig.gleason@regask.com",
-    "account": "Regask",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-18T22:45:24Z",
-    "anchor_at": "2026-08-18T22:45:24Z",
-    "anchor_is_after_hours": true,
-    "replied_at": "2026-08-19T11:42:59Z",
-    "working_hours_elapsed": 3.72,
-    "sla_status": "Replied"
-  },
-  {
     "thread_key": "ed0a2672a9587628",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
     "normalized_subject": "credits?",
@@ -152,37 +68,18 @@
       "regask.com",
       "wetransact.io"
     ],
-    "subject": "Credits?",
+    "subject": "Re: Credits?",
     "from": "craig.gleason@regask.com",
     "account": "Regask",
     "next_step_owner": "Thaddeus",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-08-18T22:43:18Z",
-    "anchor_at": "2026-08-18T22:43:18Z",
-    "anchor_is_after_hours": true,
-    "replied_at": "2026-08-19T11:35:39Z",
-    "working_hours_elapsed": 3.59,
-    "sla_status": "Replied"
-  },
-  {
-    "thread_key": "8481d0cc43382de3",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "what documents are needed for a company name change - trackingid#2607210040004594",
-    "participant_domains": [
-      "voicera.io",
-      "wetransact.io"
-    ],
-    "subject": "RE: What documents are needed for a company name change - TrackingID#2607210040004594",
-    "from": "chandra@voicera.io",
-    "account": "Voicera",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-10T13:05:30Z",
-    "anchor_at": "2026-08-18T12:55:22Z",
+    "anchor_at": "2026-09-01T12:20:39Z",
     "anchor_is_after_hours": false,
-    "replied_at": "2026-08-18T13:02:19Z",
-    "working_hours_elapsed": 0.12,
-    "sla_status": "Replied"
+    "replied_at": "2026-09-01T12:57:36Z",
+    "working_hours_elapsed": 0.62,
+    "sla_status": "Replied",
+    "note": "Extensive new round 2026-09-01: Craig got confused by the credits-claim form (expected $6K, actually entitled to $3K per the original T&Cs), marked High importance and borderline-frustrated (\"we aren't sponsoring anything\"). Thaddeus answered each question live over ~30 min, then offered to walk through it together since Craig asked; booked for CSM support call 2026-09-08T12:00Z. Worth being prepped for that call."
   },
   {
     "thread_key": "02e93652ba45f4da",
@@ -258,14 +155,15 @@
     "subject": "Re: WeTransact Notification",
     "from": "oliver.reid@convertr.io",
     "account": "Convertr",
-    "next_step_owner": "Oliver Reid (now his to message the customer)",
-    "next_step_owner_confidence": "stated",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated (\"Have these orders been processed as we expected?... should we expect to avoid this workaround for future orders?\")",
     "first_inbound_at": "2026-08-25T09:10:16Z",
-    "anchor_at": "2026-08-25T11:16:44Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-08-25T14:58:34Z",
-    "working_hours_elapsed": 3.7,
-    "sla_status": "Replied"
+    "anchor_at": "2026-09-02T20:07:52Z",
+    "anchor_is_after_hours": true,
+    "replied_at": null,
+    "working_hours_elapsed": 0.0,
+    "sla_status": "Awaiting reply",
+    "note": "New round 2026-09-02: Oliver Reid directly asked Thaddeus whether the Zscaler orders processed and whether the private-offer workaround will be needed for future orders. Same thread_key as the earlier (now-settled) Aug 25 exchange, reopened by this direct question. No reply yet as of this run."
   },
   {
     "thread_key": "bcb619407804e7c8",
@@ -280,13 +178,14 @@
     "from": "ashish@lionreach.com",
     "account": "Lion Reach / Convertr",
     "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
+    "next_step_owner_confidence": "stated (\"Can you review this at your end and let us know if it's all good now.\")",
     "first_inbound_at": "2026-08-25T18:57:21Z",
-    "anchor_at": "2026-08-25T18:57:21Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-08-26T09:33:03Z",
-    "working_hours_elapsed": 1.55,
-    "sla_status": "Replied"
+    "anchor_at": "2026-09-02T20:01:42Z",
+    "anchor_is_after_hours": true,
+    "replied_at": null,
+    "working_hours_elapsed": 0.0,
+    "sla_status": "Awaiting reply",
+    "note": "New round 2026-09-02: Ashish sent a screenshot of their fix and asked Thaddeus to confirm the listing/access issue is resolved. No reply yet as of this run."
   },
   {
     "thread_key": "c22b0808605f9396",
@@ -573,15 +472,15 @@
     "subject": "Request to Stop WeTransact Services & Azure Billing – Effective 31st Aug 2026",
     "from": "vikrant@satnavtech.com",
     "account": "SatNavTech",
-    "next_step_owner": "unclear — sent to support@wetransact.io with Ambroise, Romain, ruby.sran cc'd, not solely Thaddeus",
-    "next_step_owner_confidence": "uncertain",
+    "next_step_owner": "support@wetransact.io (resolved on their side, not Thaddeus's)",
+    "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-08-29T06:48:34Z",
     "anchor_at": "2026-08-29T06:48:34Z",
     "anchor_is_after_hours": true,
-    "replied_at": null,
+    "replied_at": "2026-08-31T10:58:41Z",
     "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply",
-    "note": "Formal request to discontinue WeTransact services and stop Azure billing, effective today (Aug 31). No reply from anyone seen in this mailbox yet. Addressed to a shared inbox (support@) with several WeTransact staff cc'd, not specifically to Thaddeus — flagging rather than assuming it's his to answer, per the 2026-08-28 guardrail, but it's time-sensitive and worth someone confirming ownership today."
+    "sla_status": "No reply needed",
+    "no_reply_reason": "Support (not Thaddeus) picked this up: Thaddeus forwarded it to support@wetransact.io Monday (10:58) summarizing the request, and support@ replied directly to SatNavTech confirming the offboarding (2026-08-31T13:40:24Z, 2026-09-01T12:50:28Z). A new blocker came in 2026-09-03T03:48:46Z (\"Unable to cancel the subscription\") addressed to Support with Thaddeus only cc'd — still Support's live item, not flagged as Thaddeus's task, though worth someone on Support actually resolving it given the account is mid-offboarding."
   },
   {
     "thread_key": "e5a983c6d1074b28",
@@ -597,10 +496,55 @@
     "next_step_owner": "Thaddeus",
     "next_step_owner_confidence": "stated (\"@Thaddeus - could you please check this?\")",
     "first_inbound_at": "2026-08-29T08:16:52Z",
-    "anchor_at": "2026-08-29T08:16:52Z",
+    "anchor_at": "2026-08-31T12:59:12Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-08-31T13:59:45Z",
+    "working_hours_elapsed": 1.01,
+    "sla_status": "Replied",
+    "note": "Resolved Monday: Thaddeus clarified this is a Private Plan, not a Private Offer, and offered a walkthrough. Gaz then asked Dick Dijkstra (colleague) to look at it together for HubSpot data — Dick took that over directly, no further Thaddeus action needed."
+  },
+  {
+    "thread_key": "a6f813dc50291e74",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "re: enrolled partner location not appearing in customer claims flow, mpn 6535120",
+    "participant_domains": [
+      "cube.global",
+      "microsoft.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: Enrolled partner location not appearing in Customer Claims flow, MPN 6535120",
+    "from": "AzureOfferingsPtrSup@microsoft.com",
+    "account": "Cube.global",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-09-02T22:34:00Z",
+    "anchor_at": "2026-09-02T22:34:00Z",
     "anchor_is_after_hours": true,
     "replied_at": null,
     "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply"
+    "sla_status": "Awaiting reply",
+    "note": "Thaddeus told George Connell (2026-09-01T11:45:19Z) he'd follow up with Microsoft again and raise a formal support ticket if no response by Friday 4 Sep. Microsoft's reply just came back saying they have no insight into the partner-enrollment process — effectively a non-answer, putting the ball back on Thaddeus to raise that formal ticket. Time-sensitive: Thaddeus is on PTO Fri 4 Sep through Mon 7 Sep, so today (Thu) is the last working day before his own stated deadline."
+  },
+  {
+    "thread_key": "d94b7c2e619af053",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "confirmed: csm support",
+    "participant_domains": [
+      "deloitte.com",
+      "wavicledata.com",
+      "wetransact.io"
+    ],
+    "subject": "Confirmed: CSM support",
+    "from": "tletlow@deloitte.com",
+    "account": "Wavicle Data (acquired by Deloitte)",
+    "next_step_owner": "n/a (no action needed)",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-09-02T21:30:42Z",
+    "anchor_at": "2026-09-02T21:30:42Z",
+    "anchor_is_after_hours": true,
+    "replied_at": null,
+    "working_hours_elapsed": 0.0,
+    "sla_status": "No reply needed",
+    "no_reply_reason": "Pure churn/closure FYI: \"Deloitte has acquired the business assets of Wavicle... We have removed our Marketplace listings and look forward to our new chapter with Deloitte.\" No question, addressed to Abel Delannoy's thread with Thaddeus only cc'd. Account loss worth noting, not a task."
   }
 ]
