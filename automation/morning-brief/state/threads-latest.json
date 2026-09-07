@@ -1,66 +1,5 @@
 [
   {
-    "thread_key": "1ce6718916c98d50",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "[external] re: spa0029 jefferson health has invoice invinc008556 - $408,061",
-    "participant_domains": [
-      "craneware.com",
-      "wetransact.io"
-    ],
-    "subject": "Re: [EXTERNAL] Re: SPA0029 Jefferson Health has invoice INVINC008556 - $408,061",
-    "from": "c.cory@craneware.com",
-    "account": "Craneware / Jefferson Health",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-20T15:07:31Z",
-    "anchor_at": "2026-08-21T16:00:08Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-08-24T10:03:44Z",
-    "working_hours_elapsed": 3.06,
-    "sla_status": "Replied"
-  },
-  {
-    "thread_key": "5a26356631ae9de9",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "galencia invoicing issue/request",
-    "participant_domains": [
-      "graviteesource.com",
-      "microsoft.com",
-      "wetransact.io"
-    ],
-    "subject": "Galencia Invoicing Issue/Request",
-    "from": "eleanor.thompson@graviteesource.com",
-    "account": "Gravitee / Galencia",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-21T13:25:35Z",
-    "anchor_at": "2026-08-21T13:25:35Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-08-24T09:15:22Z",
-    "working_hours_elapsed": 4.83,
-    "sla_status": "Replied"
-  },
-  {
-    "thread_key": "14223efa61048586",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "turbo360 & wetransact | introduction & best practices",
-    "participant_domains": [
-      "kovai.co",
-      "wetransact.io"
-    ],
-    "subject": "Re: Turbo360 & WeTransact | Introduction & Best Practices",
-    "from": "casey.read@kovai.co",
-    "account": "Kovai / Turbo360",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-18T10:16:48Z",
-    "anchor_at": "2026-08-20T13:34:55Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-08-20T15:02:05Z",
-    "working_hours_elapsed": 1.45,
-    "sla_status": "Replied"
-  },
-  {
     "thread_key": "ed0a2672a9587628",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
     "normalized_subject": "credits?",
@@ -80,26 +19,6 @@
     "working_hours_elapsed": 0.62,
     "sla_status": "Replied",
     "note": "Extensive new round 2026-09-01: Craig got confused by the credits-claim form (expected $6K, actually entitled to $3K per the original T&Cs), marked High importance and borderline-frustrated (\"we aren't sponsoring anything\"). Thaddeus answered each question live over ~30 min, then offered to walk through it together since Craig asked; booked for CSM support call 2026-09-08T12:00Z. Worth being prepped for that call."
-  },
-  {
-    "thread_key": "02e93652ba45f4da",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "tpid request - multiverse computing",
-    "participant_domains": [
-      "wetransact.io"
-    ],
-    "subject": "Tr : TPID Request - Multiverse Computing",
-    "from": "geoffroy.tamburro@wetransact.io",
-    "account": "Multiverse Computing",
-    "next_step_owner": "geoffroy.tamburro@wetransact.io / ruby.sran (not Thaddeus)",
-    "next_step_owner_confidence": "stated by Thaddeus 2026-08-28",
-    "first_inbound_at": "2026-08-20T16:31:47Z",
-    "anchor_at": "2026-08-20T16:31:47Z",
-    "anchor_is_after_hours": false,
-    "replied_at": null,
-    "working_hours_elapsed": 45.47,
-    "sla_status": "No reply needed",
-    "no_reply_reason": "Thaddeus confirmed 2026-08-28 this doesn't need his reply — forwarded by Geoffroy with ruby.sran as co-recipient, no further activity found in either direction since, consistent with ruby.sran handling it directly with Microsoft outside this mailbox's visibility. Was wrongly escalated to Thaddeus by the [OWNER AWAY] rule for merely being addressed alongside an absent colleague."
   },
   {
     "thread_key": "b87dc94bf85fd4b0",
@@ -156,14 +75,14 @@
     "from": "oliver.reid@convertr.io",
     "account": "Convertr",
     "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated (\"Have these orders been processed as we expected?... should we expect to avoid this workaround for future orders?\")",
+    "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-08-25T09:10:16Z",
-    "anchor_at": "2026-09-02T20:07:52Z",
-    "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply",
-    "note": "New round 2026-09-02: Oliver Reid directly asked Thaddeus whether the Zscaler orders processed and whether the private-offer workaround will be needed for future orders. Same thread_key as the earlier (now-settled) Aug 25 exchange, reopened by this direct question. No reply yet as of this run."
+    "anchor_at": "2026-09-03T13:53:31Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-09-03T14:33:13Z",
+    "working_hours_elapsed": 0.66,
+    "sla_status": "Replied",
+    "note": "Resolved 2026-09-03: Thaddeus proposed two options (reject duplicates vs provision), Oliver asked for a recommendation, Thaddeus advised rejecting the duplicate orders. Oliver confirmed 2026-09-04T09:15:42Z (\"please proceed with that route\") -- worth double-checking that rejection was actually executed on WeTransact's side, since that confirmation arrived while Thaddeus was on PTO."
   },
   {
     "thread_key": "bcb619407804e7c8",
@@ -178,14 +97,14 @@
     "from": "ashish@lionreach.com",
     "account": "Lion Reach / Convertr",
     "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated (\"Can you review this at your end and let us know if it's all good now.\")",
+    "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-08-25T18:57:21Z",
     "anchor_at": "2026-09-02T20:01:42Z",
     "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply",
-    "note": "New round 2026-09-02: Ashish sent a screenshot of their fix and asked Thaddeus to confirm the listing/access issue is resolved. No reply yet as of this run."
+    "replied_at": "2026-09-03T09:12:34Z",
+    "working_hours_elapsed": 1.21,
+    "sla_status": "Replied",
+    "note": "Resolved 2026-09-03: Thaddeus confirmed the order completed successfully. Ashish thanked him for the swift support same morning."
   },
   {
     "thread_key": "c22b0808605f9396",
@@ -431,12 +350,12 @@
     "next_step_owner": "Thaddeus",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-08-30T09:16:24Z",
-    "anchor_at": "2026-08-30T09:16:24Z",
+    "anchor_at": "2026-09-05T00:38:36Z",
     "anchor_is_after_hours": true,
-    "replied_at": "2026-08-30T20:10:02Z",
+    "replied_at": null,
     "working_hours_elapsed": 0.0,
-    "sla_status": "Replied",
-    "note": "Datarails listing was rejected by Microsoft certification (SaaS-publish enrolment). Thaddeus acknowledged same day and committed to investigate — worth checking this doesn't stall; not yet a resolved root cause."
+    "sla_status": "Awaiting reply",
+    "note": "Investigation continued but did not resolve: a Sep 3 troubleshooting call with Eyal didn't fix the underlying issue -- Eyal forwarded another rejection notice 2026-09-05T00:38:36Z (\"Still rejected\"), this time cc'ing a named Microsoft contact (edithberda@microsoft.com) directly himself. No reply yet as of this run (Thaddeus was on PTO). Worth fresh attention now he's back."
   },
   {
     "thread_key": "c4e7f082a19b5d63",
@@ -472,15 +391,15 @@
     "subject": "Request to Stop WeTransact Services & Azure Billing – Effective 31st Aug 2026",
     "from": "vikrant@satnavtech.com",
     "account": "SatNavTech",
-    "next_step_owner": "support@wetransact.io (resolved on their side, not Thaddeus's)",
+    "next_step_owner": "Ambroise Pouchelon / WeTransact leadership (escalated commercial dispute, not Thaddeus's to resolve directly)",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-08-29T06:48:34Z",
     "anchor_at": "2026-08-29T06:48:34Z",
     "anchor_is_after_hours": true,
-    "replied_at": "2026-08-31T10:58:41Z",
-    "working_hours_elapsed": 0.0,
+    "replied_at": "2026-09-04T09:09:26Z",
+    "working_hours_elapsed": 10.16,
     "sla_status": "No reply needed",
-    "no_reply_reason": "Support (not Thaddeus) picked this up: Thaddeus forwarded it to support@wetransact.io Monday (10:58) summarizing the request, and support@ replied directly to SatNavTech confirming the offboarding (2026-08-31T13:40:24Z, 2026-09-01T12:50:28Z). A new blocker came in 2026-09-03T03:48:46Z (\"Unable to cancel the subscription\") addressed to Support with Thaddeus only cc'd — still Support's live item, not flagged as Thaddeus's task, though worth someone on Support actually resolving it given the account is mid-offboarding."
+    "no_reply_reason": "This has escalated past a routine offboarding into a leadership-level commercial dispute. Thaddeus personally told Vikrant (2026-09-04T09:09:26Z) the subscription is on an annual commitment and isn't eligible for early termination -- a colleague, Amit (amit@satnavtech.com), pushed back the same day (10:36:07Z), cc'ing WeTransact leadership and dropping most of the original SatNav team. Ambroise Pouchelon (leadership) replied directly disputing the terms (2026-09-04T20:17:47Z), and Amit replied again disputing pricing specifics (2026-09-05T04:37:06Z: a $8,999 'Transact Warm' package plus 10% for monthly payment). Ambroise is now the one negotiating with the customer; Thaddeus stays cc'd and should expect to be asked for supporting details (original terms/pricing) but this isn't his to personally resolve."
   },
   {
     "thread_key": "e5a983c6d1074b28",
@@ -520,10 +439,10 @@
     "first_inbound_at": "2026-09-02T22:34:00Z",
     "anchor_at": "2026-09-02T22:34:00Z",
     "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply",
-    "note": "Thaddeus told George Connell (2026-09-01T11:45:19Z) he'd follow up with Microsoft again and raise a formal support ticket if no response by Friday 4 Sep. Microsoft's reply just came back saying they have no insight into the partner-enrollment process — effectively a non-answer, putting the ball back on Thaddeus to raise that formal ticket. Time-sensitive: Thaddeus is on PTO Fri 4 Sep through Mon 7 Sep, so today (Thu) is the last working day before his own stated deadline."
+    "replied_at": "2026-09-03T10:18:41Z",
+    "working_hours_elapsed": 2.31,
+    "sla_status": "Replied",
+    "note": "Resolved 2026-09-03, before PTO: Thaddeus raised the formal Partner Center support ticket as promised and updated George Connell (12:10:53Z). Microsoft's support agent sent a progress update 2026-09-04T02:32:40Z acknowledging the ticket -- in progress on Microsoft's side, no action needed from Thaddeus yet."
   },
   {
     "thread_key": "d94b7c2e619af053",
@@ -546,5 +465,48 @@
     "working_hours_elapsed": 0.0,
     "sla_status": "No reply needed",
     "no_reply_reason": "Pure churn/closure FYI: \"Deloitte has acquired the business assets of Wavicle... We have removed our Marketplace listings and look forward to our new chapter with Deloitte.\" No question, addressed to Abel Delannoy's thread with Thaddeus only cc'd. Account loss worth noting, not a task."
+  },
+  {
+    "thread_key": "f4b291ac6d7e0538",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "sword / microsoft - meet wetransact",
+    "participant_domains": [
+      "microsoft.com",
+      "swordhealth.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: Sword / Microsoft - Meet WeTransact",
+    "from": "j.gonzalez@swordhealth.com",
+    "account": "Sword Health",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated (\"Could you clarify what this specific setup actually is?\")",
+    "first_inbound_at": "2026-09-04T08:57:58Z",
+    "anchor_at": "2026-09-04T08:57:58Z",
+    "anchor_is_after_hours": false,
+    "replied_at": null,
+    "working_hours_elapsed": 8.03,
+    "sla_status": "Awaiting reply",
+    "note": "Jorge asked Thaddeus to clarify what the tax-and-payout-profile setup actually involves. Arrived Friday morning as Thaddeus started PTO -- no reply yet, and already close to the 9h target since the business-hours clock ran all of Friday."
+  },
+  {
+    "thread_key": "b6d804e29f1c7a53",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "marketplace sponsorship changes",
+    "participant_domains": [
+      "channelsight.com",
+      "wetransact.io"
+    ],
+    "subject": "Marketplace sponsorship changes",
+    "from": "enda_farrell@channelsight.com",
+    "account": "Channelsight",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-09-03T14:12:45Z",
+    "anchor_at": "2026-09-03T14:12:45Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-09-03T19:20:55Z",
+    "working_hours_elapsed": 2.79,
+    "sla_status": "Replied",
+    "note": "Only a holding reply so far (\"let me gather more information... I will inform you\") -- Enda asked detailed questions about Microsoft's Marketplace sponsorship rule changes taking effect end of September. The real answer is still owed; tracked as an open commitment in commitments.json, not fully resolved despite the SLA clock showing Replied."
   }
 ]

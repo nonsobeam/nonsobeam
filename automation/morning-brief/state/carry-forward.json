@@ -8,7 +8,10 @@
   "convertr-zscaler": {"first_seen":"2026-08-28","times_surfaced":1,"last_status":"Replied","note":"Thaddeus replied 2026-08-28, resolved."},
   "9d2c6b47a08e1f35": {"first_seen":"2026-08-31","times_surfaced":2,"last_status":"No reply needed","note":"Resolved by support@ 2026-08-31, stop surfacing/rolling."},
   "e5a983c6d1074b28": {"first_seen":"2026-08-31","times_surfaced":2,"last_status":"Replied","note":"Resolved 2026-08-31."},
-  "bcb619407804e7c8": {"first_seen":"2026-09-03","times_surfaced":1,"last_status":"Awaiting reply"},
-  "ec9d28dc8efe7562": {"first_seen":"2026-09-03","times_surfaced":1,"last_status":"Awaiting reply"},
-  "a6f813dc50291e74": {"first_seen":"2026-09-03","times_surfaced":1,"last_status":"Awaiting reply"}
+  "bcb619407804e7c8": {"first_seen":"2026-09-03","times_surfaced":2,"last_status":"Replied","note":"Resolved 2026-09-03."},
+  "ec9d28dc8efe7562": {"first_seen":"2026-09-03","times_surfaced":2,"last_status":"Replied","note":"Resolved 2026-09-03."},
+  "a6f813dc50291e74": {"first_seen":"2026-09-03","times_surfaced":2,"last_status":"Replied","note":"Resolved 2026-09-03, ticket raised before PTO."},
+  "9d2c6b47a08e1f35b": {"first_seen":"2026-09-07","times_surfaced":1,"last_status":"No reply needed","note":"SatNavTech escalated into a leadership-level commercial dispute (Ambroise Pouchelon negotiating directly) -- not Thaddeus's, but watch since he made the original call."},
+  "7a1d5e2f9b4c8036": {"first_seen":"2026-09-07","times_surfaced":1,"last_status":"Awaiting reply","note":"Datarails listing rejection still unresolved after a troubleshooting call; Eyal now cc'ing Microsoft directly."},
+  "f4b291ac6d7e0538": {"first_seen":"2026-09-07","times_surfaced":1,"last_status":"Awaiting reply"}
 }
