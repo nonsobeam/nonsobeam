@@ -1,89 +1,5 @@
 [
   {
-    "thread_key": "ec9d28dc8efe7562",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "wetransact notification",
-    "participant_domains": [
-      "convertr.io",
-      "wetransact.io"
-    ],
-    "subject": "Re: WeTransact Notification",
-    "from": "oliver.reid@convertr.io",
-    "account": "Convertr",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-25T09:10:16Z",
-    "anchor_at": "2026-09-03T13:53:31Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-09-03T14:33:13Z",
-    "working_hours_elapsed": 0.66,
-    "sla_status": "Replied",
-    "note": "Resolved 2026-09-03: Thaddeus proposed two options (reject duplicates vs provision), Oliver asked for a recommendation, Thaddeus advised rejecting the duplicate orders. Oliver confirmed 2026-09-04T09:15:42Z (\"please proceed with that route\") -- worth double-checking that rejection was actually executed on WeTransact's side, since that confirmation arrived while Thaddeus was on PTO."
-  },
-  {
-    "thread_key": "6d10c3a658373c7f",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "summize <> wetransact - getting you transactable on microsoft marketplace",
-    "participant_domains": [
-      "summize.com",
-      "wetransact.io"
-    ],
-    "subject": "Re: Summize <> WeTransact - Getting you transactable on Microsoft Marketplace",
-    "from": "chris.picarde@summize.com",
-    "account": "Summize",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-25T19:45:28Z",
-    "anchor_at": "2026-09-09T15:06:06Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-09-10T10:08:43Z",
-    "working_hours_elapsed": 4.04,
-    "sla_status": "Replied",
-    "note": "Chris delivered T&Cs, marketing content and the Azure Subscription ID 2026-09-15T11:56; Thaddeus uploaded everything the same day (2026-09-15T17:21). Bailey Gifford (Summize) confirmed 2026-09-16T14:56 the product listing is now updated with all of it. Fully progressing, nothing outstanding from Thaddeus."
-  },
-  {
-    "thread_key": "cf5c3b0bd19324ed",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "re: [external] re: convertr | zscaler private offer azure marketplace",
-    "participant_domains": [
-      "convertr.io",
-      "wetransact.io"
-    ],
-    "subject": "Re: Re: Re: [External⚠️] Re: Convertr | Zscaler Private Offer Azure Marketplace",
-    "from": "oliver.reid@convertr.io",
-    "account": "Convertr",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-27T20:22:40Z",
-    "anchor_at": "2026-09-10T06:03:38Z",
-    "anchor_is_after_hours": true,
-    "replied_at": "2026-09-11T15:32:20Z",
-    "working_hours_elapsed": 16.54,
-    "sla_status": "Breached",
-    "note": "CORRECTION (2026-09-17): this thread was wrongly carried across two runs as unanswered/breached-with-no-reply. Thaddeus actually replied 2026-09-11T15:32:20Z (\"I've checked the transaction and can confirm the Zscaler order is active...\"), and the thread fully resolved via extensive same-day back-and-forth through 2026-09-11T16:52 (confirmed with Zscaler: no action needed on the expired offers). The reply itself came 16.5 working hours after the anchor -- a genuine breach on the target, but a CLOSED one, not an open item still needing action. Root cause: the 2026-09-14 incremental read window (afterDateTime 2026-09-10T07:22Z) should have caught this 2026-09-11 reply and didn't; worth a process check on why that Sent Items page was missed."
-  },
-  {
-    "thread_key": "7a1d5e2f9b4c8036",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "fwd: wetransact notification",
-    "participant_domains": [
-      "datarails.com",
-      "wetransact.io"
-    ],
-    "subject": "Fwd: WeTransact Notification",
-    "from": "eyal.h@datarails.com",
-    "account": "Datarails",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-30T09:16:24Z",
-    "anchor_at": "2026-09-07T09:18:08Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-09-07T16:31:40Z",
-    "working_hours_elapsed": 7.23,
-    "sla_status": "Replied",
-    "note": "The Sep-11 'open a second Microsoft case' commitment lapsed without a literal case being opened -- instead, a live Partner Center troubleshooting call was held 2026-09-15 and a recap sent same day identifying the real blockers: unverified profiles, out-of-date contact details, and incomplete Azure consumption data on the publisher account. That diagnostic work is arguably more useful than a second case would have been. See the separate Datarails/Microsoft Teams escalation thread (new this run) for an unrelated, still-open urgent ask from Microsoft's own AE on the same underlying vetting case."
-  },
-  {
     "thread_key": "9d2c6b47a08e1f35",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
     "normalized_subject": "request to stop wetransact services & azure billing – effective 31st aug 2026",
@@ -95,58 +11,15 @@
     "subject": "RE: WeTransact services till 30th Oct",
     "from": "vikrant@satnavtech.com",
     "account": "SatNavTech",
-    "next_step_owner": "Thaddeus",
+    "next_step_owner": "Abel Delannoy (account ownership transferred)",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-08-29T06:48:34Z",
     "anchor_at": "2026-09-17T05:33:45Z",
     "anchor_is_after_hours": true,
     "replied_at": null,
     "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply",
-    "note": "Good news: the compensation/extension ask got resolved 2026-09-16T16:41 -- Ambroise Pouchelon (chased by Thaddeus that morning) confirmed WeTransact will extend service to cover the full outage window (8-16 Sep) AND double it as a goodwill gesture. Portal was also confirmed back online (Thaddeus, 2026-09-16T08:53). New round, though: Vikrant wrote again this morning (2026-09-17T05:33:45Z) saying the portal 'appears as a new setup' and asking to connect on a call or confirm whether everything needs reconfiguring from scratch. Unanswered so far, but a CSM support call is already booked for tomorrow, Fri 18 Sep 09:30-10:00 UTC, which should cover it."
-  },
-  {
-    "thread_key": "f4b291ac6d7e0538",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "sword / microsoft - meet wetransact",
-    "participant_domains": [
-      "microsoft.com",
-      "swordhealth.com",
-      "wetransact.io"
-    ],
-    "subject": "Re: Sword / Microsoft - Meet WeTransact",
-    "from": "j.gonzalez@swordhealth.com",
-    "account": "Sword Health",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-09-04T08:57:58Z",
-    "anchor_at": "2026-09-04T08:57:58Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-09-08T09:57:45Z",
-    "working_hours_elapsed": 19.0,
-    "sla_status": "Breached",
-    "note": "Frozen PTO-clock artifact, unchanged from prior runs -- answered same-morning once Thaddeus was back from leave. Onboarding continues to progress: Thaddeus replied again 2026-09-16T13:06 flagging that the Global Administrator needs to attend the upcoming Partner Center configuration session. Normal continued work, not a new open ask."
-  },
-  {
-    "thread_key": "b6d804e29f1c7a53",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "marketplace sponsorship changes",
-    "participant_domains": [
-      "channelsight.com",
-      "wetransact.io"
-    ],
-    "subject": "Marketplace sponsorship changes",
-    "from": "enda_farrell@channelsight.com",
-    "account": "Channelsight",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-09-03T14:12:45Z",
-    "anchor_at": "2026-09-08T15:46:39Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-09-08T19:50:15Z",
-    "working_hours_elapsed": 1.22,
-    "sla_status": "Replied",
-    "note": "Resolved Tuesday, Thaddeus's first day back: gave Enda a substantive answer on the Microsoft sponsorship rule changes, then a follow-up clarifying no new information has come through since. Commitment fulfilled."
+    "sla_status": "No reply needed",
+    "no_reply_reason": "Vikrant's 'portal looks like a new setup' question was resolved in substance -- Thaddeus confirmed internally to Ambroise/Abel on 2026-09-23T10:32 that the customer decided not to proceed with migrating their listing and is only continuing GTM tool access through their remaining period, so there was nothing left to configure. More importantly, account ownership has now transferred: Abel Delannoy introduced himself to Vikrant on 2026-09-23T18:29 as the new lead on SatNavTech, taking a fresh angle (Microsoft incentives). A new thread, 'QuickFMS and WeTransact, the next steps,' shows Amit and Ishita from SatNavTech responding warmly to Abel through 2026-09-24. Stop tracking this account under Thaddeus's SLA going forward unless he's specifically addressed."
   },
   {
     "thread_key": "c8f142a76b0e9d35",
@@ -188,7 +61,7 @@
     "replied_at": "2026-09-11T10:27:40Z",
     "working_hours_elapsed": 2.46,
     "sla_status": "Replied",
-    "note": "Isabelle asked about billing timing on a 6-month subscription; Thaddeus clarified the €30K first charge was triggered on private-offer acceptance in April. No reply since -- appears settled. Customer hasn't paid since April -- worth keeping an eye on but not an open ask from her."
+    "note": "Isabelle asked about billing timing on a 6-month subscription; Thaddeus clarified the €30K first charge was triggered on private-offer acceptance in April. No reply since -- appears settled."
   },
   {
     "thread_key": "f7b2e04d9a6c1358",
@@ -210,7 +83,7 @@
     "replied_at": "2026-09-10T13:02:33Z",
     "working_hours_elapsed": 0.06,
     "sla_status": "Replied",
-    "note": "Javier looped Thaddeus in on a new SaaS listing + IP co-sell opportunity; Thaddeus responded within minutes, ran a call same day, and pushed the listing toward publication. CSM support call held Mon 14 Sep to complete publisher enrollment. No further activity found this run -- appears settled."
+    "note": "Publisher enrollment blocked only on Model ML confirming Partner Center roles for bots@/support@wetransact.io -- Thaddeus chased again 2026-09-22T16:54; Paul Veck (Microsoft) replied 2026-09-23T17:26 'Great, thanks!!' to Thaddeus's update. Progressing, no outstanding question directed at Thaddeus."
   },
   {
     "thread_key": "a2e8d51f6c397b04",
@@ -231,7 +104,7 @@
     "replied_at": "2026-09-14T09:31:04Z",
     "working_hours_elapsed": 1.52,
     "sla_status": "Replied",
-    "note": "CORRECTION: last brief showed this as unreplied/0h because the reply (2026-09-14T09:31:04Z, well within target) hadn't happened yet at that run's 07:22Z capture time -- not an error, just timing. Leya Zheng and Palwinder Singh (EZAIX) continued the thread through 2026-09-16 on remaining details; no unanswered question directed at Thaddeus specifically since his reply."
+    "note": "Resolved; no further activity found this window."
   },
   {
     "thread_key": "bcb619407804e7c8",
@@ -253,7 +126,7 @@
     "replied_at": "2026-09-16T09:03:53Z",
     "working_hours_elapsed": 0.33,
     "sla_status": "Replied",
-    "note": "New round: Oliver, going on holiday, asked for help confirming Azure tenant sign-in / Global Administrator identification for Lee (wmamerica.com) before he left. Thaddeus replied same morning with step-by-step guidance; Oliver confirmed 2026-09-16T10:17:48Z ('hope this gives you what you need'). Resolved."
+    "note": "Fully closed out this window: Roshan Mathew confirmed 2026-09-23T15:12 the private offer purchase completed successfully, after Thaddeus's step-by-step guidance and a curiosity follow-up on what fixed it. Nothing further needed."
   },
   {
     "thread_key": "a476e240063b96ea",
@@ -271,10 +144,10 @@
     "first_inbound_at": "2026-09-17T06:52:37Z",
     "anchor_at": "2026-09-17T06:52:37Z",
     "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply",
-    "note": "Arjan noticed a Public Offer imported for the Spain transact shows as non-IP-CoSell-eligible now, though it was eligible before the transact and Marketplace still shows it as eligible. Landed this morning, no reply yet. A CSM support call with Arjan is booked for tomorrow, Fri 18 Sep 09:00-09:30 UTC -- could be covered there if not answered by email first."
+    "replied_at": "2026-09-17T08:53:54Z",
+    "working_hours_elapsed": 0.9,
+    "sla_status": "Replied",
+    "note": "Thaddeus replied same morning that he'd investigate the IP CoSell eligibility display issue. Separately, the broader Stibo authentication/access saga fully resolved by 2026-09-18T08:16, and a new 'Migration to do' request (specific Seller IDs to migrate) is being worked live via a CSM call held 2026-09-23 -- see commitments.json, not tracked here since it's an ongoing project with a call-agreed date rather than a dangling email."
   },
   {
     "thread_key": "ccf5fccf6147ad2c",
@@ -287,15 +160,15 @@
     "subject": "[Teams chat] Datarails vetting case escalation",
     "from": "edithberda@microsoft.com",
     "account": "Datarails (via Microsoft AE)",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "inferred -- Thaddeus has driven the Datarails/Microsoft vetting saga throughout; Javier Albaladejo is also engaged on the email side, ownership not explicitly stated in the chat itself",
+    "next_step_owner": "Microsoft (Edith Berda / Miroslava Pipileva)",
+    "next_step_owner_confidence": "stated -- Thaddeus proposed a live troubleshooting call and explained the underlying 715 error; Microsoft has gone quiet since",
     "first_inbound_at": "2026-09-16T17:57:55Z",
     "anchor_at": "2026-09-16T17:57:55Z",
     "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply",
-    "note": "New channel, same underlying case as the Datarails 'Primary contact change blocked' Microsoft ticket (TrackingID#2609070040004160): Edith Berda, the Microsoft AE for Datarails, messaged over Teams (not email) on 2026-09-16 between 17:57-18:01Z: a new publisher account keeps reverting to the old one, this has blocked their co-sell for over a week, and she's asking for a fast escalation to the product group. Landed just after Lisbon business hours close, still unanswered as of this run. This run's MIT -- an external Microsoft contact explicitly asking for urgent help on a week-old blocker, in a channel separate from the email thread already being worked."
+    "replied_at": "2026-09-21T09:29:40Z",
+    "working_hours_elapsed": 19.49,
+    "sla_status": "Breached",
+    "note": "CORRECTION from last brief: this was flagged as this run's MIT and assumed still unanswered, but Thaddeus did reply -- three times, the morning Microsoft added another contact (Miroslava Pipileva) to the chat on 2026-09-21: he explained a new publisher account hit the same issue, proposed a live troubleshooting call, and detailed a 715 error blocking partner-center legal-profile verification. 19.5 working hours elapsed to that first reply (a real breach -- it sat over the weekend from Wed evening) but it's genuinely closed on Thaddeus's side now; Microsoft hasn't responded in that chat since. Separately, the parallel EMAIL ticket (TrackingID#2609070040004160) closed cleanly: Thaddeus raised service request 2609170040003828 on 2026-09-17T13:42, Microsoft's Monalisa Thorat confirmed the case closed 2026-09-17T17:19."
   },
   {
     "thread_key": "44631c5d6ebb3099",
@@ -317,7 +190,7 @@
     "replied_at": "2026-09-16T12:34:29Z",
     "working_hours_elapsed": 3.19,
     "sla_status": "Replied",
-    "note": "Claire (Microsoft) asked Thaddeus to support Wordsmith AI through IP Co-sell readiness / MACC eligibility and referral upload. Thaddeus replied same day offering support, asking who owns the process on Wordsmith's side. Both Jono (Wordsmith) and Claire went OOO immediately after -- ball is with them until they're back."
+    "note": "Extensive continued saga this window: a TPID/Partner ID mismatch surfaced, Thaddeus raised a support ticket 2026-09-22T16:15 and kept engaging through 2026-09-23T12:16 (screenshots, a parallel path suggestion). Claire (Microsoft) posted a proactive status update 2026-09-23T12:29 ('keeping you all informed... requested the old ID to be merged') -- reads as an FYI, not a question, no reply needed."
   },
   {
     "thread_key": "508caf5b3a8a1c21",
@@ -338,7 +211,7 @@
     "replied_at": "2026-09-16T08:56:53Z",
     "working_hours_elapsed": 0.95,
     "sla_status": "Replied",
-    "note": "Craig escalated twice overnight (automated onboarding process failing, delaying their private offer). Thaddeus replied same morning: they'll complete onboarding manually together rather than via the automated process, asked Craig to book a slot. Resolved, no further activity found."
+    "note": "Fully resolved this window: root cause was stricter Entra ID policies blocking session cookies; engineering fixed it, Thaddeus confirmed 2026-09-23T12:32 they could proceed with the private offer, Craig thanked him 2026-09-23T12:42. Closed."
   },
   {
     "thread_key": "ae096ccf26042a3d",
@@ -360,7 +233,7 @@
     "replied_at": "2026-09-16T09:15:44Z",
     "working_hours_elapsed": 3.11,
     "sla_status": "Replied",
-    "note": "Separate, newer round from the existing Regask/Credits relationship: Craig was confused about which Azure credits applied; a Microsoft rep explained the Marketplace Rewards process, then Thaddeus clarified the enablement credits are tied to Regask's Build & Publish eligibility. No follow-up found -- resolved."
+    "note": "Separately, a related but distinct Azure IP Co-sell application saga (TrackingID#2607300040007476) ran hot all week -- Thaddeus sent high-importance replies 2026-09-22/23, Vic Tompkins (Microsoft) resubmitted the solution 2026-09-23T21:18 after a call. A follow-up CSM call with Craig is booked today, 24 Sep 13:00-13:30 UTC; nothing to report until it happens. Craig also introduced a new Microsoft ISV Success contact 2026-09-18 for other co-sell opportunities -- low-urgency, no reply sent yet, worth a line whenever convenient."
   },
   {
     "thread_key": "1b42730643551da8",
@@ -381,7 +254,7 @@
     "replied_at": "2026-09-16T11:29:41Z",
     "working_hours_elapsed": 3.49,
     "sla_status": "Replied",
-    "note": "Cassondra asked whether a Partner Center desync was related to a prior renewal/access issue. Thaddeus clarified it wasn't and asked her to confirm current access. She confirmed 2026-09-16T19:38 it resolved itself ('must have been a temporary issue'). Fully resolved."
+    "note": "Fully resolved, no further activity found this window."
   },
   {
     "thread_key": "2f8170c122afaade",
@@ -402,6 +275,47 @@
     "replied_at": "2026-09-16T09:10:10Z",
     "working_hours_elapsed": 1.17,
     "sla_status": "Replied",
-    "note": "Sarah asked about bank account confirmation / sample invoice for a client. Thaddeus explained Microsoft handles billing/invoicing/payout directly, customers don't pay Professional.me. Sarah closed the loop 2026-09-16T10:21 thanking him. Fully resolved."
+    "note": "Fully resolved, no further activity found this window."
+  },
+  {
+    "thread_key": "7c9e2a41db6f0358",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "urgent - ai build & publish - engagement eligibility error on customer claim incentive fy27",
+    "participant_domains": [
+      "cube.global",
+      "wetransact.io"
+    ],
+    "subject": "Re: Urgent - AI Build & Publish – engagement eligibility error on customer claim incentive FY27",
+    "from": "george.connell@cube.global",
+    "account": "Cube.global",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-09-23T10:06:55Z",
+    "anchor_at": "2026-09-23T10:06:55Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-09-23T14:03:46Z",
+    "working_hours_elapsed": 3.95,
+    "sla_status": "Replied",
+    "note": "George confirmed the fix was working and asked who to put as customer contact given no end-customer and a >$1M MACC. Thaddeus answered same day (put himself as customer, follow the guide). Resolved."
+  },
+  {
+    "thread_key": "b2f6d1948a70e5c3",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "rcsi purchase order",
+    "participant_domains": [
+      "wetransact.io"
+    ],
+    "subject": "Re: RCSI Purchase Order",
+    "from": "geoffroy.tamburro@wetransact.io",
+    "account": "Internal (RCSI account, AE coordination)",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- direct question from Geoffroy",
+    "first_inbound_at": "2026-09-23T21:44:58Z",
+    "anchor_at": "2026-09-23T21:44:58Z",
+    "anchor_is_after_hours": true,
+    "replied_at": null,
+    "working_hours_elapsed": 0.0,
+    "sla_status": "Awaiting reply",
+    "note": "Internal back-and-forth trying to find the right AE for the RCSI account. Thaddeus said Growth now handles this and to reach out to them (2026-09-23T17:28); Geoffroy followed up asking 'Did she register the deal?' at 21:44 -- landed after hours, unanswered as of this run."
   }
 ]
