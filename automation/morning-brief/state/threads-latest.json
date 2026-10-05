@@ -1,48 +1,5 @@
 [
   {
-    "thread_key": "9d2c6b47a08e1f35",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "request to stop wetransact services & azure billing – effective 31st aug 2026",
-    "participant_domains": [
-      "satnavtech.com",
-      "wetransact.io",
-      "xencia.com"
-    ],
-    "subject": "RE: WeTransact services till 30th Oct",
-    "from": "vikrant@satnavtech.com",
-    "account": "SatNavTech",
-    "next_step_owner": "Abel Delannoy (account ownership transferred)",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-08-29T06:48:34Z",
-    "anchor_at": "2026-09-17T05:33:45Z",
-    "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 0.0,
-    "sla_status": "No reply needed",
-    "no_reply_reason": "Account ownership transferred to Abel Delannoy 2026-09-23; he is actively engaged with the customer on a new thread. Last run at the 14-day boundary -- will age out next run unless Thaddeus is specifically addressed again."
-  },
-  {
-    "thread_key": "a476e240063b96ea",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "azure benefits eligible status",
-    "participant_domains": [
-      "stibosystems.com",
-      "wetransact.io"
-    ],
-    "subject": "Azure Benefits Eligible status",
-    "from": "ataa@stibosystems.com",
-    "account": "Stibo Systems",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-09-17T06:52:37Z",
-    "anchor_at": "2026-09-17T06:52:37Z",
-    "anchor_is_after_hours": true,
-    "replied_at": "2026-09-17T08:53:54Z",
-    "working_hours_elapsed": 0.9,
-    "sla_status": "Replied",
-    "note": "IP CoSell eligibility question answered same morning, fully settled. Broader seller-ID migration still tracked separately in commitments.json (call-agreed timeline, not a dangling email) -- no new activity on that this window. At the 14-day boundary, will age out next run."
-  },
-  {
     "thread_key": "7c9e2a41db6f0358",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
     "normalized_subject": "urgent - ai build & publish - engagement eligibility error on customer claim incentive fy27",
@@ -54,14 +11,186 @@
     "from": "george.connell@cube.global",
     "account": "Cube.global",
     "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated -- direct question from George, no colleague has stepped in",
+    "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-09-23T10:06:55Z",
     "anchor_at": "2026-09-29T10:23:07Z",
     "anchor_is_after_hours": false,
-    "replied_at": null,
-    "working_hours_elapsed": 15.61,
+    "replied_at": "2026-10-02T16:17:12Z",
+    "working_hours_elapsed": 32.9,
     "sla_status": "Breached",
-    "note": "Reopened: the original eligibility-error exchange was answered same day 2026-09-23, but George came back 2026-09-29T10:23:07Z with a new question (follow-up on the customer-contact/MACC guidance). No reply from Thaddeus or any colleague found this window -- genuinely unanswered, no coverage. Part of this week's PTO coverage gap."
+    "note": "Closed breach: George's 29 Sep follow-up (customer-contact/invoice guidance) sat unanswered through the PTO coverage gap, then Thaddeus answered it his first day back (2 Oct) with the invoice-timing guidance. No further activity since. Resolved."
+  },
+  {
+    "thread_key": "f6a1b8d43c95e720",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "external re wordsmith ai ip co-sell and macc eligibility",
+    "participant_domains": [
+      "wordsmith.ai",
+      "wetransact.io"
+    ],
+    "subject": "Logging a Lead",
+    "from": "isabelle@wordsmith.ai",
+    "account": "Wordsmith AI",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-09-25T13:43:47Z",
+    "anchor_at": "2026-09-29T09:36:03Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-02T17:06:14Z",
+    "working_hours_elapsed": 34.4,
+    "sla_status": "Breached",
+    "note": "Closed breach: Isabelle's 29 Sep error report (and a 2 Oct chase, 'is there a solution to the error above?') sat unanswered through the PTO gap; Thaddeus sent the Deal Registration consent/troubleshooting guide same day he was back. No further activity since. Resolved."
+  },
+  {
+    "thread_key": "d81f3ae692c05b74",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "first deal coming on marketplace - one obstacle",
+    "participant_domains": [
+      "stacc.com",
+      "wetransact.io"
+    ],
+    "subject": "First deal coming on Marketplace - one obstacle",
+    "from": "anders@stacc.com",
+    "account": "Stacc",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-09-28T14:02:29Z",
+    "anchor_at": "2026-09-28T14:02:29Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-02T11:56:08Z",
+    "working_hours_elapsed": 33.89,
+    "sla_status": "Breached",
+    "note": "Closed breach: Anders chased again 1 Oct ('where do we stand?'); Thaddeus replied 2 Oct morning. Anders then hit a 'Publication in progress' blocker uploading the new screenshots (2 Oct 13:54) and Thaddeus answered that same evening (19:49). Resolved, no further activity since."
+  },
+  {
+    "thread_key": "f047b6e2d9a81c35",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "model ml co-sell / marketplace follow-up",
+    "participant_domains": [
+      "microsoft.com",
+      "modelml.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: [EXTERNAL] Re: Model ML Onboarding - WeTransact",
+    "from": "paveck@microsoft.com",
+    "account": "Model ML (via Microsoft)",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-09-29T09:27:57Z",
+    "anchor_at": "2026-09-29T09:27:57Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-02T07:17:06Z",
+    "working_hours_elapsed": 25.53,
+    "sla_status": "Breached",
+    "note": "Closed breach: Thaddeus replied his first morning back, confirming a Monday 5 Oct 09:00 meeting; a prior invite had been cancelled/rescheduled over the weekend and Eli (Model ML) confirmed Monday 00:49 that Paul Veck has been added. Meeting happened today -- see Heads-up."
+  },
+  {
+    "thread_key": "a35e8c1f609d4b72",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "turbo360 & wetransact | introduction & best practices",
+    "participant_domains": [
+      "kovai.co",
+      "wetransact.io"
+    ],
+    "subject": "Turbo360 & WeTransact | Introduction & Best Practices",
+    "from": "casey.read@kovai.co",
+    "account": "Kovai",
+    "next_step_owner": "Thaddeus (owes a follow-up)",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-09-29T08:24:48Z",
+    "anchor_at": "2026-09-29T08:24:48Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-02T16:39:31Z",
+    "working_hours_elapsed": 35.25,
+    "sla_status": "Breached",
+    "note": "Closed breach: Thaddeus replied 2 Oct asking Casey to clarify the question, Casey confirmed same day (16:57, 'the Technologies filter'), and Thaddeus's last word (19:57) was 'let me check with the team and come back to you' -- so the thread is answered for SLA purposes, but he still owes Casey that follow-up once he's checked internally."
+  },
+  {
+    "thread_key": "b03d58f61a29e743",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "convertrone - contracting & billing process lead2pipeline",
+    "participant_domains": [
+      "convertr.io",
+      "lead2pipeline.com",
+      "wetransact.io"
+    ],
+    "subject": "RE: ConvertrOne - Contracting & Billing Process",
+    "from": "jason.gladu@convertr.io",
+    "account": "Convertr / Lead2Pipeline",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-09-24T10:43:33Z",
+    "anchor_at": "2026-09-30T15:58:17Z",
+    "anchor_is_after_hours": true,
+    "replied_at": "2026-10-02T07:22:48Z",
+    "working_hours_elapsed": 10.03,
+    "sla_status": "Breached",
+    "note": "Closed breach, just over target: Thaddeus's first morning back he picked up the whole thread ('I'm back in the office... happy to help work through the issue'), offered a troubleshooting call. Wendell booked a slot for Monday 5 Oct; Oliver Reid/Thomas Roche/Geoffroy had covered the gap during the PTO week. Resolved, call scheduled."
+  },
+  {
+    "thread_key": "c6b3f08e5a1d7942",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "alstom invoice voiding escalation (fw: soa 07sep26)",
+    "participant_domains": [
+      "microsoft.com",
+      "naaia.ai",
+      "wetransact.io"
+    ],
+    "subject": "Fw: SoA 07SEP26|Alstom",
+    "from": "martinpr@microsoft.com",
+    "account": "Naaia.ai / Alstom (via Microsoft Collections -- Martin Probst)",
+    "next_step_owner": "Thaddeus (chasing Microsoft)",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-10-01T06:30:00Z",
+    "anchor_at": "2026-10-01T06:30:00Z",
+    "anchor_is_after_hours": true,
+    "replied_at": "2026-10-02T12:12:17Z",
+    "working_hours_elapsed": 13.2,
+    "sla_status": "Breached",
+    "note": "Closed breach (anchor timestamp approximate): Thaddeus replied his first morning back, raising it again with the Microsoft support agent who handled the original case; Martin reacted positively to a same-day follow-up (13:16). Separately chased Monalisa Thorat on the underlying case, who clarified the customer needs an Azure Subscription Management (ASMS) ticket, not Partner Center -- Thaddeus relayed that to Naaia.ai (Isabelle Perl) the same day with next steps. The actual invoice void is still NOT confirmed done -- this is process-in-motion, not yet resolved. Worth checking for Martin's next response."
+  },
+  {
+    "thread_key": "9c2e47f81b6d3a05",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "azure credits",
+    "participant_domains": [
+      "channelsight.com",
+      "wetransact.io"
+    ],
+    "subject": "Azure credits",
+    "from": "enda_farrell@channelsight.com",
+    "account": "ChannelSight",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-10-02T13:45:35Z",
+    "anchor_at": "2026-10-02T13:45:35Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-02T19:45:46Z",
+    "working_hours_elapsed": 3.24,
+    "sla_status": "Replied",
+    "note": "Enda asked for help processing an agreed 3-year sponsorship and getting it allocated to tenants; Thaddeus replied same day with the guide. No further activity since."
+  },
+  {
+    "thread_key": "b4f81a06d9c35e72",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "datarails teams primary-contact fix re-test",
+    "participant_domains": [
+      "datarails.com",
+      "microsoft.com",
+      "wetransact.io"
+    ],
+    "subject": "datarails",
+    "from": "eyal.h@datarails.com",
+    "account": "Datarails",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- direct question from Eyal",
+    "first_inbound_at": "2026-10-04T10:05:53Z",
+    "anchor_at": "2026-10-04T10:05:53Z",
+    "anchor_is_after_hours": true,
+    "replied_at": null,
+    "working_hours_elapsed": 0.0,
+    "sla_status": "Awaiting reply",
+    "note": "Good news on the long-running Datarails vetting/primary-contact saga: per Microsoft's Catia, the fix should now be in place. Eyal (cc Edith Berda) asked Sunday when's a good time to test it -- landed outside business hours, clock hasn't started yet since today's open. Simple scheduling reply, should be quick."
   },
   {
     "thread_key": "b2f6d1948a70e5c3",
@@ -81,7 +210,7 @@
     "replied_at": "2026-09-24T11:32:42Z",
     "working_hours_elapsed": 3.54,
     "sla_status": "Replied",
-    "note": "Resolved -- Thaddeus answered Geoffroy and separately asked Maimoona to try registering the deal. No further activity this window."
+    "note": "Resolved -- Thaddeus answered Geoffroy and separately asked Maimoona to try registering the deal. Maimoona sent a friendly progress update 2 Oct (PO expected Mon/Tue, price revised) with no question pending -- no reply required."
   },
   {
     "thread_key": "c1a7f938e5b06d24",
@@ -102,7 +231,7 @@
     "replied_at": null,
     "working_hours_elapsed": 0.0,
     "sla_status": "No reply needed",
-    "no_reply_reason": "RECLASSIFIED this run: Sean's literal question (had the pipeline fields been shared) was never answered directly, but it's been superseded -- the active blocker on this account was the Azure IP Co-sell submission, which Vic Tompkins (Microsoft) validated as working 2026-09-29/30. Was carried as 'Awaiting reply' in the last two briefs; closing it out now that the substantive issue is resolved. No colleague coverage needed, no WeTransact-side action currently outstanding."
+    "no_reply_reason": "Sean's literal fields question was superseded by the Azure IP Co-sell submission, validated working by Vic Tompkins (Microsoft) 2026-09-29/30. No new activity this window."
   },
   {
     "thread_key": "d4b8e26a9f710c53",
@@ -115,7 +244,7 @@
     "subject": "Re: WeTransact intro following your Microsoft session",
     "from": "corstiaan@meniga.com",
     "account": "Meniga",
-    "next_step_owner": "Thaddeus (on return)",
+    "next_step_owner": "Thaddeus (owes a re-propose)",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-09-24T08:34:08Z",
     "anchor_at": "2026-09-24T08:34:08Z",
@@ -123,7 +252,7 @@
     "replied_at": null,
     "working_hours_elapsed": 26.43,
     "sla_status": "No reply needed",
-    "no_reply_reason": "RECLASSIFIED this run: the Tue 29 Sep 3pm call sat unconfirmed long enough to be flagged as a genuine breach in the last brief (17.4h at that point, now 26.4h). Corstiaan has since resolved it gracefully himself -- confirmed he's happy to wait until Thaddeus is back from PTO before scheduling. No reply strictly required before Thaddeus's return; worth a quick note to him on 2 Oct to re-propose a time."
+    "no_reply_reason": "Corstiaan resolved it gracefully himself (happy to wait for Thaddeus). No new activity this window -- Thaddeus still hasn't sent the re-propose-a-time note flagged in the last two briefs. Not an SLA item, but a loose end -- see The five."
   },
   {
     "thread_key": "e5f9a03c718b6d42",
@@ -144,28 +273,7 @@
     "replied_at": "2026-09-25T13:41:17Z",
     "working_hours_elapsed": 0.16,
     "sla_status": "Replied",
-    "note": "Replied within 10 minutes. No further activity found this window -- appears settled."
-  },
-  {
-    "thread_key": "f6a1b8d43c95e720",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "external re wordsmith ai ip co-sell and macc eligibility",
-    "participant_domains": [
-      "wordsmith.ai",
-      "wetransact.io"
-    ],
-    "subject": "Logging a Lead",
-    "from": "isabelle@wordsmith.ai",
-    "account": "Wordsmith AI",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated -- direct report of an error, no colleague has stepped in",
-    "first_inbound_at": "2026-09-25T13:43:47Z",
-    "anchor_at": "2026-09-29T09:36:03Z",
-    "anchor_is_after_hours": false,
-    "replied_at": null,
-    "working_hours_elapsed": 16.4,
-    "sla_status": "Breached",
-    "note": "Reopened: the original lead-logging and Deal Registration tab questions were both answered same day 2026-09-25. Isabelle came back 2026-09-29T09:36:03Z saying 'I have tried and am getting an error' -- genuinely unanswered, no coverage found. Part of this week's PTO coverage gap."
+    "note": "Resolved, no further activity this window."
   },
   {
     "thread_key": "a92c47e0d5b18f36",
@@ -186,29 +294,7 @@
     "replied_at": "2026-09-24T11:29:38Z",
     "working_hours_elapsed": 0.11,
     "sla_status": "Replied",
-    "note": "Resolved via a live call same day. No further activity found this window."
-  },
-  {
-    "thread_key": "b03d58f61a29e743",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "convertrone - contracting & billing process lead2pipeline",
-    "participant_domains": [
-      "convertr.io",
-      "lead2pipeline.com",
-      "wetransact.io"
-    ],
-    "subject": "RE: ConvertrOne - Contracting & Billing Process",
-    "from": "jason.gladu@convertr.io",
-    "account": "Convertr / Lead2Pipeline",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated -- Oliver Reid is now chasing on two channels (email + Teams DM) with zero WeTransact response",
-    "first_inbound_at": "2026-09-24T10:43:33Z",
-    "anchor_at": "2026-09-30T15:58:17Z",
-    "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 1.03,
-    "sla_status": "Awaiting reply",
-    "note": "Significantly escalated this window: after Thaddeus offered to coordinate directly (24 Sep) and Jason looped in Wendell, the thread went quiet, then Oliver Reid escalated via a direct Teams 1:1 message to Thaddeus on 2026-09-30 (15:58 and 16:01) with two technical questions and an urgent request for a live call, noting the private offer 'expires at midnight tonight.' That deadline has very likely already passed as of this brief. Business-hours clock reads only 1.0h since the clock paused overnight/off-hours, but the real-world urgency is high -- this is the most concrete customer-facing deadline risk of the week, and nobody from WeTransact has engaged since 24 Sep."
+    "note": "Resolved, no further activity this window."
   },
   {
     "thread_key": "c74e91a02d6f8b53",
@@ -229,7 +315,7 @@
     "replied_at": "2026-09-25T16:43:43Z",
     "working_hours_elapsed": 8.76,
     "sla_status": "Replied",
-    "note": "Replied just inside target. No further activity found this window."
+    "note": "Resolved. Kate opened a new round this window (2 Oct 14:16, private-offer process overview for her internal team) and Thaddeus sent full documentation same day (19:51, 2.73h) -- fast turnaround, no further activity since."
   },
   {
     "thread_key": "e2a7c951fb3d8460",
@@ -242,99 +328,14 @@
     "subject": "Private Offer on TSB listing",
     "from": "mike.castricone@tetrate.io",
     "account": "Tetrate",
-    "next_step_owner": "support@wetransact.io (Thaddeus to confirm outcome with Mike on return)",
-    "next_step_owner_confidence": "stated -- support mailbox has been the active responder, not Thaddeus",
+    "next_step_owner": "support@wetransact.io (Thaddeus to confirm outcome with Mike)",
+    "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-09-28T12:13:00Z",
     "anchor_at": "2026-09-29T07:57:34Z",
     "anchor_is_after_hours": true,
     "replied_at": null,
     "working_hours_elapsed": 18.0,
     "sla_status": "No reply needed",
-    "no_reply_reason": "Mike escalated repeatedly 2026-09-28 about a private offer stuck in 'publishing' with a broken clone; support@wetransact.io said at 14:20 it was live, Mike confirmed it looked fixed at 14:43 -- but support sent another apology at 2026-09-29T07:57:34Z about pushing the correct offer and cleaning up a duplicate, meaning the fix hadn't fully stuck. Being actively covered by the support mailbox, not a Thaddeus SLA item, but the outcome is unconfirmed -- worth a direct check-in with Mike when Thaddeus is back."
-  },
-  {
-    "thread_key": "d81f3ae692c05b74",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "first deal coming on marketplace - one obstacle",
-    "participant_domains": [
-      "stacc.com",
-      "wetransact.io"
-    ],
-    "subject": "First deal coming on Marketplace - one obstacle",
-    "from": "anders@stacc.com",
-    "account": "Stacc",
-    "next_step_owner": "Thaddeus (co-addressed with Geoffroy Tamburro)",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-09-28T14:02:29Z",
-    "anchor_at": "2026-09-28T14:02:29Z",
-    "anchor_is_after_hours": false,
-    "replied_at": null,
-    "working_hours_elapsed": 20.96,
-    "sla_status": "Breached",
-    "note": "Anders created new listing screenshots per Microsoft's guidelines after a rejection, and is asking Thaddeus (cc: Geoffroy) to swap them onto the live listing. No reply found from either. Genuinely unanswered, no coverage -- part of this week's PTO coverage gap."
-  },
-  {
-    "thread_key": "f047b6e2d9a81c35",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "model ml co-sell / marketplace follow-up",
-    "participant_domains": [
-      "microsoft.com",
-      "wetransact.io"
-    ],
-    "subject": "Model ML follow-up",
-    "from": "paveck@microsoft.com",
-    "account": "Model ML (via Microsoft)",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-09-29T09:27:57Z",
-    "anchor_at": "2026-09-29T09:27:57Z",
-    "anchor_is_after_hours": false,
-    "replied_at": null,
-    "working_hours_elapsed": 16.53,
-    "sla_status": "Breached",
-    "note": "New this window. Genuinely unanswered, no colleague coverage found -- part of this week's PTO coverage gap. Full ask needs reviewing on return."
-  },
-  {
-    "thread_key": "a35e8c1f609d4b72",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "turbo360 & wetransact | introduction & best practices",
-    "participant_domains": [
-      "kovai.co",
-      "wetransact.io"
-    ],
-    "subject": "Turbo360 & WeTransact | Introduction & Best Practices",
-    "from": "casey.read@kovai.co",
-    "account": "Kovai",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-09-29T08:24:48Z",
-    "anchor_at": "2026-09-29T08:24:48Z",
-    "anchor_is_after_hours": false,
-    "replied_at": null,
-    "working_hours_elapsed": 17.59,
-    "sla_status": "Breached",
-    "note": "New this window. Genuinely unanswered, no colleague coverage found -- part of this week's PTO coverage gap."
-  },
-  {
-    "thread_key": "c6b3f08e5a1d7942",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "alstom invoice voiding escalation (fw: soa 07sep26)",
-    "participant_domains": [
-      "microsoft.com",
-      "naaia.ai",
-      "wetransact.io"
-    ],
-    "subject": "Fw: SoA 07SEP26|Alstom",
-    "from": "martinpr@microsoft.com",
-    "account": "Naaia.ai / Alstom (via Microsoft Collections -- Martin Probst)",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated -- sharp complaint directly referencing an unfulfilled commitment",
-    "first_inbound_at": "2026-10-01T06:30:00Z",
-    "anchor_at": "2026-10-01T06:30:00Z",
-    "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply",
-    "note": "Landed the morning of this brief (exact timestamp approximate -- forwarded internal Microsoft/Alstom Statement-of-Account thread re: 4 unvoided invoices, G113175161/G116424752/G133330594/G150637222). Investigated the underlying promise: Thaddeus emailed martinpr@microsoft.com and Microsoft support on 2026-09-18T08:43:11Z pressing them to void a duplicate invoice Microsoft had 'previously confirmed' would be auto-voided, and asked Martin what evidence would confirm it was done. No later message gives an explicit committed date from Thaddeus himself -- it's possible a verbal/phone commitment was also made that isn't in the mailbox. This is the clear MIT for Thaddeus's return: needs him to clarify what was actually promised and chase Microsoft again, since the void still hasn't happened two weeks on."
+    "no_reply_reason": "Handled by the support mailbox during the PTO week; outcome still unconfirmed with Mike as of this run (no new activity found). Thaddeus still hasn't done the direct check-in flagged in the last brief -- see The five."
   }
 ]
