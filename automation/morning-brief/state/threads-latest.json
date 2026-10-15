@@ -16,9 +16,9 @@
     "anchor_at": "2026-10-07T15:24:35Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 19.59,
+    "working_hours_elapsed": 46.59,
     "sla_status": "Breached",
-    "note": "Jonathan Hay's labeling question (whether the customer can just type 'Canada Life' in the company-name box) is still unanswered four business days on -- genuinely live breach, no coverage found. Separately, support has kept Mike updated on the approval process and a draft purchase is progressing well."
+    "note": "Jonathan Hay's labeling question (whether the customer can just type 'Canada Life' in the company-name box) remains unanswered -- now a full working week, no coverage found despite being surfaced five times. This is the single oldest open ask in the book; a two-line reply would close it out."
   },
   {
     "thread_key": "a8f3d61c0b7e9452",
@@ -28,18 +28,18 @@
       "summize.com",
       "wetransact.io"
     ],
-    "subject": "RE: Summize onboarding - Microsoft",
+    "subject": "Summize Limited. - Call transcript.",
     "from": "Kris.Legzdins@summize.com",
     "account": "Summize",
     "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated -- high-importance flag from a new finance contact",
-    "first_inbound_at": "2026-10-07T15:38:26Z",
-    "anchor_at": "2026-10-08T10:57:44Z",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-10-14T12:25:01Z",
+    "anchor_at": "2026-10-14T12:25:01Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 15.04,
-    "sla_status": "Breached",
-    "note": "Reopened: Laura's original beneficiary-info question was answered same day (8 Oct). Kris Legzdins (picking up the finance side from Chris) then asked, marked high importance, for a short call next week before sending financial details -- a scheduling ask, still unanswered, live breach."
+    "working_hours_elapsed": 4.58,
+    "sla_status": "Awaiting reply",
+    "note": "Reopened: the finance call Kris asked for in the last window happened. He's now asking for a copy of the call transcript/notetaker recording -- small, quick ask, not yet answered."
   },
   {
     "thread_key": "d81f3ae692c05b74",
@@ -60,7 +60,7 @@
     "replied_at": "2026-10-09T13:26:54Z",
     "working_hours_elapsed": 17.72,
     "sla_status": "Breached",
-    "note": "Closed breach: public plan went live and Thaddeus created a draft Private Offer based on Anders's pricing model, inviting him to customise it further. Ball is now with Anders."
+    "note": "Closed breach, unchanged. No new activity found this window; ball remains with Anders customizing the draft Private Offer."
   },
   {
     "thread_key": "9c2e47f81b6d3a05",
@@ -74,7 +74,7 @@
     "subject": "RE: Azure credits Claims - TrackingID#2606180010000746",
     "from": "enda_farrell@channelsight.com",
     "account": "ChannelSight",
-    "next_step_owner": "Microsoft (Jessica Brown)",
+    "next_step_owner": "Microsoft (Jessica Brown) / ChannelSight internally",
     "next_step_owner_confidence": "stated -- Thaddeus escalated with specific clarifying questions",
     "first_inbound_at": "2026-10-02T13:45:35Z",
     "anchor_at": "2026-10-07T12:22:39Z",
@@ -82,7 +82,7 @@
     "replied_at": "2026-10-08T11:51:51Z",
     "working_hours_elapsed": 8.49,
     "sla_status": "Replied",
-    "note": "Resolved for Thaddeus's SLA: he worked through Enda's fund-split numbers in detail (8 Oct) and escalated specific confirmation questions directly to Microsoft's Jessica Brown. Enda sent a minor clarification (ignore the refund questions) same day. Ball is now with Microsoft."
+    "note": "Still resolved for Thaddeus's SLA. Jessica Brown (Microsoft) came back 13 Oct with a detailed answer and asked for ChannelSight's anniversary date; Enda's follow-up that afternoon reads as forwarding that question on internally (Thaddeus only cc'd), not a direct ask of him. Assumption -- worth a sanity check if it resurfaces."
   },
   {
     "thread_key": "c6b3f08e5a1d7942",
@@ -104,7 +104,7 @@
     "replied_at": "2026-10-08T09:42:18Z",
     "working_hours_elapsed": 3.58,
     "sla_status": "Replied",
-    "note": "RESOLVED: Thaddeus raised the Azure Subscription Management ticket Monalisa asked for (2610080050001182) referencing the original case. Microsoft confirmed the issue resolved and closed the case the same day. Multi-week saga fully closed out."
+    "note": "RESOLVED, no further activity. Multi-week saga stays fully closed out; will age out of tracking next run."
   },
   {
     "thread_key": "f047b6e2d9a81c35",
@@ -126,33 +126,12 @@
     "replied_at": "2026-10-08T08:52:41Z",
     "working_hours_elapsed": 0.88,
     "sla_status": "Replied",
-    "note": "RESOLVED: Microsoft's Paul Veck confirmed directly -- no limit on the MACC draw-down, and offered a call next week. Separately, Model ML's own Marketplace listing went fully live this window (8 Oct), and a commercial-terms call is booked for Tue 13 Oct."
-  },
-  {
-    "thread_key": "a35e8c1f609d4b72",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "turbo360 & wetransact | introduction & best practices",
-    "participant_domains": [
-      "kovai.co",
-      "wetransact.io"
-    ],
-    "subject": "Turbo360 & WeTransact | Introduction & Best Practices",
-    "from": "casey.read@kovai.co",
-    "account": "Kovai",
-    "next_step_owner": "Thaddeus (final answer pending internally)",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-09-29T08:24:48Z",
-    "anchor_at": "2026-09-29T08:24:48Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-10-02T16:39:31Z",
-    "working_hours_elapsed": 35.25,
-    "sla_status": "Breached",
-    "note": "Closed breach, unchanged. Still waiting on the vacationing PM for the Technologies-filter detail; no new activity found this window."
+    "note": "Still resolved. The commercial-terms call that had been booked for Tue 13 Oct got tangled in the offsite -- Thaddeus's auto-decline fired and Eli independently rebooked a slightly earlier slot the same morning. Pure scheduling housekeeping, not an open ask."
   },
   {
     "thread_key": "b03d58f61a29e743",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "convertrone - fresh azure payg subscription proposal",
+    "normalized_subject": "convertrone - contracting billing process - portal permissions error",
     "participant_domains": [
       "convertr.io",
       "lead2pipeline.com",
@@ -161,37 +140,37 @@
     "subject": "RE: ConvertrOne - Contracting & Billing Process",
     "from": "wendell.peji@lead2pipeline.com",
     "account": "Convertr / Lead2Pipeline",
-    "next_step_owner": "Wendell (setting up the new subscription)",
-    "next_step_owner_confidence": "stated",
+    "next_step_owner": "Thaddeus / Wendell / Microsoft",
+    "next_step_owner_confidence": "stated -- explicit deadline from the customer",
     "first_inbound_at": "2026-09-24T10:43:33Z",
-    "anchor_at": "2026-10-07T23:32:20Z",
+    "anchor_at": "2026-10-14T20:46:59Z",
     "anchor_is_after_hours": true,
-    "replied_at": "2026-10-08T12:10:06Z",
-    "working_hours_elapsed": 4.17,
-    "sla_status": "Replied",
-    "note": "Agreed with Wendell's fresh-start plan (new Azure PAYG subscription + support ticket for the old one). Separately, a Stephanie Firescu call happened 8 Oct (recap sent 9 Oct) surfacing a new permissions error for Zach accepting the private offer -- worth a check that this gets picked up, though no direct new ask landed this window. ActivateMS/Chris Ricca's parallel issue closed via the public-offer route, Oliver thanked the team."
+    "replied_at": null,
+    "working_hours_elapsed": 0.0,
+    "sla_status": "Awaiting reply",
+    "note": "Reopened and escalated: Oliver Reid wants the private-offer acceptance / billing-account-permissions issue sorted by the end of this week. Wendell's latest (14 Oct, 20:47 UTC, after hours so the SLA clock hasn't really started) lays out a detailed and still-unresolved Azure portal permissions error blocking offer acceptance -- Thaddeus's own earlier suggestion to contact Azure Offerings support hasn't yet closed the loop. Time-critical given the deadline; this run's MIT."
   },
   {
     "thread_key": "d2c75a1f93e6b048",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "kbm kw new messages before kickoff call",
+    "normalized_subject": "kbm kw onboarding session reschedule",
     "participant_domains": [
       "kbm-kw.com",
       "coordinatesme.com",
       "wetransact.io"
     ],
-    "subject": "RE: KBM - Developing Microsoft offering / Welcome to WeTransact",
+    "subject": "RE: CSM support - Heba Adel",
     "from": "hebaa@kbm-kw.com",
     "account": "KBM Kw (new customer, Kuwait)",
-    "next_step_owner": "Thaddeus",
+    "next_step_owner": "n/a -- resolved",
     "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-10-07T13:11:10Z",
-    "anchor_at": "2026-10-12T06:11:26Z",
+    "first_inbound_at": "2026-10-14T11:44:34Z",
+    "anchor_at": "2026-10-14T11:44:34Z",
     "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply",
-    "note": "Original kickoff ask answered well within target (8 Oct, booking link); Heba booked the kickoff call for Tue 13 Oct 11:15. This morning she sent two more messages on both threads ('COR Onboarding' and 'Welcome to WeTransact') -- unread as of this run, worth reviewing before tomorrow's call."
+    "replied_at": "2026-10-14T11:49:31Z",
+    "working_hours_elapsed": 0.08,
+    "sla_status": "Replied",
+    "note": "RESOLVED this window, but worth flagging: Thaddeus cancelled the 13 Oct kickoff morning-of (offsite) and asked Heba to reschedule; two days later he then missed the rescheduled session too, having mixed up the meeting times while at the offsite. He apologized immediately, sent a fresh Teams invite, and Heba accepted within a minute -- gracious but visibly frustrated reply, understandable given the account's history of onboarding delays. Worth being especially reliable with KBM Kw next time."
   },
   {
     "thread_key": "7b3c9e1a5f08d246",
@@ -206,15 +185,15 @@
     "subject": "Re: WeTransact Notification",
     "from": "xenabou.kann@softwareone.com",
     "account": "Gojob (via reseller SoftwareOne/Crayon)",
-    "next_step_owner": "Thaddeus",
+    "next_step_owner": "Xenabou / Jérémie (identifying the specific invoices)",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-10-08T06:50:12Z",
-    "anchor_at": "2026-10-09T08:35:44Z",
+    "anchor_at": "2026-10-13T09:30:56Z",
     "anchor_is_after_hours": false,
-    "replied_at": null,
-    "working_hours_elapsed": 8.4,
-    "sla_status": "Awaiting reply",
-    "note": "Thaddeus sent a full transaction PDF (8 Oct) and explained the duplicate charges were from two auto-renewing subscriptions. Xenabou confirmed she's disabled auto-renew and is asking for something further (a corrected invoice/credit) -- close to breaching, not yet answered."
+    "replied_at": "2026-10-13T10:47:10Z",
+    "working_hours_elapsed": 1.27,
+    "sla_status": "Replied",
+    "note": "Resolved for Thaddeus's SLA, in target. He asked Xenabou/Jérémie to confirm which invoices were meant to be paid under the agreement so the unintended-renewal ones can be cancelled. Ball is now with them; no response yet."
   },
   {
     "thread_key": "c9f2b7e4a1d6835f",
@@ -233,30 +212,31 @@
     "anchor_at": "2026-10-09T14:22:32Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 2.62,
-    "sla_status": "Awaiting reply",
-    "note": "After Thaddeus asked Sean to check the tenant and share a screenshot, Sean sent it, said the 23rd works for a call, and asked what to do next -- plus whether Thaddeus genuinely has no visibility on his end. Unanswered."
+    "working_hours_elapsed": 29.63,
+    "sla_status": "Breached",
+    "note": "Still unanswered, now a genuine live breach. Sean sent the screenshot Thaddeus asked for, confirmed the 23rd works for a call, and directly asked what to do next and whether Thaddeus really has no visibility on his end. Carried forward three times now without a reply."
   },
   {
     "thread_key": "a6d3f2e9b7c48510",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "ai build publish incentive call recap - payout discrepancy",
+    "normalized_subject": "xerox lexmark claims registration error",
     "participant_domains": [
       "xerox.com",
+      "microsoft.com",
       "wetransact.io"
     ],
-    "subject": "Re: AI Build & Publish Incentive - Call Recap",
+    "subject": "Error During Claims Request - Lexmark",
     "from": "Aaron.Morgan@xerox.com",
     "account": "Xerox / Lexmark",
-    "next_step_owner": "Thaddeus / Leya Zheng / Abel Delannoy",
+    "next_step_owner": "Microsoft (Azure Offerings Partner Support), Thaddeus to chase",
     "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-10-08T17:48:57Z",
-    "anchor_at": "2026-10-09T15:55:17Z",
+    "first_inbound_at": "2026-10-13T13:42:39Z",
+    "anchor_at": "2026-10-13T13:42:39Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 1.08,
-    "sla_status": "Awaiting reply",
-    "note": "After Thaddeus clarified the Market A/B incentive classification (9 Oct), Aaron remained confused about a $30K (doc) vs $24K (Partner Center) payout discrepancy and then reported an error after entering partner details, asking for thoughts. Unanswered -- Leya/Abel are also on the thread."
+    "working_hours_elapsed": 12.29,
+    "sla_status": "Breached",
+    "note": "Reopened on a new, more concrete issue: the earlier $30K vs $24K payout-discrepancy confusion was answered in target (13 Oct, pointed Aaron to Azure Offerings Partner Support). Aaron then opened a fresh thread reporting an actual registration error when submitting the claim, and chased again the next day with no response from Microsoft or WeTransact -- live breach, worth a nudge to Azure Offerings on Aaron's behalf."
   },
   {
     "thread_key": "f1e4a7b982c63d05",
@@ -278,54 +258,12 @@
     "replied_at": null,
     "working_hours_elapsed": 0.0,
     "sla_status": "No reply needed",
-    "no_reply_reason": "Last brief's MIT. Confirmed resolved in substance: the billing/payment-card request was already communicated to the client (per Alex Pascal's reaction to Thaddeus's 7 Oct message), and support sent Microsoft's listing-correction feedback to Craig 8 Oct with specific fixes needed. No new unanswered direct ask found this window."
-  },
-  {
-    "thread_key": "7c9e2a41db6f0358",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "urgent - ai build & publish - engagement eligibility error on customer claim incentive fy27",
-    "participant_domains": [
-      "cube.global",
-      "wetransact.io"
-    ],
-    "subject": "Re: Urgent - AI Build & Publish – engagement eligibility error on customer claim incentive FY27",
-    "from": "george.connell@cube.global",
-    "account": "Cube.global",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-09-23T10:06:55Z",
-    "anchor_at": "2026-09-29T10:23:07Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-10-02T16:17:12Z",
-    "working_hours_elapsed": 32.9,
-    "sla_status": "Breached",
-    "note": "Closed breach, resolved. No further activity this window."
-  },
-  {
-    "thread_key": "f6a1b8d43c95e720",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "external re wordsmith ai ip co-sell and macc eligibility",
-    "participant_domains": [
-      "wordsmith.ai",
-      "wetransact.io"
-    ],
-    "subject": "Logging a Lead",
-    "from": "isabelle@wordsmith.ai",
-    "account": "Wordsmith AI",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-09-25T13:43:47Z",
-    "anchor_at": "2026-09-29T09:36:03Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-10-02T17:06:14Z",
-    "working_hours_elapsed": 34.4,
-    "sla_status": "Breached",
-    "note": "Closed breach, resolved. No further activity this window."
+    "no_reply_reason": "No new activity found this window. Support's listing-correction feedback (8 Oct) stands as the last word; no new unanswered direct ask from Craig."
   },
   {
     "thread_key": "b4f81a06d9c35e72",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "datarails teams primary-contact fix re-test",
+    "normalized_subject": "datarails partnership managers meeting request",
     "participant_domains": [
       "datarails.com",
       "microsoft.com",
@@ -334,14 +272,14 @@
     "subject": "Re: datarails",
     "from": "eyal.h@datarails.com",
     "account": "Datarails",
-    "next_step_owner": "n/a -- resolved",
+    "next_step_owner": "Eyal (to book a slot)",
     "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-10-04T10:05:53Z",
-    "anchor_at": "2026-10-04T10:05:53Z",
+    "first_inbound_at": "2026-10-12T07:40:27Z",
+    "anchor_at": "2026-10-12T07:40:27Z",
     "anchor_is_after_hours": true,
-    "replied_at": "2026-10-05T09:23:19Z",
-    "working_hours_elapsed": 1.39,
-    "sla_status": "Replied",
-    "note": "Resolved. Thaddeus kept Eyal updated through publication (8 Oct, 9 Oct) -- payout/tax profile validated, listing in publication. No outstanding question."
+    "replied_at": "2026-10-13T12:10:21Z",
+    "working_hours_elapsed": 13.17,
+    "sla_status": "Breached",
+    "note": "Reopened and closed (breach): Eyal asked to schedule a meeting with the partnership managers. Thaddeus agreed and pointed him to the booking page for a slot next week -- the gap crossed a full business day because the ask landed right after Monday's brief was sent, so it sat over the Offsite's start. Ball is now with Eyal to book."
   }
 ]

@@ -10,5 +10,6 @@
   "Johan Aussenac": {"email":"johan.aussenac@wetransact.io","away_start":null,"away_end":"2026-08-27","source":"OOO auto-reply","confidence":"stated"},
   "Juan Castiblanques (JJ)": {"email":"juan.castiblanques@wetransact.io","away_start":"2026-08-12","away_end":"2026-08-27","source":"Calendar all-day event 'JJ - OoO'","confidence":"stated"},
   "Antonio Banganho": {"email":null,"away_start":"2026-08-31","away_end":"2026-10-01","source":"HR PTO calendar entry","confidence":"stated"},
-  "Thaddeus Uzornne": {"email":"Thaddeus.Uzornne@wetransact.io","away_start":"2026-09-28","away_end":"2026-10-01","source":"Calendar all-day event 'Thaddeus Uzornne PTO' + own email to Thomas Roche","confidence":"stated"}
+  "Thaddeus Uzornne": {"email":"Thaddeus.Uzornne@wetransact.io","away_start":"2026-09-28","away_end":"2026-10-01","source":"Calendar all-day event 'Thaddeus Uzornne PTO' + own email to Thomas Roche","confidence":"stated"},
+  "WeTransact Offsite (Troia)": {"email":null,"away_start":"2026-10-12","away_end":"2026-10-16","source":"Thaddeus's own 'Declined (Away)' auto-replies + cancelled/mixed-up customer sessions (KBM Kw, Model ML)","confidence":"stated","note":"Company-wide offsite causing reduced availability across the CS/Sales team this week. Directly impacted Thaddeus's own responsiveness -- cancelled the KBM Kw kickoff morning-of, then missed the rescheduled session too, and Model ML's Tuesday commercial call got auto-declined and rebooked."}
 }
