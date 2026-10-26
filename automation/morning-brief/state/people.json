@@ -15,5 +15,7 @@
   "Khaled Ibrahim Abed": {"email":"kabed@kbm-kw.com","away_start":"2026-10-15","away_end":"2026-10-30","source":"OOO auto-reply","confidence":"stated"},
   "Afareen Assi": {"email":"Afareen.Assi@theaccessgroup.com","away_start":"2026-10-19","away_end":"2026-10-23","source":"OOO auto-reply + her own note (back the week of 26 Oct)","confidence":"inferred"},
   "Claire Ginn-Langlands": {"email":"clarginn@microsoft.com","away_start":"2026-10-20","away_end":null,"source":"OOO auto-reply (annual leave, no return date)","confidence":"stated"},
-  "Shannon Conboy": {"email":"shannon.conboy@convertr.io","away_start":null,"away_end":"2026-10-20","source":"OOO auto-reply","confidence":"stated"}
+  "Shannon Conboy": {"email":"shannon.conboy@convertr.io","away_start":null,"away_end":"2026-10-20","source":"OOO auto-reply","confidence":"stated"},
+  "Jono Pepper": {"email":"jono@wordsmith.ai","away_start":"2026-10-22","away_end":"2026-10-29","source":"OOO auto-reply","confidence":"stated"},
+  "Bijhan Hirani": {"email":"bijhan.h@datarails.com","away_start":null,"away_end":"2026-10-22","source":"OOO auto-reply (conference)","confidence":"stated"}
 }

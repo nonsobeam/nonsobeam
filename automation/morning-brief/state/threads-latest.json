@@ -1,24 +1,26 @@
 [
   {
-    "thread_key": "c9f2b7e4a1d6835f",
+    "thread_key": "7b3c9e1a5f08d246",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "regask azure credits visibility question",
+    "normalized_subject": "wetransact notification - reseller invoice reconciliation",
     "participant_domains": [
-      "regask.com",
+      "gojob.com",
+      "softwareone.com",
+      "crayon.com",
       "wetransact.io"
     ],
-    "subject": "Re: Azure Credits",
-    "from": "sean.regan@regask.com",
-    "account": "Regask",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated -- direct question",
-    "first_inbound_at": "2026-10-09T14:22:32Z",
-    "anchor_at": "2026-10-09T14:22:32Z",
+    "subject": "RE: France Travail : Gojob - Contrat de partenariat Crayon France et Contrat d'application au deal France Travail",
+    "from": "jeremie.chemla@gojob.com",
+    "account": "Gojob (via reseller SoftwareOne/Crayon)",
+    "next_step_owner": "Jérémie (to confirm the proposal)",
+    "next_step_owner_confidence": "inferred -- reply to Thaddeus's 20 Oct proposal",
+    "first_inbound_at": "2026-10-08T06:50:12Z",
+    "anchor_at": "2026-10-22T09:58:32Z",
     "anchor_is_after_hours": false,
     "replied_at": null,
-    "working_hours_elapsed": 74.62,
+    "working_hours_elapsed": 16.02,
     "sla_status": "Breached",
-    "note": "STILL unanswered, five briefs running. Sean sent the screenshot, asked what to do next and whether Thaddeus has visibility, and said the 23rd works for a call. The 23rd is tomorrow (Fri), so this needs a reply today. This run's MIT."
+    "note": "REOPENED. Replying to Thaddeus's 20 Oct proposal, Jérémie (22 Oct 08:38) said France Travail paid only two UGAP invoices (4401282614, EUR 237,037.20 TTC, and 4401295119, EUR 316,049.64). Xenabou (09:58) confirmed UGAP paid only the two real orders and that the other invoices were raised in error by Microsoft. The next step is Thaddeus's: get the erroneous invoices cancelled with Microsoft and confirm back. Unanswered at 16.0h."
   },
   {
     "thread_key": "9c2e47f81b6d3a05",
@@ -35,12 +37,12 @@
     "next_step_owner": "Thaddeus",
     "next_step_owner_confidence": "stated -- direct question",
     "first_inbound_at": "2026-10-15T13:15:59Z",
-    "anchor_at": "2026-10-20T16:35:39Z",
+    "anchor_at": "2026-10-22T19:15:31Z",
     "anchor_is_after_hours": false,
-    "replied_at": null,
-    "working_hours_elapsed": 9.41,
-    "sla_status": "Breached",
-    "note": "Last brief's allocation question was answered 19 Oct (14.3h, closed breach) with a full policy breakdown, and a follow-up on free-trial eligibility was answered in 3h. Enda then asked (20 Oct) which Marketplace Rewards benefit holds the form link for the $10K free-trial sponsorship. Unanswered, just over target."
+    "replied_at": "2026-10-23T10:08:35Z",
+    "working_hours_elapsed": 2.14,
+    "sla_status": "Replied",
+    "note": "Three asks this window. The form-link question was answered 22 Oct 09:48 UTC, a closed breach at 11.2h. Enda then found the form 'does not exist' and Thaddeus escalated to Marzena at Microsoft within 3.5h. Enda's free-trial badge question was answered in 2.1h, and Enda thanked him. Ball with Microsoft on the sponsorship form."
   },
   {
     "thread_key": "e91c4a7fb6d82305",
@@ -58,10 +60,10 @@
     "first_inbound_at": "2026-10-16T10:02:44Z",
     "anchor_at": "2026-10-21T20:28:09Z",
     "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply",
-    "note": "Reopened. The original urgent query was answered 19 Oct (7.6h), followed by a thorough back-and-forth on the Micromail/MACC scenarios. Maimoona has now published the private plan, but RCSI still can't access it. Fintan advised emailing the Microsoft account executive and copying him. Arrived last night, clock starts at 09:00 today."
+    "replied_at": "2026-10-22T15:19:29Z",
+    "working_hours_elapsed": 7.32,
+    "sla_status": "Replied",
+    "note": "Answered in 7.3h. It's a private plan, not a private offer, so Fintan should look under Private Plans; guide sent. Waiting on RCSI to confirm access."
   },
   {
     "thread_key": "c84f1b3ea06d9752",
@@ -80,10 +82,10 @@
     "first_inbound_at": "2026-10-16T09:10:03Z",
     "anchor_at": "2026-10-22T06:22:54Z",
     "anchor_is_after_hours": true,
-    "replied_at": null,
-    "working_hours_elapsed": 0.0,
-    "sla_status": "Awaiting reply",
-    "note": "Reopened. The enrolment blocker was solved (ticket raised 19 Oct, step-by-step guide 20 Oct, enrolment completed). Anuscha resubmitted IP Co-sell docs, but Microsoft rejected the material WeTransact prepared. She asks for a better template. Arrived 06:22 today."
+    "replied_at": "2026-10-22T14:48:08Z",
+    "working_hours_elapsed": 6.8,
+    "sla_status": "Replied",
+    "note": "Sajan (Microsoft) escalated the IP Co-sell rejection to the US team, with an answer promised this week. Thaddeus asked Sajan to also request a TPID-to-Partner ID remap because Qanooni's ACR isn't recognised. Ball with Microsoft."
   },
   {
     "thread_key": "b03d58f61a29e743",
@@ -106,7 +108,7 @@
     "replied_at": "2026-10-19T09:05:48Z",
     "working_hours_elapsed": 10.26,
     "sla_status": "Breached",
-    "note": "RESOLVED, closed breach (10.3h). Thaddeus set up a troubleshooting call with Dick Dijkstra and Ruby Sran (held 20 Oct). Optimal Fusion completed its purchase, and Oliver approved both the Activate and Optimal Fusion orders on 21 Oct. Thaddeus sent Oliver a write-up of the two root causes. Remaining step is Convertr's own: DocuSign T&Cs to Activate, Optimal Fusion and Lion Reach."
+    "note": "Resolved 21 Oct. On 23 Oct Thaddeus sent Oli the 'Update Credentials for Finance Tab' guide to fix finance access. Convertr T&Cs DocuSign still pending on their side."
   },
   {
     "thread_key": "d2c75a1f93e6b048",
@@ -129,7 +131,7 @@
     "replied_at": "2026-10-21T17:17:22Z",
     "working_hours_elapsed": 5.94,
     "sla_status": "Replied",
-    "note": "Onboarding is moving: sessions held 19 Oct (11 min) and 21 Oct (36 min) after Hamdi rescheduled. The payout-currency question was answered in 4 minutes. Hamdi then hit tax-profile registration errors. Thaddeus escalated to Microsoft Accounts Payable and told Hamdi to keep building the offer in parallel. Khaled is out until 30 Oct."
+    "note": "Microsoft Accounts Payable confirmed 23 Oct 11:03 UTC that the resubmitted tax form is valid, with 24-48h for Partner Center to update. Commitment fulfilled. Khaled is out until 30 Oct."
   },
   {
     "thread_key": "d81f3ae692c05b74",
@@ -150,7 +152,7 @@
     "replied_at": "2026-10-20T10:51:59Z",
     "working_hours_elapsed": 2.87,
     "sla_status": "Replied",
-    "note": "Anders came back with detailed Private Offer questions (fixed EUR 7,000/month for 4 years, 13 custom amounts, then 16 flexible-billing elements). Both rounds were answered in target, and Anders booked a billing-structure call for Fri 23 Oct 10:00."
+    "note": "Anders cancelled Friday's call to work on the Marketplace T&Cs. Rebooked for Mon 26 Oct 13:00."
   },
   {
     "thread_key": "5b2e8f71c9a3d604",
@@ -166,12 +168,12 @@
     "next_step_owner": "n/a -- call booked",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-10-19T20:56:22Z",
-    "anchor_at": "2026-10-19T20:56:22Z",
+    "anchor_at": "2026-10-23T15:44:56Z",
     "anchor_is_after_hours": true,
-    "replied_at": "2026-10-20T10:49:50Z",
-    "working_hours_elapsed": 2.83,
+    "replied_at": "2026-10-23T16:16:45Z",
+    "working_hours_elapsed": 0.53,
     "sla_status": "Replied",
-    "note": "Isabelle needs a one-time Services private offer for Alstom (EUR 10,597.50) with no renewal term, and asked whether her draft is right. Thaddeus proposed covering it on their Fri 23 Oct 16:30 call, and she agreed. She also booked that call to revisit the old ASMS case (2608100040001494)."
+    "note": "Thaddeus MISSED Friday's 16:30 Alstom private-offer call (technical issues). Isabelle asked to reschedule, Thaddeus apologised within 32 minutes, and the call is rebooked for Mon 26 Oct 10:00. Relationship-sensitive."
   },
   {
     "thread_key": "3d7a9e2c5b81f046",
@@ -213,7 +215,7 @@
     "replied_at": "2026-10-21T14:32:30Z",
     "working_hours_elapsed": 0.58,
     "sla_status": "Replied",
-    "note": "Corstiaan asked for a Friday session with two IT colleagues who hold the needed permissions. Booked for Fri 23 Oct 14:00-14:30 CET; the invite time was corrected within a minute, and all three accepted."
+    "note": "Session with Meniga IT held Fri 23 Oct (34 min)."
   },
   {
     "thread_key": "1f9d6b3a8c27e540",
@@ -256,7 +258,7 @@
     "replied_at": "2026-10-19T08:32:09Z",
     "working_hours_elapsed": 0.54,
     "sla_status": "Replied",
-    "note": "Tom asked for a walkthrough of Marketplace Leads, Ecosystem and Find a Partner. Booked for Mon 26 Oct 13:30-14:30 with Tom and Afareen."
+    "note": "Walkthrough today (Mon 26 Oct) at 13:30."
   },
   {
     "thread_key": "6c1f4e8a2d97b350",
@@ -277,7 +279,7 @@
     "replied_at": "2026-10-20T10:23:16Z",
     "working_hours_elapsed": 0.13,
     "sla_status": "Replied",
-    "note": "New customer, introduced by Asier 18 Oct. Welcome email sent 19 Oct, and a CSM call held 20 Oct (43 min). When Julien's form loaded he asked to rejoin the call; Thaddeus answered within 8 minutes."
+    "note": "Next-step email sent 22 Oct. Julien booked platform onboarding for Tue 27 Oct 16:30."
   },
   {
     "thread_key": "a8f3d61c0b7e9452",
@@ -299,30 +301,7 @@
     "replied_at": "2026-10-15T12:03:45Z",
     "working_hours_elapsed": 8.65,
     "sla_status": "Replied",
-    "note": "Commitment met early: Microsoft verified the payout and tax profiles, and Thaddeus republished the listing on 21 Oct, two days ahead of his 23 Oct promise. He also sent explainers on the Copilot agent listing and Azure credits. Bailey booked a GTM call for Mon 26 Oct 15:00."
-  },
-  {
-    "thread_key": "7b3c9e1a5f08d246",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "wetransact notification - reseller invoice reconciliation",
-    "participant_domains": [
-      "gojob.com",
-      "softwareone.com",
-      "crayon.com",
-      "wetransact.io"
-    ],
-    "subject": "Re: WeTransact Notification",
-    "from": "jeremie.chemla@gojob.com",
-    "account": "Gojob (via reseller SoftwareOne/Crayon)",
-    "next_step_owner": "Jérémie (to confirm the proposal)",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-10-08T06:50:12Z",
-    "anchor_at": "2026-10-13T09:30:56Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-10-13T10:47:10Z",
-    "working_hours_elapsed": 1.27,
-    "sla_status": "Replied",
-    "note": "Xenabou shared the two France Travail orders, but UGAP's invoices to France Travail aren't accessible. On 20 Oct Thaddeus proposed to Jérémie (cc Thomas Roche) settling the two invoices for the orders originally intended, then cancelling the rest. No response yet."
+    "note": "Listing republished 21 Oct. GTM call today (Mon 26 Oct) at 15:00."
   },
   {
     "thread_key": "a6d3f2e9b7c48510",
@@ -366,6 +345,113 @@
     "replied_at": "2026-10-16T07:00:23Z",
     "working_hours_elapsed": 0.0,
     "sla_status": "Replied",
-    "note": "Live on the Marketplace. A CSM call was held 20 Oct, and Eyal confirmed 21 Oct that the files are uploaded to the Microsoft portal. No question pending."
+    "note": "Thaddeus asked Eyal on 22 Oct whether it's submitted for verification and requested a screenshot. No reply yet. Ball with Datarails."
+  },
+  {
+    "thread_key": "b03ccd5c75a42650",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "welcome to wetransact lets get you live kronmuller",
+    "participant_domains": [
+      "kbsynotec.eu",
+      "kronmuellers.eu",
+      "wetransact.io"
+    ],
+    "subject": "Welcome to WeTransact — let's get you live",
+    "from": "niklas.almerood@wetransact.io",
+    "account": "Kronmüller (new customer)",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- intro handed to CSM",
+    "first_inbound_at": "2026-10-22T14:29:26Z",
+    "anchor_at": "2026-10-22T14:29:26Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-22T16:39:59Z",
+    "working_hours_elapsed": 2.18,
+    "sla_status": "Replied",
+    "note": "New customer introduced by Niklas. Welcome sent in 2.2h, and Anne booked the first session for Mon 26 Oct 09:00."
+  },
+  {
+    "thread_key": "5b7b6aeed2b45fb5",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "welcome to wetransact lets get you live refine skills",
+    "participant_domains": [
+      "refine-skills.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: Welcome to WeTransact — let's get you live",
+    "from": "ceo@refine-skills.com",
+    "account": "Refine Skills",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- direct update needing next step",
+    "first_inbound_at": "2026-10-22T12:17:59Z",
+    "anchor_at": "2026-10-22T12:17:59Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-22T13:54:30Z",
+    "working_hours_elapsed": 1.61,
+    "sla_status": "Replied",
+    "note": "Aleksandar confirmed ID verification and added Filip as Owner/Admin. Thaddeus replied in 1.6h, and Filip booked Wed 28 Oct 10:00."
+  },
+  {
+    "thread_key": "c595ab04ebbf4078",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "billing issue with a client",
+    "participant_domains": [
+      "professional.me",
+      "wetransact.io"
+    ],
+    "subject": "Re: Billing issue with a client",
+    "from": "sarah.christiansen@professional.me",
+    "account": "professional.me",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- direct question",
+    "first_inbound_at": "2026-10-22T07:44:29Z",
+    "anchor_at": "2026-10-22T07:44:29Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-22T14:53:33Z",
+    "working_hours_elapsed": 6.89,
+    "sla_status": "Replied",
+    "note": "Sarah asked whether her client needs an Azure billing account to buy. Answered yes in 6.9h; she thanked him."
+  },
+  {
+    "thread_key": "1f852953ae759987",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "error submitting cosell eligibility trackingid 2609220040006223",
+    "participant_domains": [
+      "microsoft.com",
+      "wetransact.io",
+      "wordsmith.ai"
+    ],
+    "subject": "Re: [EXTERNAL] Re: Error submitting co-sell eligibility - TrackingID#2609220040006223",
+    "from": "jono@wordsmith.ai",
+    "account": "Wordsmith",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- direct question",
+    "first_inbound_at": "2026-10-22T09:46:32Z",
+    "anchor_at": "2026-10-22T09:46:32Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-22T10:06:57Z",
+    "working_hours_elapsed": 0.34,
+    "sla_status": "Replied",
+    "note": "Jono couldn't select any option. Thaddeus sent the greyed-out-button guide in 20 minutes. Claire (Microsoft) says to sit tight until the merge, and Vic is investigating the FAM enrolment. Jono is out until 29 Oct."
+  },
+  {
+    "thread_key": "ac60ad7d6a4c77ec",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "model ml",
+    "participant_domains": [
+      "microsoft.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: Model ML",
+    "from": "paveck@microsoft.com",
+    "account": "Model ML (via Microsoft)",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- direct question, high importance",
+    "first_inbound_at": "2026-10-23T13:06:23Z",
+    "anchor_at": "2026-10-23T13:06:23Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-23T13:46:17Z",
+    "working_hours_elapsed": 0.67,
+    "sla_status": "Replied",
+    "note": "Paul Veck (Microsoft) asked for an IP Co-sell timeline. Thaddeus answered in 40 minutes: he chased Eli on 22 Oct and is waiting on Model ML. Ruvini says Model ML will address it this week."
   }
 ]
