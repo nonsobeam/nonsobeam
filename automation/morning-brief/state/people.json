@@ -1,7 +1,7 @@
 {
   "Geoffroy Tamburro": {"email":"geoffroy.tamburro@wetransact.io","away_start":"2026-08-24","away_end":"2026-08-28","source":"OOO auto-reply","confidence":"stated"},
   "Romain de Leusse": {"email":"romaindeleusse@wetransact.io","away_start":"2026-08-19","away_end":"2026-08-25","source":"HR PTO calendar entry","confidence":"stated"},
-  "Divyashree G": {"email":"Divyashree.G@wetransact.io","away_start":"2026-08-19","away_end":"2026-09-05","source":"HR PTO calendar entry","confidence":"stated"},
+  "Divyashree G": {"email":"Divyashree.G@wetransact.io","away_start":"2026-11-09","away_end":"2026-11-10","source":"HR PTO calendar entry","confidence":"stated","note":"Covering Nyx during Thaddeus's PTO."},
   "Emerald Bartolome": {"email":"emerald.bartolome@wetransact.io","away_start":"2026-08-24","away_end":"2026-08-25","source":"HR/calendar all-day event","confidence":"stated"},
   "Thomas Matthieu Roche": {"email":"thomas.roche@wetransact.io","away_start":"2026-08-26","away_end":"2026-08-29","source":"HR PTO calendar entry","confidence":"stated"},
   "Sarah Christiansen": {"email":"sarah.christiansen@professional.me","away_start":null,"away_end":"2026-09-01","source":"OOO auto-reply","confidence":"stated"},
@@ -10,12 +10,17 @@
   "Johan Aussenac": {"email":"johan.aussenac@wetransact.io","away_start":null,"away_end":"2026-08-27","source":"OOO auto-reply","confidence":"stated"},
   "Juan Castiblanques (JJ)": {"email":"juan.castiblanques@wetransact.io","away_start":"2026-08-12","away_end":"2026-08-27","source":"Calendar all-day event 'JJ - OoO'","confidence":"stated"},
   "Antonio Banganho": {"email":null,"away_start":"2026-08-31","away_end":"2026-10-01","source":"HR PTO calendar entry","confidence":"stated"},
-  "Thaddeus Uzornne": {"email":"Thaddeus.Uzornne@wetransact.io","away_start":"2026-09-28","away_end":"2026-10-01","source":"Calendar all-day event 'Thaddeus Uzornne PTO' + own email to Thomas Roche","confidence":"stated"},
+  "Thaddeus Uzornne": {"email":"Thaddeus.Uzornne@wetransact.io","away_start":"2026-10-30","away_end":"2026-11-23","source":"HR calendar 'Thaddeus Uzornne PTO' 2-23 Nov + own emails ('out from Friday 30 October')","confidence":"stated","note":"Cover: Thomas Roche (Kronmuller, TAG, Summize, Convertr), Ruby Sran (KBM, Robonito, Model ML), Divyashree G (Nyx). Previous PTO entry (28 Sep - 1 Oct) superseded."},
   "WeTransact Offsite (Troia)": {"email":null,"away_start":"2026-10-12","away_end":"2026-10-16","source":"Thaddeus's own 'Declined (Away)' auto-replies + cancelled/mixed-up customer sessions (KBM Kw, Model ML)","confidence":"stated","note":"Company-wide offsite causing reduced availability across the CS/Sales team this week. Directly impacted Thaddeus's own responsiveness -- cancelled the KBM Kw kickoff morning-of, then missed the rescheduled session too, and Model ML's Tuesday commercial call got auto-declined and rebooked."},
   "Khaled Ibrahim Abed": {"email":"kabed@kbm-kw.com","away_start":"2026-10-15","away_end":"2026-10-30","source":"OOO auto-reply","confidence":"stated"},
   "Afareen Assi": {"email":"Afareen.Assi@theaccessgroup.com","away_start":"2026-10-19","away_end":"2026-10-23","source":"OOO auto-reply + her own note (back the week of 26 Oct)","confidence":"inferred"},
   "Claire Ginn-Langlands": {"email":"clarginn@microsoft.com","away_start":"2026-10-20","away_end":null,"source":"OOO auto-reply (annual leave, no return date)","confidence":"stated"},
   "Shannon Conboy": {"email":"shannon.conboy@convertr.io","away_start":null,"away_end":"2026-10-20","source":"OOO auto-reply","confidence":"stated"},
   "Jono Pepper": {"email":"jono@wordsmith.ai","away_start":"2026-10-22","away_end":"2026-10-29","source":"OOO auto-reply","confidence":"stated"},
-  "Bijhan Hirani": {"email":"bijhan.h@datarails.com","away_start":null,"away_end":"2026-10-22","source":"OOO auto-reply (conference)","confidence":"stated"}
+  "Bijhan Hirani": {"email":"bijhan.h@datarails.com","away_start":null,"away_end":"2026-10-22","source":"OOO auto-reply (conference)","confidence":"stated"},
+  "Aaloka Anant": {"email":"aaloka@mayadataprivacy.eu","away_start":null,"away_end":"2026-10-30","source":"OOO auto-reply (travel)","confidence":"stated"},
+  "Alastair MacKenzie": {"email":"Alastair.MacKenzie@autorek.com","away_start":null,"away_end":"2026-11-02","source":"OOO auto-reply","confidence":"stated"},
+  "Paul Veck": {"email":"paveck@microsoft.com","away_start":null,"away_end":"2026-10-28","source":"OOO auto-reply","confidence":"stated"},
+  "Gabriel Naranjo": {"email":"gabriel.naranjo@tdsynnex.com","away_start":null,"away_end":"2026-10-30","source":"OOO auto-reply (business trip)","confidence":"stated"},
+  "Selin Gumus": {"email":"selin.gumus@tdsynnex.com","away_start":null,"away_end":"2026-10-30","source":"OOO auto-reply (public holiday, 'till Friday')","confidence":"inferred"}
 }

@@ -1,5 +1,50 @@
 [
   {
+    "thread_key": "c84f1b3ea06d9752",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "qanooni ip co-sell documentation rejected",
+    "participant_domains": [
+      "qanooni.ai",
+      "microsoft.com",
+      "wetransact.io"
+    ],
+    "subject": "RE: Your solution in Partner Center doesn’t satisfy policies for a status change",
+    "from": "anuscha@qanooni.ai",
+    "account": "Qanooni",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- direct question",
+    "first_inbound_at": "2026-10-16T09:10:03Z",
+    "anchor_at": "2026-10-29T02:40:49Z",
+    "anchor_is_after_hours": true,
+    "replied_at": null,
+    "working_hours_elapsed": 0.0,
+    "sla_status": "Awaiting reply",
+    "note": "NEW OPEN ASK: Thaddeus chased Sajan (Microsoft) 28 Oct on the $100K ACR mismatch blocking Qanooni's IP Co-sell. Sajan replied 02:40 'Let's connect today' and again at 07:07. Today is the last working day before PTO."
+  },
+  {
+    "thread_key": "b03d58f61a29e743",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "convertrone - contracting billing process - public offer workaround error",
+    "participant_domains": [
+      "convertr.io",
+      "lead2pipeline.com",
+      "optimalfusion.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: ConvertrOne - Contracting & Billing Process",
+    "from": "sfirescu@OptimalFusion.com",
+    "account": "Convertr / Lead2Pipeline",
+    "next_step_owner": "n/a -- resolved",
+    "next_step_owner_confidence": "stated",
+    "first_inbound_at": "2026-09-24T10:43:33Z",
+    "anchor_at": "2026-10-28T23:53:25Z",
+    "anchor_is_after_hours": false,
+    "replied_at": null,
+    "working_hours_elapsed": 0.0,
+    "sla_status": "Awaiting reply",
+    "note": "NEW OPEN ASK: Stephanie Firescu (Optimal Fusion) asked late on 28 Oct whether to disregard the earlier DocuSign now that there's a new private offer (Thaddeus told her the accepted public offer was on the wrong plan). 0 business hours so far. Thomas Roche is cc'd and covers during PTO. Earlier this window: Oli's finance-section question was answered in minutes, and a 46-minute CSM call was held 28 Oct."
+  },
+  {
     "thread_key": "7b3c9e1a5f08d246",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
     "normalized_subject": "wetransact notification - reseller invoice reconciliation",
@@ -17,10 +62,10 @@
     "first_inbound_at": "2026-10-08T06:50:12Z",
     "anchor_at": "2026-10-22T09:58:32Z",
     "anchor_is_after_hours": false,
-    "replied_at": null,
+    "replied_at": "2026-10-26T08:33:20Z",
     "working_hours_elapsed": 16.02,
     "sla_status": "Breached",
-    "note": "REOPENED. Replying to Thaddeus's 20 Oct proposal, Jérémie (22 Oct 08:38) said France Travail paid only two UGAP invoices (4401282614, EUR 237,037.20 TTC, and 4401295119, EUR 316,049.64). Xenabou (09:58) confirmed UGAP paid only the two real orders and that the other invoices were raised in error by Microsoft. The next step is Thaddeus's: get the erroneous invoices cancelled with Microsoft and confirm back. Unanswered at 16.0h."
+    "note": "Closed breach (16.0h). Thaddeus replied 26 Oct 08:33 asking Jeremie what resolution Gojob wants on the extra invoices. Jeremie (27 Oct) is waiting on France Travail's decision. Xenabou's follow-up question about credit notes went to Jeremie, with Thaddeus only cc'd. Ball with Gojob/France Travail."
   },
   {
     "thread_key": "9c2e47f81b6d3a05",
@@ -66,51 +111,6 @@
     "note": "Answered in 7.3h. It's a private plan, not a private offer, so Fintan should look under Private Plans; guide sent. Waiting on RCSI to confirm access."
   },
   {
-    "thread_key": "c84f1b3ea06d9752",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "qanooni ip co-sell documentation rejected",
-    "participant_domains": [
-      "qanooni.ai",
-      "microsoft.com",
-      "wetransact.io"
-    ],
-    "subject": "Fw: Your solution in Partner Center doesn't satisfy policies for a status change",
-    "from": "anuscha@qanooni.ai",
-    "account": "Qanooni",
-    "next_step_owner": "Thaddeus",
-    "next_step_owner_confidence": "stated -- direct question",
-    "first_inbound_at": "2026-10-16T09:10:03Z",
-    "anchor_at": "2026-10-22T06:22:54Z",
-    "anchor_is_after_hours": true,
-    "replied_at": "2026-10-22T14:48:08Z",
-    "working_hours_elapsed": 6.8,
-    "sla_status": "Replied",
-    "note": "Sajan (Microsoft) escalated the IP Co-sell rejection to the US team, with an answer promised this week. Thaddeus asked Sajan to also request a TPID-to-Partner ID remap because Qanooni's ACR isn't recognised. Ball with Microsoft."
-  },
-  {
-    "thread_key": "b03d58f61a29e743",
-    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
-    "normalized_subject": "convertrone - contracting billing process - public offer workaround error",
-    "participant_domains": [
-      "convertr.io",
-      "lead2pipeline.com",
-      "optimalfusion.com",
-      "wetransact.io"
-    ],
-    "subject": "RE: ConvertrOne - Contracting & Billing Process",
-    "from": "wendell.peji@lead2pipeline.com",
-    "account": "Convertr / Lead2Pipeline",
-    "next_step_owner": "n/a -- resolved",
-    "next_step_owner_confidence": "stated",
-    "first_inbound_at": "2026-09-24T10:43:33Z",
-    "anchor_at": "2026-10-15T16:50:03Z",
-    "anchor_is_after_hours": false,
-    "replied_at": "2026-10-19T09:05:48Z",
-    "working_hours_elapsed": 10.26,
-    "sla_status": "Breached",
-    "note": "Resolved 21 Oct. On 23 Oct Thaddeus sent Oli the 'Update Credentials for Finance Tab' guide to fix finance access. Convertr T&Cs DocuSign still pending on their side."
-  },
-  {
     "thread_key": "d2c75a1f93e6b048",
     "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
     "normalized_subject": "kbm kw onboarding tax profile",
@@ -120,18 +120,18 @@
       "microsoft.com",
       "wetransact.io"
     ],
-    "subject": "Re: KBM NBK USD Account",
+    "subject": "Re: Welcome to WeTransact — let's get Kbm Kw live in one week",
     "from": "hamdiba@kbm-kw.com",
     "account": "KBM Kw (new customer, Kuwait)",
     "next_step_owner": "Microsoft Accounts Payable (apmdg), Thaddeus to relay",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-10-14T11:44:34Z",
-    "anchor_at": "2026-10-21T11:03:33Z",
+    "anchor_at": "2026-10-27T15:09:19Z",
     "anchor_is_after_hours": false,
-    "replied_at": "2026-10-21T17:17:22Z",
-    "working_hours_elapsed": 5.94,
+    "replied_at": "2026-10-27T15:27:28Z",
+    "working_hours_elapsed": 0.3,
     "sla_status": "Replied",
-    "note": "Microsoft Accounts Payable confirmed 23 Oct 11:03 UTC that the resubmitted tax form is valid, with 24-48h for Partner Center to update. Commitment fulfilled. Khaled is out until 30 Oct."
+    "note": "Tax, payout and legal profiles verified. USD payout profile submitted 27 Oct, with validation expected by 29 Oct (Thaddeus said he'd raise a ticket if not). Coordinates (COR) runs as a separate onboarding track. Full MACC path sent 28 Oct. Handed over to Ruby Sran for the PTO. Heba's four asks were all answered in under 20 minutes."
   },
   {
     "thread_key": "d81f3ae692c05b74",
@@ -147,12 +147,12 @@
     "next_step_owner": "n/a -- call booked",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-09-28T14:02:29Z",
-    "anchor_at": "2026-10-19T17:26:25Z",
+    "anchor_at": "2026-10-27T10:56:24Z",
     "anchor_is_after_hours": true,
-    "replied_at": "2026-10-20T10:51:59Z",
-    "working_hours_elapsed": 2.87,
+    "replied_at": "2026-10-27T12:46:25Z",
+    "working_hours_elapsed": 1.83,
     "sla_status": "Replied",
-    "note": "Anders cancelled Friday's call to work on the Marketplace T&Cs. Rebooked for Mon 26 Oct 13:00."
+    "note": "Call held 26 Oct. Quarterly private-offer payout overview sent, and the yearly public plan removed so only the 1-month plan remains (custom dimensions kept). No named PTO cover seen."
   },
   {
     "thread_key": "5b2e8f71c9a3d604",
@@ -173,7 +173,7 @@
     "replied_at": "2026-10-23T16:16:45Z",
     "working_hours_elapsed": 0.53,
     "sla_status": "Replied",
-    "note": "Thaddeus MISSED Friday's 16:30 Alstom private-offer call (technical issues). Isabelle asked to reschedule, Thaddeus apologised within 32 minutes, and the call is rebooked for Mon 26 Oct 10:00. Relationship-sensitive."
+    "note": "Rebooked call held 26 Oct (28 min). Thaddeus sent Isabelle steps to raise an Azure billing ticket so the duplicate Alstom invoice can be voided. Waiting on her ticket number. No named PTO cover seen."
   },
   {
     "thread_key": "3d7a9e2c5b81f046",
@@ -189,12 +189,12 @@
     "next_step_owner": "Thaddeus (investigation promised)",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-10-20T12:32:55Z",
-    "anchor_at": "2026-10-21T10:54:52Z",
+    "anchor_at": "2026-10-28T10:02:14Z",
     "anchor_is_after_hours": false,
-    "replied_at": "2026-10-21T17:32:57Z",
-    "working_hours_elapsed": 6.09,
+    "replied_at": "2026-10-28T15:46:26Z",
+    "working_hours_elapsed": 5.74,
     "sla_status": "Replied",
-    "note": "New account thread, handed over by Geoffroy 20 Oct. Sam's questions were answered within the hour. Luke then hit two errors updating the University Hospitals North Midlands opportunity, including 'No exchange rate on file'. Thaddeus replied the same day that he is investigating. The answer is still owed (tracked as a commitment)."
+    "note": "Sam Soares has left Culture.ai, and Ryan Davis is picking it up. His login question was answered (he already has an account). Thaddeus followed up 27 Oct on the co-sell docs and opportunity errors. The 'No exchange rate on file' answer is still owed."
   },
   {
     "thread_key": "8e4c1a97f2d65b30",
@@ -204,18 +204,18 @@
       "meniga.com",
       "wetransact.io"
     ],
-    "subject": "Re: WeTransact intro following your Microsoft session",
+    "subject": "Pls share your booking link, thx",
     "from": "corstiaan@meniga.com",
     "account": "Meniga",
     "next_step_owner": "n/a -- session booked",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-10-21T13:57:50Z",
-    "anchor_at": "2026-10-21T13:57:50Z",
+    "anchor_at": "2026-10-26T12:23:14Z",
     "anchor_is_after_hours": false,
-    "replied_at": "2026-10-21T14:32:30Z",
-    "working_hours_elapsed": 0.58,
+    "replied_at": "2026-10-26T12:30:12Z",
+    "working_hours_elapsed": 0.12,
     "sla_status": "Replied",
-    "note": "Session with Meniga IT held Fri 23 Oct (34 min)."
+    "note": "Booking link sent in 7 minutes. Session held 28 Oct. The Partner Center tax form isn't loading, so Thaddeus sent Corstiaan's tax/finance data to Microsoft AP on 28 Oct. Another onboarding session is today at 13:30."
   },
   {
     "thread_key": "1f9d6b3a8c27e540",
@@ -237,7 +237,7 @@
     "replied_at": "2026-10-21T09:11:34Z",
     "working_hours_elapsed": 5.35,
     "sla_status": "Replied",
-    "note": "Aaloka said there had been no communication and wants GTM help with customers' remaining Azure credits (now expanding into Canada). Fabio (TD Synnex) offered a call, and Thaddeus followed up 21 Oct asking where things stand."
+    "note": "Re-engagement email sent 28 Oct. Aaloka travelling until 30 Oct."
   },
   {
     "thread_key": "a2c8e5f19b74d063",
@@ -247,18 +247,18 @@
       "theaccessgroup.com",
       "wetransact.io"
     ],
-    "subject": "Re: #External# Re: WeTransact and TAG",
+    "subject": "Re: #External# Evo checklist, next steps and my cover from 2 November",
     "from": "Tom.Wightman@theaccessgroup.com",
     "account": "The Access Group",
     "next_step_owner": "n/a -- call booked",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-10-16T17:13:35Z",
-    "anchor_at": "2026-10-16T17:13:35Z",
+    "anchor_at": "2026-10-27T08:50:31Z",
     "anchor_is_after_hours": true,
-    "replied_at": "2026-10-19T08:32:09Z",
-    "working_hours_elapsed": 0.54,
+    "replied_at": "2026-10-27T12:05:21Z",
+    "working_hours_elapsed": 3.09,
     "sla_status": "Replied",
-    "note": "Walkthrough today (Mon 26 Oct) at 13:30."
+    "note": "AT RISK. Internal CSM Frustration Alert (High, 26 Oct): after 27 months (14,999/mo, health 4) TAG has only used WeTransact for product uploads and just found hundreds of leads nobody told them about. Lead-source explanation sent to Tom 26 and 27 Oct. Suggested next steps still open: full platform training and lead notifications for POCs. Afareen asked who covers the PTO: Thomas Roche from 2 Nov. She can only confirm Evo for AI Build & Publish next week."
   },
   {
     "thread_key": "6c1f4e8a2d97b350",
@@ -279,7 +279,7 @@
     "replied_at": "2026-10-20T10:23:16Z",
     "working_hours_elapsed": 0.13,
     "sla_status": "Replied",
-    "note": "Next-step email sent 22 Oct. Julien booked platform onboarding for Tue 27 Oct 16:30."
+    "note": "Julien cancelled Tue 27 Oct (materials not ready) and will rebook. No named PTO cover seen."
   },
   {
     "thread_key": "a8f3d61c0b7e9452",
@@ -290,18 +290,18 @@
       "microsoft.com",
       "wetransact.io"
     ],
-    "subject": "Summize: Next steps after our check-in",
+    "subject": "Re: Summize: Azure credits and Microsoft incentive",
     "from": "Kris.Legzdins@summize.com",
     "account": "Summize",
     "next_step_owner": "n/a -- resolved",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-10-14T12:25:01Z",
-    "anchor_at": "2026-10-14T12:25:01Z",
+    "anchor_at": "2026-10-27T11:10:10Z",
     "anchor_is_after_hours": false,
-    "replied_at": "2026-10-15T12:03:45Z",
-    "working_hours_elapsed": 8.65,
+    "replied_at": "2026-10-27T13:17:46Z",
+    "working_hours_elapsed": 2.13,
     "sla_status": "Replied",
-    "note": "Listing republished 21 Oct. GTM call today (Mon 26 Oct) at 15:00."
+    "note": "GTM call held 26 Oct. Listing live and transactable, and the focus is now IP Co-sell. Bailey was asked to take the Referral Admin role and do Frontier Accelerate enrolment. Thomas Roche cc'd."
   },
   {
     "thread_key": "a6d3f2e9b7c48510",
@@ -312,18 +312,18 @@
       "microsoft.com",
       "wetransact.io"
     ],
-    "subject": "Error During Claims Request - Lexmark",
+    "subject": "Re: Question - \"t shirt\" size",
     "from": "Aaron.Morgan@xerox.com",
     "account": "Xerox / Lexmark",
     "next_step_owner": "n/a -- Microsoft activating",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-10-13T13:42:39Z",
-    "anchor_at": "2026-10-15T15:31:46Z",
+    "anchor_at": "2026-10-28T18:32:05Z",
     "anchor_is_after_hours": false,
-    "replied_at": "2026-10-16T05:45:06Z",
-    "working_hours_elapsed": 1.47,
+    "replied_at": "2026-10-28T19:06:34Z",
+    "working_hours_elapsed": 0.0,
     "sla_status": "Replied",
-    "note": "Resolved 16 Oct. Microsoft submitted the TPID activation and expected it within about 5 days, so it should be live around now. No new activity."
+    "note": "Aaron is sizing the AI Build & Publish claim ($139K path in 120 days, Phase 2 worth another $300-400K). Thaddeus answered on approval timing, Migrate & Modernize (ACR) vs B&P (MBS), and that the existing architecture diagram works. Leya and Abel are involved."
   },
   {
     "thread_key": "b4f81a06d9c35e72",
@@ -340,12 +340,12 @@
     "next_step_owner": "n/a -- resolved",
     "next_step_owner_confidence": "stated",
     "first_inbound_at": "2026-10-12T07:40:27Z",
-    "anchor_at": "2026-10-16T07:00:23Z",
+    "anchor_at": "2026-10-26T09:32:17Z",
     "anchor_is_after_hours": true,
-    "replied_at": "2026-10-16T07:00:23Z",
-    "working_hours_elapsed": 0.0,
+    "replied_at": "2026-10-26T11:33:25Z",
+    "working_hours_elapsed": 2.02,
     "sla_status": "Replied",
-    "note": "Thaddeus asked Eyal on 22 Oct whether it's submitted for verification and requested a screenshot. No reply yet. Ball with Datarails."
+    "note": "Eyal sent screenshots. Thaddeus said Frontier Accelerate enrolment comes before verification, and asked Edith (Microsoft) for a TPID-to-Partner ID remap so ACR shows for IP Co-sell. Eyal hasn't replied to the 27 Oct follow-up. No named PTO cover seen."
   },
   {
     "thread_key": "b03ccd5c75a42650",
@@ -356,18 +356,18 @@
       "kronmuellers.eu",
       "wetransact.io"
     ],
-    "subject": "Welcome to WeTransact — let's get you live",
+    "subject": "AW: Kronmuller onboarding: call recap and next steps",
     "from": "niklas.almerood@wetransact.io",
     "account": "Kronmüller (new customer)",
     "next_step_owner": "Thaddeus",
     "next_step_owner_confidence": "stated -- intro handed to CSM",
     "first_inbound_at": "2026-10-22T14:29:26Z",
-    "anchor_at": "2026-10-22T14:29:26Z",
+    "anchor_at": "2026-10-28T13:09:38Z",
     "anchor_is_after_hours": false,
-    "replied_at": "2026-10-22T16:39:59Z",
-    "working_hours_elapsed": 2.18,
+    "replied_at": "2026-10-28T18:13:04Z",
+    "working_hours_elapsed": 4.84,
     "sla_status": "Replied",
-    "note": "New customer introduced by Niklas. Welcome sent in 2.2h, and Anne booked the first session for Mon 26 Oct 09:00."
+    "note": "Listing LIVE on Marketplace 28 Oct (sync issue fixed). Stephan's two clarifications were answered 27 Oct. Anne wants the platform demo next week, so it's handed to Thomas Roche."
   },
   {
     "thread_key": "5b7b6aeed2b45fb5",
@@ -388,7 +388,7 @@
     "replied_at": "2026-10-22T13:54:30Z",
     "working_hours_elapsed": 1.61,
     "sla_status": "Replied",
-    "note": "Aleksandar confirmed ID verification and added Filip as Owner/Admin. Thaddeus replied in 1.6h, and Filip booked Wed 28 Oct 10:00."
+    "note": "Filip call held 28 Oct. Next onboarding is booked FRI 30 OCT 10:00, the day Thaddeus says he's out. Needs moving or a cover."
   },
   {
     "thread_key": "c595ab04ebbf4078",
@@ -431,7 +431,7 @@
     "replied_at": "2026-10-22T10:06:57Z",
     "working_hours_elapsed": 0.34,
     "sla_status": "Replied",
-    "note": "Jono couldn't select any option. Thaddeus sent the greyed-out-button guide in 20 minutes. Claire (Microsoft) says to sit tight until the merge, and Vic is investigating the FAM enrolment. Jono is out until 29 Oct."
+    "note": "Vic says the Partner ID merge (6970818/7087842) is incomplete. Thaddeus asked Jono 27 Oct to open a Partner Center merge case. Cyril is now AM. Jono back 29 Oct."
   },
   {
     "thread_key": "ac60ad7d6a4c77ec",
@@ -452,6 +452,132 @@
     "replied_at": "2026-10-23T13:46:17Z",
     "working_hours_elapsed": 0.67,
     "sla_status": "Replied",
-    "note": "Paul Veck (Microsoft) asked for an IP Co-sell timeline. Thaddeus answered in 40 minutes: he chased Eli on 22 Oct and is waiting on Model ML. Ruvini says Model ML will address it this week."
+    "note": "Thaddeus told Eli/Ruvini about the vacation 27 Oct (Ruby and Javier cc'd). Paul Veck out until 28 Oct."
+  },
+  {
+    "thread_key": "c9f2b7e4a1d6835f",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "regask azure credits visibility question",
+    "participant_domains": [
+      "regask.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: Azure Credits - TrackingID#2606100010001279",
+    "from": "sean.regan@regask.com",
+    "account": "Regask",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- direct question",
+    "first_inbound_at": "2026-10-28T11:37:46Z",
+    "anchor_at": "2026-10-28T11:37:46Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-28T18:09:07Z",
+    "working_hours_elapsed": 6.37,
+    "sla_status": "Replied",
+    "note": "RESOLVED. Via the Rewards desk and Mielan (Microsoft), Thaddeus confirmed 28 Oct that RegASK has $5K in Azure Sponsorship credits (ISV Success) until 15 Dec 2026, which answers Sean's 9 Oct question at 113.1h. Sean's follow-up ('credit or cash?') was answered in 6.4h."
+  },
+  {
+    "thread_key": "bbd316083097422e",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "autorek private offer",
+    "participant_domains": [
+      "autorek.com",
+      "wetransact.io"
+    ],
+    "subject": "AutoRek Private Offer",
+    "from": "Douglas.Menzies@autorek.com",
+    "account": "AutoRek",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- direct question, high importance",
+    "first_inbound_at": "2026-10-26T10:43:18Z",
+    "anchor_at": "2026-10-26T10:43:18Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-26T11:47:04Z",
+    "working_hours_elapsed": 1.06,
+    "sla_status": "Replied",
+    "note": "Offer accepted 16 Oct and Subscribed in Partner Center but not showing in WeTransact. Thaddeus confirmed no customer action is needed and the sync is still under investigation. Douglas thanked him. Investigation still open, with no named PTO cover seen."
+  },
+  {
+    "thread_key": "9a04e47b342f6725",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "withdraw godrej industries unily private offer remap to new enrollment 79995464",
+    "participant_domains": [
+      "unily.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: Withdraw Godrej Industries Unily Private Offer + Remap to new Enrollment (79995464)",
+    "from": "Stuart.Hornsey@unily.com",
+    "account": "Unily",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- direct question",
+    "first_inbound_at": "2026-10-27T14:28:04Z",
+    "anchor_at": "2026-10-27T14:28:04Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-27T15:30:02Z",
+    "working_hours_elapsed": 1.03,
+    "sla_status": "Replied",
+    "note": "New deal mixing licence and pro services. Thaddeus recommended a Flexible Billing private offer if amounts and dates are fixed. Kirsty asked for a walkthrough, and a 28-minute call was held 27 Oct."
+  },
+  {
+    "thread_key": "807c19923baa8c51",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "next steps robonito td synnex wetransact consent",
+    "participant_domains": [
+      "robonito.com",
+      "tdsynnex.com",
+      "wetransact.io"
+    ],
+    "subject": "Re: Next steps Robonito<>TD SYNNEX<>WeTransact: consent",
+    "from": "Sounak.Ghosh@wetransact.io",
+    "account": "Robonito (via TD Synnex)",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- internal direct question",
+    "first_inbound_at": "2026-10-28T04:32:54Z",
+    "anchor_at": "2026-10-28T04:32:54Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-28T10:52:26Z",
+    "working_hours_elapsed": 1.87,
+    "sla_status": "Replied",
+    "note": "Bilal said he'd never seen the onboarding email. Thaddeus re-sent it 28 Oct, and Bilal will book sessions. Handed to Ruby Sran for the PTO."
+  },
+  {
+    "thread_key": "860053954effd67c",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "ezaix 100k mbs milestone next steps",
+    "participant_domains": [
+      "ezaix.com",
+      "wetransact.io"
+    ],
+    "subject": "Ezaix - $100K MBS Milestone & Next Steps",
+    "from": "leya.zheng@wetransact.io",
+    "account": "Ezaix",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- internal direct ask",
+    "first_inbound_at": "2026-10-27T13:54:47Z",
+    "anchor_at": "2026-10-27T13:54:47Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-27T16:48:08Z",
+    "working_hours_elapsed": 2.89,
+    "sla_status": "Replied",
+    "note": "Leya asked for a follow-up on TeamsCoreIQ certification now that $100K MBS shows. Thaddeus replied that WeTransact can't see the Certified Software application area."
+  },
+  {
+    "thread_key": "b7d568c762f4972f",
+    "thread_key_derivation": "sha256(normalized_subject + '|' + sorted_participant_domains)[:16]",
+    "normalized_subject": "prodigy learning x wetransact your new account manager",
+    "participant_domains": [
+      "wetransact.io"
+    ],
+    "subject": "Re: Prodigy Learning x WeTransact – your new Account Manager",
+    "from": "joana.pissarra@wetransact.io",
+    "account": "Prodigy Learning (internal AM handover)",
+    "next_step_owner": "Thaddeus",
+    "next_step_owner_confidence": "stated -- internal direct question",
+    "first_inbound_at": "2026-10-28T17:35:52Z",
+    "anchor_at": "2026-10-28T17:35:52Z",
+    "anchor_is_after_hours": false,
+    "replied_at": "2026-10-28T19:05:00Z",
+    "working_hours_elapsed": 0.4,
+    "sla_status": "Replied",
+    "note": "Joana (new AM) asked which FY27 incentives Prodigy is going for (AI Build & Publish, timing TBD) and for 15 minutes this week ahead of the 20 Dec renewal. Booking slots sent."
   }
 ]
