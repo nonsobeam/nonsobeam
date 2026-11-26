@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reseller & Partner — Fundamentals</title>
+<style>
+  :root {
+    --blue: #0f62fe;
+    --blue-light: #d0e2ff;
+    --indigo: #4f46e5;
+    --purple: #7c3aed;
+    --teal: #0d9488;
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --border: #e2e8f0;
+    --text: #0f172a;
+    --muted: #64748b;
+    --tag-bg: #eff6ff;
+    --tag-text: #1d4ed8;
+    --success: #059669;
+    --radius: 12px;
+    --shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.06);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,.10);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 60%, #1e40af 100%);
+    color: #fff;
+    padding: 48px 24px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .level-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: #93c5fd;
+  }
+  .level-badge span { color: #fff; }
+  h1 {
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    line-height: 1.15;
+  }
+  .header-desc {
+    font-size: 16px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    max-width: 580px;
+  }
+  .hero-subtitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(99,102,241,.25);
+    border: 1px solid rgba(99,102,241,.4);
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #c7d2fe;
+    font-weight: 500;
+  }
+  .hero-subtitle::before {
+    content: '\2192';
+    font-size: 16px;
+    color: #818cf8;
+  }
+
+  /* ── TIMELINE ── */
+  .timeline-wrap {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 24px;
+  }
+  .timeline-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  .phase {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    position: relative;
+  }
+  .phase-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    padding: 0 8px;
+  }
+  .phase-dot {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    flex-shrink: 0;
+  }
+  .phase:nth-child(1) .phase-dot { background: #dbeafe; color: #1d4ed8; }
+  .phase:nth-child(2) .phase-dot { background: #ede9fe; color: #6d28d9; }
+  .phase:nth-child(3) .phase-dot { background: #d1fae5; color: #065f46; }
+  .phase-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .phase-actions {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .phase-connector {
+    height: 2px;
+    flex: 0 0 40px;
+    background: linear-gradient(90deg, #bfdbfe, #ddd6fe);
+    position: relative;
+    top: -10px;
+  }
+
+  /* ── MAIN ── */
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* ── CARDS ── */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+  @media (max-width: 800px) {
+    .cards-grid { grid-template-columns: 1fr; }
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow);
+    transition: box-shadow .2s, transform .2s;
+  }
+  .card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+  .card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .card:nth-child(1) .card-badge { background: #dbeafe; color: #1d4ed8; }
+  .card:nth-child(2) .card-badge { background: #ede9fe; color: #6d28d9; }
+  .card:nth-child(3) .card-badge { background: #d1fae5; color: #065f46; }
+  .card-icon { font-size: 20px; }
+  .card-intro {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  .card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card ul li {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #334155;
+  }
+  .card ul li::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+  .card:nth-child(1) ul li::before { background: #3b82f6; }
+  .card:nth-child(2) ul li::before { background: #8b5cf6; }
+  .card:nth-child(3) ul li::before { background: #10b981; }
+
+  /* ── SECTION HEADING ── */
+  .section-heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-heading::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── ACCORDION ── */
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .accordion-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: box-shadow .2s;
+  }
+  .accordion-item.open {
+    box-shadow: var(--shadow-lg);
+    border-color: #c7d2fe;
+  }
+  .accordion-trigger {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    text-align: left;
+    transition: background .15s;
+  }
+  .accordion-trigger:hover { background: #f8fafc; }
+  .accordion-item.open .accordion-trigger { background: #f0f4ff; }
+  .step-num {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .trigger-text { flex: 1; }
+  .trigger-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 2px;
+  }
+  .trigger-sub {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .chevron {
+    width: 20px;
+    height: 20px;
+    color: var(--muted);
+    transition: transform .25s;
+    flex-shrink: 0;
+  }
+  .accordion-item.open .chevron { transform: rotate(180deg); }
+  .accordion-body {
+    display: none;
+    padding: 0 24px 24px;
+  }
+  .accordion-item.open .accordion-body { display: block; }
+  .why-box {
+    background: #f0f4ff;
+    border-left: 3px solid var(--indigo);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+  }
+  .why-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--indigo);
+    margin-bottom: 6px;
+  }
+  .why-text {
+    font-size: 14px;
+    color: #334155;
+    line-height: 1.65;
+  }
+  .prompt-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #fef9c3;
+    border: 1px solid #fde68a;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 13px;
+    color: #92400e;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: none;
+    cursor: default;
+  }
+  .steps-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .step-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .step-n {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #e0e7ff;
+    color: #4338ca;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .step-text {
+    font-size: 14px;
+    color: #334155;
+    line-height: 1.6;
+  }
+  .done-box {
+    display: flex;
+    gap: 10px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .done-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .done-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--success);
+    margin-bottom: 4px;
+  }
+  .done-text {
+    font-size: 14px;
+    color: #166534;
+    line-height: 1.6;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+    background: var(--surface);
+  }
+
+  /* ── PROGRESS BAR ── */
+  .progress-bar-wrap {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+  }
+  .progress-bar-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .progress-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .progress-track {
+    flex: 1;
+    height: 6px;
+    background: #e2e8f0;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    border-radius: 3px;
+    transition: width .4s ease;
+    width: 0%;
+  }
+  .progress-count {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--indigo);
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="level-badge"><span>Level 0</span> &middot; Fundamentals</div>
+    <h1>Reseller &amp; Partner</h1>
+    <p class="header-desc">Build and activate your Microsoft reseller channel.</p>
+    <div class="hero-subtitle">For your partner team &mdash; 7 actions to build your reseller channel</div>
+  </div>
+</header>
+
+<div class="timeline-wrap">
+  <div class="timeline-inner">
+    <div class="phase">
+      <div class="phase-content">
+        <div class="phase-dot">1</div>
+        <div class="phase-label">Week 1&ndash;2</div>
+        <div class="phase-actions">Map &middot; Classify &middot; Story &middot; EDP</div>
+      </div>
+    </div>
+    <div class="phase-connector"></div>
+    <div class="phase">
+      <div class="phase-content">
+        <div class="phase-dot">2</div>
+        <div class="phase-label">Week 3&ndash;6</div>
+        <div class="phase-actions">Persona &middot; Outreach &middot; Recruit</div>
+      </div>
+    </div>
+    <div class="phase-connector"></div>
+    <div class="phase">
+      <div class="phase-content">
+        <div class="phase-dot">3</div>
+        <div class="phase-label">Week 7&ndash;10</div>
+        <div class="phase-actions">Champion &middot; Close &middot; Activate</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="progress-bar-wrap">
+  <div class="progress-bar-inner">
+    <span class="progress-label">Your progress</span>
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <span class="progress-count" id="progressCount">0 / 7 steps</span>
+  </div>
+</div>
+
+<main>
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-badge"><span class="card-icon">&#128506;&#65039;</span> Map &amp; Identify</div>
+      <div class="card-intro">Know your partner landscape</div>
+      <ul>
+        <li>Map your existing partners against Microsoft CSP/reseller data &mdash; flag those already in the Microsoft ecosystem</li>
+        <li>Review the WeTransact preferred partners list and filter by segment, geography, and fit</li>
+        <li>Classify your partner type &mdash; VAR, MSP, or SI &mdash; before approaching anyone</li>
+        <li>Appoint a Partner Champion to own the Marketplace reseller programme end-to-end</li>
+        <li>Register your partner team for WeTransact Fundamentals training</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-badge"><span class="card-icon">&#129309;</span> Recruit &amp; Enable</div>
+      <div class="card-intro">Start activating partners</div>
+      <ul>
+        <li>Connect with 3&ndash;5 high-fit preferred partners using the platform&rsquo;s built-in outreach tools</li>
+        <li>Prepare a partnership presentation (5&ndash;10 slides) with your Better Together story and MACC benefits</li>
+        <li>Build your Better Together narrative &mdash; the answer to &ldquo;how does this ISV help me win more Microsoft business?&rdquo;</li>
+        <li>Have a standard reseller contract ready &mdash; don&rsquo;t lose momentum when a partner says yes</li>
+        <li>Quantify what each target reseller is losing by not having your ISV &mdash; use this as your outreach hook</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-badge"><span class="card-icon">&#128640;</span> Activate &amp; Scale</div>
+      <div class="card-intro">Get your first reseller deals flowing</div>
+      <ul>
+        <li>Launch an outreach campaign to the broader Microsoft CSP directory via WeTransact</li>
+        <li>Enroll your first partners in Crossbeam &mdash; run account mapping for pipeline overlaps</li>
+        <li>Use overlap data to prioritise which deals to pursue together through the Marketplace</li>
+        <li>Close your first deal via CSP private offer &mdash; or Multiparty Private Offer for enterprise customers</li>
+        <li>Run a joint business review with your first partner within 30 days of signing</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-heading">7 Step-by-Step Actions</div>
+  <div class="accordion" id="accordion">
+
+    <div class="accordion-item" data-step="1">
+      <button class="accordion-trigger" onclick="toggle(this)">
+        <div class="step-num">1</div>
+        <div class="trigger-text">
+          <div class="trigger-title">Map and Classify Your Partners</div>
+          <div class="trigger-sub">Week 1&ndash;2 &middot; Foundation</div>
+        </div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="accordion-body">
+        <div class="why-box">
+          <div class="why-label">Why it matters</div>
+          <div class="why-text">Some of your current partners may already be Microsoft CSPs &mdash; identifying them lets you fast-track Marketplace activation with people who already know your product. Before recruiting new ones, you also need to know which partner type fits your go-to-market. VAR, MSP, and SI partners sell differently, expect different margins, and serve different customer segments. Targeting the wrong type wastes months.</div>
+        </div>
+        <div class="prompt-link">&#128206; Prompt artifact: Partner Type Classification</div>
+        <div class="steps-label">Steps</div>
+        <div class="steps-list">
+          <div class="step-row"><div class="step-n">1</div><div class="step-text">Export your current partner list (active resellers, referral, distribution).</div></div>
+          <div class="step-row"><div class="step-n">2</div><div class="step-text">Cross-reference with Microsoft CSP data via WeTransact or Partner Center &mdash; flag partners already in the Microsoft ecosystem as your fastest activation path.</div></div>
+          <div class="step-row"><div class="step-n">3</div><div class="step-text">For new partners you are recruiting, check if they are already Microsoft resellers &mdash; it makes the partnership proposition immediately relevant.</div></div>
+          <div class="step-row"><div class="step-n">4</div><div class="step-text">Apply the partner type decision logic: implementation over 60 days or enterprise-only = SI; managed services or SLA-driven = MSP; product-led or quick deployment = VAR.</div></div>
+          <div class="step-row"><div class="step-n">5</div><div class="step-text">Run the Partner Type Classification prompt with your domain to get a scored recommendation with confidence level.</div></div>
+          <div class="step-row"><div class="step-n">6</div><div class="step-text">Note your primary type and any secondary type &mdash; both will shape your outreach target list.</div></div>
+        </div>
+        <div class="done-box">
+          <div class="done-icon">&#9989;</div>
+          <div>
+            <div class="done-label">Done well</div>
+            <div class="done-text">You know which existing partners are Microsoft resellers and who to activate first. You have confirmed your primary partner type with a confidence score and know which resellers to prioritise.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-step="2">
+      <button class="accordion-trigger" onclick="toggle(this)">
+        <div class="step-num">2</div>
+        <div class="trigger-text">
+          <div class="trigger-title">Build Your Better Together Story</div>
+          <div class="trigger-sub">Week 1&ndash;2 &middot; Messaging</div>
+        </div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="accordion-body">
+        <div class="why-box">
+          <div class="why-label">Why it matters</div>
+          <div class="why-text">Resellers do not want another vendor &mdash; they want solutions that make their Microsoft practice stronger. Your Better Together story answers the one question every reseller asks: &ldquo;How does this ISV help me win more Microsoft business and keep it longer?&rdquo; Without this, your outreach is a pitch. With it, it is a business case. This narrative also becomes the foundation of your one-pager for Microsoft AEs and your partnership deck.</div>
+        </div>
+        <div class="prompt-link">&#128206; Prompt artifact: Better Together Value Proposition</div>
+        <div class="steps-label">Steps</div>
+        <div class="steps-list">
+          <div class="step-row"><div class="step-n">1</div><div class="step-text">Identify which specific Microsoft platform your solution extends &mdash; not generic &ldquo;Azure&rdquo; but the specific services (Azure Data Factory, Microsoft Sentinel, Dynamics 365, etc.).</div></div>
+          <div class="step-row"><div class="step-n">2</div><div class="step-text">Define the gap Microsoft does not fill natively that your ISV addresses.</div></div>
+          <div class="step-row"><div class="step-n">3</div><div class="step-text">Build all six components: Microsoft Foundation, Gap Microsoft Doesn&rsquo;t Fill, ISV Complementary Value, Reseller Amplification, Combined Customer Outcome, and Microsoft Consumption Acceleration.</div></div>
+          <div class="step-row"><div class="step-n">4</div><div class="step-text">Run the Better Together prompt with your domain and partner type to produce the full narrative.</div></div>
+          <div class="step-row"><div class="step-n">5</div><div class="step-text">Check the output against four quality criteria: independently useful to a partner, based on verifiable data, relates to your actual solution, Microsoft-anchored throughout. Revise if any criterion fails.</div></div>
+          <div class="step-row"><div class="step-n">6</div><div class="step-text">Simplify the output into a one-page PDF written from the Microsoft seller&rsquo;s perspective &mdash; use MACC, Azure, and co-sell terminology. This is your seller enablement kit for Microsoft AEs.</div></div>
+        </div>
+        <div class="done-box">
+          <div class="done-icon">&#9989;</div>
+          <div>
+            <div class="done-label">Done well</div>
+            <div class="done-text">You have a six-component Better Together narrative that passes all four quality checks, is ready to use in reseller conversations, and has been distilled into a one-pager any Microsoft seller can understand in 60 seconds.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-step="3">
+      <button class="accordion-trigger" onclick="toggle(this)">
+        <div class="step-num">3</div>
+        <div class="trigger-text">
+          <div class="trigger-title">Quantify the Reseller EDP</div>
+          <div class="trigger-sub">Week 1&ndash;2 &middot; Commercial</div>
+        </div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="accordion-body">
+        <div class="why-box">
+          <div class="why-label">Why it matters</div>
+          <div class="why-text">The EDP (Existential Data Point) turns your pitch from a nice-to-have into a must-have. It answers what a specific reseller is losing &mdash; in revenue, margin, or competitive position &mdash; by not having your ISV in their portfolio. Leading with a quantified loss is far more compelling than leading with a product feature. This is the number you lead with in cold outreach.</div>
+        </div>
+        <div class="prompt-link">&#128206; Prompt artifact: Reseller EDP Analysis</div>
+        <div class="steps-label">Steps</div>
+        <div class="steps-list">
+          <div class="step-row"><div class="step-n">1</div><div class="step-text">Run the G6 Reseller Intelligence framework to collect public data on your target reseller before calculating &mdash; Microsoft partnership tier, customer segments, capability gaps, hiring signals.</div></div>
+          <div class="step-row"><div class="step-n">2</div><div class="step-text">Identify which EDP type applies: margin erosion for VARs (benchmark: 8&ndash;12% licensing vs 25&ndash;35% solution margin); churn exposure for MSPs (benchmark: 8&ndash;15% annual churn); services multiplier gap for SIs (benchmark: 2&ndash;4x licence value).</div></div>
+          <div class="step-row"><div class="step-n">3</div><div class="step-text">Run the Reseller EDP Analysis prompt using your Better Together story and reseller intelligence.</div></div>
+          <div class="step-row"><div class="step-n">4</div><div class="step-text">Label all variables as sourced (from real data) or estimated (from benchmarks) before using any figure externally.</div></div>
+          <div class="step-row"><div class="step-n">5</div><div class="step-text">Extract the headline number &mdash; this becomes your cold outreach hook. The typical range is $100K&ndash;$250K annually per reseller.</div></div>
+          <div class="step-row"><div class="step-n">6</div><div class="step-text">Build a confidence score into your output &mdash; prioritise high-confidence results first when deciding which resellers to pursue.</div></div>
+        </div>
+        <div class="done-box">
+          <div class="done-icon">&#9989;</div>
+          <div>
+            <div class="done-label">Done well</div>
+            <div class="done-text">You have a quantified EDP for your top target resellers, a headline revenue figure per reseller, and all variables clearly labelled as sourced or estimated.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-step="4">
+      <button class="accordion-trigger" onclick="toggle(this)">
+        <div class="step-num">4</div>
+        <div class="trigger-text">
+          <div class="trigger-title">Identify and Contact Your Best Entry Persona</div>
+          <div class="trigger-sub">Week 3&ndash;6 &middot; Outreach</div>
+        </div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="accordion-body">
+        <div class="why-box">
+          <div class="why-label">Why it matters</div>
+          <div class="why-text">The person who feels the pain daily is a better entry point than the CEO who is three layers removed from the problem. Approaching the wrong person at the right company wastes your most valuable outreach opportunity. The practice lead who owns the capability gap will champion you internally. The executive sponsor approves. Win the champion first.</div>
+        </div>
+        <div class="prompt-link">&#128206; Prompt artifact: Best Entry Persona</div>
+        <div class="prompt-link" style="margin-top:-12px;">&#128206; Prompt artifact: PVP Variant Generator</div>
+        <div class="steps-label">Steps</div>
+        <div class="steps-list">
+          <div class="step-row"><div class="step-n">1</div><div class="step-text">Identify your ISV&rsquo;s capability area &mdash; Security, Data and AI, Modern Work, Business Applications, or Cloud Infrastructure &mdash; and use the corresponding search priority to find the right title at your target reseller on LinkedIn.</div></div>
+          <div class="step-row"><div class="step-n">2</div><div class="step-text">Score each candidate against three criteria: Capability Ownership (40%), Pain Proximity (35%), Internal Influence (25%). Overall score = (CO &times; 0.4) + (PP &times; 0.35) + (II &times; 0.25).</div></div>
+          <div class="step-row"><div class="step-n">3</div><div class="step-text">Map the champion-to-sponsor path before reaching out &mdash; know who approves the partnership before you approach the champion.</div></div>
+          <div class="step-row"><div class="step-n">4</div><div class="step-text">Run the Best Entry Persona prompt to identify and score 3&ndash;5 real candidates at each target reseller and select your primary champion.</div></div>
+          <div class="step-row"><div class="step-n">5</div><div class="step-text">Gather your inputs for outreach: ISV domain, reseller domain, partner type, champion name and role, EDP output, and Better Together story.</div></div>
+          <div class="step-row"><div class="step-n">6</div><div class="step-text">Run the PVP Variant Generator to produce all five outreach messages &mdash; each message must add new intelligence, get shorter over time, and never repeat the same angle.</div></div>
+          <div class="step-row"><div class="step-n">7</div><div class="step-text">Use plain text only in all messages &mdash; never HTML. Load into Lemlist or PartnerReach for sequencing.</div></div>
+        </div>
+        <div class="done-box">
+          <div class="done-icon">&#9989;</div>
+          <div>
+            <div class="done-label">Done well</div>
+            <div class="done-text">You have a named, scored champion at each of your top 5 target resellers, the sponsor path mapped, and five personalised outreach messages per reseller loaded into your sequencer.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-step="5">
+      <button class="accordion-trigger" onclick="toggle(this)">
+        <div class="step-num">5</div>
+        <div class="trigger-text">
+          <div class="trigger-title">Recruit via the WeTransact Platform</div>
+          <div class="trigger-sub">Week 3&ndash;6 &middot; Recruitment</div>
+        </div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="accordion-body">
+        <div class="why-box">
+          <div class="why-label">Why it matters</div>
+          <div class="why-text">WeTransact&rsquo;s preferred partners list is curated and pre-vetted &mdash; these resellers are actively looking to add ISV solutions. Beyond that, the broader Microsoft CSP ecosystem has 90,000+ resellers. Systematic outreach through the platform lets you scale across both and track engagement in one place.</div>
+        </div>
+        <div class="steps-label">Steps</div>
+        <div class="steps-list">
+          <div class="step-row"><div class="step-n">1</div><div class="step-text">Access the preferred partners list in WeTransact and filter by segment, geography, and specialisation that align with your product and confirmed partner type.</div></div>
+          <div class="step-row"><div class="step-n">2</div><div class="step-text">Use the platform&rsquo;s connect button to initiate outreach to 3&ndash;5 high-fit preferred partners &mdash; do not try to reach all of them at once.</div></div>
+          <div class="step-row"><div class="step-n">3</div><div class="step-text">Use the Microsoft AppSource Partner Directory to supplement your search &mdash; filter by designation, specialisation, industry, and location.</div></div>
+          <div class="step-row"><div class="step-n">4</div><div class="step-text">For the broader CSP directory, define your ideal reseller profile first: product fit, segment, geography, Microsoft tier, and capability area gap.</div></div>
+          <div class="step-row"><div class="step-n">5</div><div class="step-text">Run an outreach campaign through the WeTransact platform to contact partners at scale &mdash; use Clay to enrich your dataset and identify technographic signals before outreach.</div></div>
+          <div class="step-row"><div class="step-n">6</div><div class="step-text">Apply the 100-10-1 ratio expectation: reach out to 100+ resellers, expect 5&ndash;10 meetings, aim to close 1&ndash;2 agreements in the first 10 weeks. A 3&ndash;5% response rate is normal &mdash; low early response is not failure.</div></div>
+          <div class="step-row"><div class="step-n">7</div><div class="step-text">Track engagement and follow up &mdash; partner recruitment is multi-touch. When someone responds, your first meeting goal is to qualify WHY they responded, not to pitch.</div></div>
+        </div>
+        <div class="done-box">
+          <div class="done-icon">&#9989;</div>
+          <div>
+            <div class="done-label">Done well</div>
+            <div class="done-text">You have an active recruitment campaign across preferred partners and the broader CSP directory, with a pipeline of potential reseller partners tracked in WeTransact.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-step="6">
+      <button class="accordion-trigger" onclick="toggle(this)">
+        <div class="step-num">6</div>
+        <div class="trigger-text">
+          <div class="trigger-title">Appoint Your Partner Champion and Complete Fundamentals Training</div>
+          <div class="trigger-sub">Week 3&ndash;6 &middot; Internal readiness</div>
+        </div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="accordion-body">
+        <div class="why-box">
+          <div class="why-label">Why it matters</div>
+          <div class="why-text">Your channel team needs one person who owns the Marketplace reseller motion end-to-end. Without a named champion, accountability fragments and partners do not know who to go to. Equally, the partner team needs to understand Marketplace mechanics &mdash; CSP workflows, multiparty private offers, and how WeTransact supports it all &mdash; before managing any reseller relationship. Companies with structured internal onboarding achieve 40% faster time to productivity with partners.</div>
+        </div>
+        <div class="steps-label">Steps</div>
+        <div class="steps-list">
+          <div class="step-row"><div class="step-n">1</div><div class="step-text">Pick one person on your partner team to own the programme &mdash; this is the Partner Champion. Partners and leadership must know who to contact.</div></div>
+          <div class="step-row"><div class="step-n">2</div><div class="step-text">They complete WeTransact Fundamentals first and become the internal expert before managing any marketplace reseller relationship.</div></div>
+          <div class="step-row"><div class="step-n">3</div><div class="step-text">They are responsible for recruitment pipeline, partner enablement, and activation metrics.</div></div>
+          <div class="step-row"><div class="step-n">4</div><div class="step-text">Register key channel team members for the Fundamentals programme alongside the champion.</div></div>
+          <div class="step-row"><div class="step-n">5</div><div class="step-text">Ensure the team understands: CSP private offer mechanics (margin setting, Microsoft 3% agency fee, reseller pricing), multiparty private offer availability for enterprise customers (currently US, UK, Canada), and the double sell model (recruit first, then help the reseller sell &mdash; different from co-sell).</div></div>
+          <div class="step-row"><div class="step-n">6</div><div class="step-text">Check co-sell ready status and IP Co-sell eligibility in Partner Center &mdash; co-sell status increases credibility with resellers and gives access to Microsoft seller support.</div></div>
+          <div class="step-row"><div class="step-n">7</div><div class="step-text">Review Microsoft ISV Success programme benefits to ensure you are claiming all available enablement resources.</div></div>
+        </div>
+        <div class="done-box">
+          <div class="done-icon">&#9989;</div>
+          <div>
+            <div class="done-label">Done well</div>
+            <div class="done-text">A named Partner Champion owns the reseller channel, has completed Fundamentals training, and can confidently explain CSP workflows, private offer mechanics, and multiparty private offers to any reseller.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-step="7">
+      <button class="accordion-trigger" onclick="toggle(this)">
+        <div class="step-num">7</div>
+        <div class="trigger-text">
+          <div class="trigger-title">Close Your First Agreement and Activate the Partnership</div>
+          <div class="trigger-sub">Week 7&ndash;10 &middot; Activation</div>
+        </div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="accordion-body">
+        <div class="why-box">
+          <div class="why-label">Why it matters</div>
+          <div class="why-text">The first signed reseller agreement is not the end of the process &mdash; it is the beginning of the double sell. You have recruited the reseller. Now you help them sell. This requires a clear commercial structure, joint pipeline visibility, and an enablement plan that keeps your ISV top of mind for the reseller&rsquo;s sales team.</div>
+        </div>
+        <div class="steps-label">Steps</div>
+        <div class="steps-list">
+          <div class="step-row"><div class="step-n">1</div><div class="step-text">Have your standard reseller agreement template ready before any conversation reaches this stage &mdash; prepare it in Week 1, not Week 7.</div></div>
+          <div class="step-row"><div class="step-n">2</div><div class="step-text">Create a CSP private offer in WeTransact: set your margin (typically 30&ndash;40% for a full channel play; adjust down to 20% for distributor-tier or 10% for implementation-heavy SI deals), send to the reseller&rsquo;s Partner Center.</div></div>
+          <div class="step-row"><div class="step-n">3</div><div class="step-text">For enterprise customers on EA or MCA, use a Multiparty Private Offer (MPO) instead &mdash; available in US, UK, and Canada. The channel partner oversees the customer relationship while Microsoft bills directly through the Marketplace.</div></div>
+          <div class="step-row"><div class="step-n">4</div><div class="step-text">If the deal is single-customer, contact support@wetransact.io to enable the single-tenant offer toggle.</div></div>
+          <div class="step-row"><div class="step-n">5</div><div class="step-text">Enroll your first partner in Crossbeam and run account mapping immediately &mdash; identify which of their existing customers overlap with your target accounts. This is where the joint pipeline comes from.</div></div>
+          <div class="step-row"><div class="step-n">6</div><div class="step-text">Use the pipeline overlap data to identify 3&ndash;5 specific deals to pursue together through the Marketplace in the first 90 days.</div></div>
+          <div class="step-row"><div class="step-n">7</div><div class="step-text">Consider a SPIF for individual sellers at larger resellers (500+ employees) &mdash; culturally appropriate gifts for the first 6 months, at both company and individual seller level, framed as a beginning not a permanent fixture. Never make it feel like cash under the table.</div></div>
+          <div class="step-row"><div class="step-n">8</div><div class="step-text">Send the Post-Discovery Recap email within 24 hours of your first partner meeting &mdash; include a Ready to Circulate section the champion can forward to their leadership.</div></div>
+          <div class="step-row"><div class="step-n">9</div><div class="step-text">Set a monthly business review cadence with your first partner &mdash; define clear success metrics, track deal velocity, and update the joint pipeline in Crossbeam at each review.</div></div>
+        </div>
+        <div class="done-box">
+          <div class="done-icon">&#9989;</div>
+          <div>
+            <div class="done-label">Done well</div>
+            <div class="done-text">Your first reseller agreement is signed, a CSP or Multiparty Private Offer is live, you have identified at least three joint pipeline opportunities from their existing customer base, and you have a monthly review cadence in place.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  Reseller &amp; Partner &middot; Level 0 Fundamentals &middot; WeTransact Partner Programme
+</footer>
+
+<script>
+  const openSteps = new Set();
+
+  function toggle(btn) {
+    const item = btn.closest('.accordion-item');
+    const step = item.dataset.step;
+    const isOpen = item.classList.contains('open');
+    if (isOpen) {
+      item.classList.remove('open');
+      openSteps.delete(step);
+    } else {
+      item.classList.add('open');
+      openSteps.add(step);
+    }
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const total = 7;
+    const done = openSteps.size;
+    const pct = Math.round((done / total) * 100);
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressCount').textContent = done + ' / ' + total + ' steps';
+  }
+</script>
+</body>
+</html>
